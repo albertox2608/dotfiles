@@ -1,0 +1,22 @@
+// .vim/coc-settings.json
+{
+    //"suggest.autoTrigger": "trigger",
+    //"suggest.triggerAfterInsertEnter": true,
+    "snippets.priority": 1,
+    "snippets.trace": "verbose",
+    "snippets.enableStatusItem": false,
+    "snippets.extends": {
+        "lua": ["lua"]
+    }, 
+    //"snippets.userSnippetsDirectory": ["~/.config/nvim/snippets/ultisnippets"],
+    "snippets.shortcut": "S",
+    "snippets.autoTrigger": true,
+    "snippets.triggerCharacters": [],
+    "snippets.loadFromExtensions": true,
+    "snippets.textmateSnippetsRoots": ["~/.config/nvim/snippets/textmate"],
+    "snippets.ultisnips.enable": false,
+    "snippets.ultisnips.usePythonx": false,
+    "snippets.ultisnips.directories": [],
+    "snippets.snipmate.enable": true,
+    "snippets.snipmate.author": "Alberto Cabrera"
+}

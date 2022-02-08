@@ -1,0 +1,7548 @@
+{
+  "doPlayerAddItem": {
+    "prefix": "doPlayerAddItem",
+    "body": [
+      "doPlayerAddItem(${1:cid}, ${2:itemid}, ${3:<optional: default: 1> count}, ${4:<optional: default: 1> canDropOnMap}, ${5:<optional: default: 1>subtype})$6"
+    ],
+    "description": "doPlayerAddItem"
+  },
+  "debugPrint": {
+    "prefix": "debugPrint",
+    "body": [
+      "debugPrint(${1:text})$2"
+    ],
+    "description": "debugPrint"
+  },
+  "getWorldTime": {
+    "prefix": "getWorldTime",
+    "body": [
+      "getWorldTime()$1"
+    ],
+    "description": "getWorldTime"
+  },
+  "getWorldLight": {
+    "prefix": "getWorldLight",
+    "body": [
+      "getWorldLight()$1"
+    ],
+    "description": "getWorldLight"
+  },
+  "setWorldLight": {
+    "prefix": "setWorldLight",
+    "body": [
+      "setWorldLight(${1:level}, ${2:color})$3"
+    ],
+    "description": "setWorldLight"
+  },
+  "getWorldUpTime": {
+    "prefix": "getWorldUpTime",
+    "body": [
+      "getWorldUpTime()$1"
+    ],
+    "description": "getWorldUpTime"
+  },
+  "getSubTypeName": {
+    "prefix": "getSubTypeName",
+    "body": [
+      "getSubTypeName(${1:subType})$2"
+    ],
+    "description": "getSubTypeName"
+  },
+  "createCombatArea": {
+    "prefix": "createCombatArea",
+    "body": [
+      "createCombatArea(${1: {area}}, ${2:<optional> {extArea} })$3"
+    ],
+    "description": "createCombatArea"
+  },
+  "doAreaCombat": {
+    "prefix": "doAreaCombat",
+    "body": [
+      "doAreaCombat(${1:cid}, ${2:type}, ${3:pos}, ${4:area}, ${5:min}, ${6:max}, ${7:effect[}, ${8:origin = ORIGIN_SPELL[}, ${9:blockArmor = false[}, ${10:blockShield = false[}, ${11:ignoreResistances = false]]]]})$12"
+    ],
+    "description": "doAreaCombat"
+  },
+  "doTargetCombat": {
+    "prefix": "doTargetCombat",
+    "body": [
+      "doTargetCombat(${1:cid}, ${2:target}, ${3:type}, ${4:min}, ${5:max}, ${6:effect[}, ${7:origin = ORIGIN_SPELL[}, ${8:blockArmor = false[}, ${9:blockShield = false[}, ${10:ignoreResistances = false]]]]})$11"
+    ],
+    "description": "doTargetCombat"
+  },
+  "doChallengeCreature": {
+    "prefix": "doChallengeCreature",
+    "body": [
+      "doChallengeCreature(${1:cid}, ${2:target[}, ${3:force = false]})$4"
+    ],
+    "description": "doChallengeCreature"
+  },
+  "isValidUID": {
+    "prefix": "isValidUID",
+    "body": [
+      "isValidUID(${1:uid})$2"
+    ],
+    "description": "isValidUID"
+  },
+  "isDepot": {
+    "prefix": "isDepot",
+    "body": [
+      "isDepot(${1:uid})$2"
+    ],
+    "description": "isDepot"
+  },
+  "isMoveable": {
+    "prefix": "isMoveable",
+    "body": [
+      "isMoveable(${1:uid})$2"
+    ],
+    "description": "isMoveable"
+  },
+  "isMovable": {
+    "prefix": "isMovable",
+    "body": [
+      "isMovable(${1:uid})$2"
+    ],
+    "description": "isMovable"
+  },
+  "doAddContainerItem": {
+    "prefix": "doAddContainerItem",
+    "body": [
+      "doAddContainerItem(${1:uid}, ${2:itemid}, ${3:<optional> count/subtype})$4"
+    ],
+    "description": "doAddContainerItem"
+  },
+  "getDepotId": {
+    "prefix": "getDepotId",
+    "body": [
+      "getDepotId(${1:uid})$2"
+    ],
+    "description": "getDepotId"
+  },
+  "addEvent": {
+    "prefix": "addEvent",
+    "body": [
+      "addEvent(${1:callback}, ${2:delay}, ${3:...})$4"
+    ],
+    "description": "addEvent"
+  },
+  "stopEvent": {
+    "prefix": "stopEvent",
+    "body": [
+      "stopEvent(${1:eventid})$2"
+    ],
+    "description": "stopEvent"
+  },
+  "isInWar": {
+    "prefix": "isInWar",
+    "body": [
+      "isInWar(${1:cid}, ${2:target})$3"
+    ],
+    "description": "isInWar"
+  },
+  "getWaypointPositionByName": {
+    "prefix": "getWaypointPositionByName",
+    "body": [
+      "getWaypointPositionByName(${1:name})$2"
+    ],
+    "description": "getWaypointPositionByName"
+  },
+  "sendChannelMessage": {
+    "prefix": "sendChannelMessage",
+    "body": [
+      "sendChannelMessage(${1:channelId}, ${2:type}, ${3:message})$4"
+    ],
+    "description": "sendChannelMessage"
+  },
+  "sendGuildChannelMessage": {
+    "prefix": "sendGuildChannelMessage",
+    "body": [
+      "sendGuildChannelMessage(${1:guildId}, ${2:type}, ${3:message})$4"
+    ],
+    "description": "sendGuildChannelMessage"
+  },
+  "isScriptsInterface": {
+    "prefix": "isScriptsInterface",
+    "body": [
+      "isScriptsInterface()$1"
+    ],
+    "description": "isScriptsInterface"
+  },
+  "Game.getSpectators": {
+    "prefix": "Game.getSpectators",
+    "body": [
+      "Game.getSpectators(${1:position[}, ${2:multifloor = false[}, ${3:onlyPlayer = false[}, ${4:minRangeX = 0[}, ${5:maxRangeX = 0[}, ${6:minRangeY = 0[}, ${7:maxRangeY = 0]]]]]]})$8"
+    ],
+    "description": "Game.getSpectators"
+  },
+  "Game.getPlayers": {
+    "prefix": "Game.getPlayers",
+    "body": [
+      "Game.getPlayers()$1"
+    ],
+    "description": "Game.getPlayers"
+  },
+  "Game.loadMap": {
+    "prefix": "Game.loadMap",
+    "body": [
+      "Game.loadMap(${1:path})$2"
+    ],
+    "description": "Game.loadMap"
+  },
+  "Game.getExperienceStage": {
+    "prefix": "Game.getExperienceStage",
+    "body": [
+      "Game.getExperienceStage(${1:level})$2"
+    ],
+    "description": "Game.getExperienceStage"
+  },
+  "Game.getExperienceForLevel": {
+    "prefix": "Game.getExperienceForLevel",
+    "body": [
+      "Game.getExperienceForLevel(${1:level})$2"
+    ],
+    "description": "Game.getExperienceForLevel"
+  },
+  "Game.getMonsterCount": {
+    "prefix": "Game.getMonsterCount",
+    "body": [
+      "Game.getMonsterCount()$1"
+    ],
+    "description": "Game.getMonsterCount"
+  },
+  "Game.getPlayerCount": {
+    "prefix": "Game.getPlayerCount",
+    "body": [
+      "Game.getPlayerCount()$1"
+    ],
+    "description": "Game.getPlayerCount"
+  },
+  "Game.getNpcCount": {
+    "prefix": "Game.getNpcCount",
+    "body": [
+      "Game.getNpcCount()$1"
+    ],
+    "description": "Game.getNpcCount"
+  },
+  "Game.getMonsterTypes": {
+    "prefix": "Game.getMonsterTypes",
+    "body": [
+      "Game.getMonsterTypes()$1"
+    ],
+    "description": "Game.getMonsterTypes"
+  },
+  "Game.getTowns": {
+    "prefix": "Game.getTowns",
+    "body": [
+      "Game.getTowns()$1"
+    ],
+    "description": "Game.getTowns"
+  },
+  "Game.getHouses": {
+    "prefix": "Game.getHouses",
+    "body": [
+      "Game.getHouses()$1"
+    ],
+    "description": "Game.getHouses"
+  },
+  "Game.getGameState": {
+    "prefix": "Game.getGameState",
+    "body": [
+      "Game.getGameState()$1"
+    ],
+    "description": "Game.getGameState"
+  },
+  "Game.setGameState": {
+    "prefix": "Game.setGameState",
+    "body": [
+      "Game.setGameState(${1:state})$2"
+    ],
+    "description": "Game.setGameState"
+  },
+  "Game.getWorldType": {
+    "prefix": "Game.getWorldType",
+    "body": [
+      "Game.getWorldType()$1"
+    ],
+    "description": "Game.getWorldType"
+  },
+  "Game.setWorldType": {
+    "prefix": "Game.setWorldType",
+    "body": [
+      "Game.setWorldType(${1:type})$2"
+    ],
+    "description": "Game.setWorldType"
+  },
+  "Game.getReturnMessage": {
+    "prefix": "Game.getReturnMessage",
+    "body": [
+      "Game.getReturnMessage(${1:value})$2"
+    ],
+    "description": "Game.getReturnMessage"
+  },
+  "Game.getItemAttributeByName": {
+    "prefix": "Game.getItemAttributeByName",
+    "body": [
+      "Game.getItemAttributeByName(${1:name})$2"
+    ],
+    "description": "Game.getItemAttributeByName"
+  },
+  "Game.createItem": {
+    "prefix": "Game.createItem",
+    "body": [
+      "Game.createItem(${1:itemId[}, ${2:count[}, ${3:position]]})$4"
+    ],
+    "description": "Game.createItem"
+  },
+  "Game.createContainer": {
+    "prefix": "Game.createContainer",
+    "body": [
+      "Game.createContainer(${1:itemId}, ${2:size[}, ${3:position]})$4"
+    ],
+    "description": "Game.createContainer"
+  },
+  "Game.createMonster": {
+    "prefix": "Game.createMonster",
+    "body": [
+      "Game.createMonster(${1:monsterName}, ${2:position[}, ${3:extended = false[}, ${4:force = false]]})$5"
+    ],
+    "description": "Game.createMonster"
+  },
+  "Game.createNpc": {
+    "prefix": "Game.createNpc",
+    "body": [
+      "Game.createNpc(${1:npcName}, ${2:position[}, ${3:extended = false[}, ${4:force = false]]})$5"
+    ],
+    "description": "Game.createNpc"
+  },
+  "Game.createTile": {
+    "prefix": "Game.createTile",
+    "body": [
+      "Game.createTile(${1:position[}, ${2:isDynamic = false]})$3"
+    ],
+    "description": "Game.createTile"
+  },
+  "Game.createMonsterType": {
+    "prefix": "Game.createMonsterType",
+    "body": [
+      "Game.createMonsterType(${1:name})$2"
+    ],
+    "description": "Game.createMonsterType"
+  },
+  "Game.startRaid": {
+    "prefix": "Game.startRaid",
+    "body": [
+      "Game.startRaid(${1:raidName})$2"
+    ],
+    "description": "Game.startRaid"
+  },
+  "Game.sendAnimatedText": {
+    "prefix": "Game.sendAnimatedText",
+    "body": [
+      "Game.sendAnimatedText(${1:message}, ${2:position}, ${3:color})$4"
+    ],
+    "description": "Game.sendAnimatedText"
+  },
+  "Game.getClientVersion": {
+    "prefix": "Game.getClientVersion",
+    "body": [
+      "Game.getClientVersion()$1"
+    ],
+    "description": "Game.getClientVersion"
+  },
+  "Game.reload": {
+    "prefix": "Game.reload",
+    "body": [
+      "Game.reload(${1:reloadType})$2"
+    ],
+    "description": "Game.reload"
+  },
+  "Game.getAccountStorageValue": {
+    "prefix": "Game.getAccountStorageValue",
+    "body": [
+      "Game.getAccountStorageValue(${1:accountId}, ${2:key})$3"
+    ],
+    "description": "Game.getAccountStorageValue"
+  },
+  "Game.setAccountStorageValue": {
+    "prefix": "Game.setAccountStorageValue",
+    "body": [
+      "Game.setAccountStorageValue(${1:accountId}, ${2:key}, ${3:value})$4"
+    ],
+    "description": "Game.setAccountStorageValue"
+  },
+  "Game.saveAccountStorageValues": {
+    "prefix": "Game.saveAccountStorageValues",
+    "body": [
+      "Game.saveAccountStorageValues()$1"
+    ],
+    "description": "Game.saveAccountStorageValues"
+  },
+  "Variant:getNumber": {
+    "prefix": "getNumber",
+    "body": [
+      "${1:Variant}:getNumber()$2"
+    ],
+    "description": "Variant:getNumber"
+  },
+  "Variant:getString": {
+    "prefix": "getString",
+    "body": [
+      "${1:Variant}:getString()$2"
+    ],
+    "description": "Variant:getString"
+  },
+  "Variant:getPosition": {
+    "prefix": "getPosition",
+    "body": [
+      "${1:Variant}:getPosition()$2"
+    ],
+    "description": "Variant:getPosition"
+  },
+  "Position": {
+    "prefix": "Position",
+    "body": [
+      "Position(${1:[position]})$2"
+    ],
+    "description": "Position"
+  },
+  "Position:getDistance": {
+    "prefix": "getDistance",
+    "body": [
+      "${1:position}:getDistance(${2:positionEx})$3"
+    ],
+    "description": "Position:getDistance"
+  },
+  "Position:isSightClear": {
+    "prefix": "isSightClear",
+    "body": [
+      "${1:position}:isSightClear(${2:positionEx[}, ${3:sameFloor = true]})$4"
+    ],
+    "description": "Position:isSightClear"
+  },
+  "Position:sendMagicEffect": {
+    "prefix": "sendMagicEffect",
+    "body": [
+      "${1:position}:sendMagicEffect(${2:magicEffect[}, ${3:player = nullptr]})$4"
+    ],
+    "description": "Position:sendMagicEffect"
+  },
+  "Position:sendDistanceEffect": {
+    "prefix": "sendDistanceEffect",
+    "body": [
+      "${1:position}:sendDistanceEffect(${2:positionEx}, ${3:distanceEffect[}, ${4:player = nullptr]})$5"
+    ],
+    "description": "Position:sendDistanceEffect"
+  },
+  "Tile": {
+    "prefix": "Tile",
+    "body": [
+      "Tile(${1:position})$2"
+    ],
+    "description": "Tile"
+  },
+  "Tile:remove": {
+    "prefix": "remove",
+    "body": [
+      "${1:tile}:remove()$2"
+    ],
+    "description": "Tile:remove"
+  },
+  "Tile:getPosition": {
+    "prefix": "getPosition",
+    "body": [
+      "${1:tile}:getPosition()$2"
+    ],
+    "description": "Tile:getPosition"
+  },
+  "Tile:getGround": {
+    "prefix": "getGround",
+    "body": [
+      "${1:tile}:getGround()$2"
+    ],
+    "description": "Tile:getGround"
+  },
+  "Tile:getThing": {
+    "prefix": "getThing",
+    "body": [
+      "${1:tile}:getThing(${2:index})$3"
+    ],
+    "description": "Tile:getThing"
+  },
+  "Tile:getThingCount": {
+    "prefix": "getThingCount",
+    "body": [
+      "${1:tile}:getThingCount()$2"
+    ],
+    "description": "Tile:getThingCount"
+  },
+  "Tile:getTopVisibleThing": {
+    "prefix": "getTopVisibleThing",
+    "body": [
+      "${1:tile}:getTopVisibleThing(${2:creature})$3"
+    ],
+    "description": "Tile:getTopVisibleThing"
+  },
+  "Tile:getTopTopItem": {
+    "prefix": "getTopTopItem",
+    "body": [
+      "${1:tile}:getTopTopItem()$2"
+    ],
+    "description": "Tile:getTopTopItem"
+  },
+  "Tile:getTopDownItem": {
+    "prefix": "getTopDownItem",
+    "body": [
+      "${1:tile}:getTopDownItem()$2"
+    ],
+    "description": "Tile:getTopDownItem"
+  },
+  "Tile:getFieldItem": {
+    "prefix": "getFieldItem",
+    "body": [
+      "${1:tile}:getFieldItem()$2"
+    ],
+    "description": "Tile:getFieldItem"
+  },
+  "Tile:getItemById": {
+    "prefix": "getItemById",
+    "body": [
+      "${1:tile}:getItemById(${2:itemId[}, ${3:subType = -1]})$4"
+    ],
+    "description": "Tile:getItemById"
+  },
+  "Tile:getItemByType": {
+    "prefix": "getItemByType",
+    "body": [
+      "${1:tile}:getItemByType(${2:itemType})$3"
+    ],
+    "description": "Tile:getItemByType"
+  },
+  "Tile:getItemByTopOrder": {
+    "prefix": "getItemByTopOrder",
+    "body": [
+      "${1:tile}:getItemByTopOrder(${2:topOrder})$3"
+    ],
+    "description": "Tile:getItemByTopOrder"
+  },
+  "Tile:getItemCountById": {
+    "prefix": "getItemCountById",
+    "body": [
+      "${1:tile}:getItemCountById(${2:itemId[}, ${3:subType = -1]})$4"
+    ],
+    "description": "Tile:getItemCountById"
+  },
+  "Tile:getBottomCreature": {
+    "prefix": "getBottomCreature",
+    "body": [
+      "${1:tile}:getBottomCreature()$2"
+    ],
+    "description": "Tile:getBottomCreature"
+  },
+  "Tile:getTopCreature": {
+    "prefix": "getTopCreature",
+    "body": [
+      "${1:tile}:getTopCreature()$2"
+    ],
+    "description": "Tile:getTopCreature"
+  },
+  "Tile:getBottomVisibleCreature": {
+    "prefix": "getBottomVisibleCreature",
+    "body": [
+      "${1:tile}:getBottomVisibleCreature(${2:creature})$3"
+    ],
+    "description": "Tile:getBottomVisibleCreature"
+  },
+  "Tile:getTopVisibleCreature": {
+    "prefix": "getTopVisibleCreature",
+    "body": [
+      "${1:tile}:getTopVisibleCreature(${2:creature})$3"
+    ],
+    "description": "Tile:getTopVisibleCreature"
+  },
+  "Tile:getItems": {
+    "prefix": "getItems",
+    "body": [
+      "${1:tile}:getItems()$2"
+    ],
+    "description": "Tile:getItems"
+  },
+  "Tile:getItemCount": {
+    "prefix": "getItemCount",
+    "body": [
+      "${1:tile}:getItemCount()$2"
+    ],
+    "description": "Tile:getItemCount"
+  },
+  "Tile:getDownItemCount": {
+    "prefix": "getDownItemCount",
+    "body": [
+      "${1:tile}:getDownItemCount()$2"
+    ],
+    "description": "Tile:getDownItemCount"
+  },
+  "Tile:getTopItemCount": {
+    "prefix": "getTopItemCount",
+    "body": [
+      "${1:tile}:getTopItemCount()$2"
+    ],
+    "description": "Tile:getTopItemCount"
+  },
+  "Tile:getCreatures": {
+    "prefix": "getCreatures",
+    "body": [
+      "${1:tile}:getCreatures()$2"
+    ],
+    "description": "Tile:getCreatures"
+  },
+  "Tile:getCreatureCount": {
+    "prefix": "getCreatureCount",
+    "body": [
+      "${1:tile}:getCreatureCount()$2"
+    ],
+    "description": "Tile:getCreatureCount"
+  },
+  "Tile:hasProperty": {
+    "prefix": "hasProperty",
+    "body": [
+      "${1:tile}:hasProperty(${2:property[}, ${3:item]})$4"
+    ],
+    "description": "Tile:hasProperty"
+  },
+  "Tile:getThingIndex": {
+    "prefix": "getThingIndex",
+    "body": [
+      "${1:tile}:getThingIndex(${2:thing})$3"
+    ],
+    "description": "Tile:getThingIndex"
+  },
+  "Tile:hasFlag": {
+    "prefix": "hasFlag",
+    "body": [
+      "${1:tile}:hasFlag(${2:flag})$3"
+    ],
+    "description": "Tile:hasFlag"
+  },
+  "Tile:queryAdd": {
+    "prefix": "queryAdd",
+    "body": [
+      "${1:tile}:queryAdd(${2:thing[}, ${3:flags]})$4"
+    ],
+    "description": "Tile:queryAdd"
+  },
+  "Tile:addItem": {
+    "prefix": "addItem",
+    "body": [
+      "${1:tile}:addItem(${2:itemId[}, ${3:count/subType = 1[}, ${4:flags = 0]]})$5"
+    ],
+    "description": "Tile:addItem"
+  },
+  "Tile:addItemEx": {
+    "prefix": "addItemEx",
+    "body": [
+      "${1:tile}:addItemEx(${2:item[}, ${3:flags = 0]})$4"
+    ],
+    "description": "Tile:addItemEx"
+  },
+  "Tile:getHouse": {
+    "prefix": "getHouse",
+    "body": [
+      "${1:tile}:getHouse()$2"
+    ],
+    "description": "Tile:getHouse"
+  },
+  "NetworkMessage": {
+    "prefix": "NetworkMessage",
+    "body": [
+      "NetworkMessage()$1"
+    ],
+    "description": "NetworkMessage"
+  },
+  "NetworkMessage:getByte": {
+    "prefix": "getByte",
+    "body": [
+      "${1:networkMessage}:getByte()$2"
+    ],
+    "description": "NetworkMessage:getByte"
+  },
+  "NetworkMessage:getU16": {
+    "prefix": "getU16",
+    "body": [
+      "${1:networkMessage}:getU16()$2"
+    ],
+    "description": "NetworkMessage:getU16"
+  },
+  "NetworkMessage:getU32": {
+    "prefix": "getU32",
+    "body": [
+      "${1:networkMessage}:getU32()$2"
+    ],
+    "description": "NetworkMessage:getU32"
+  },
+  "NetworkMessage:getU64": {
+    "prefix": "getU64",
+    "body": [
+      "${1:networkMessage}:getU64()$2"
+    ],
+    "description": "NetworkMessage:getU64"
+  },
+  "NetworkMessage:getString": {
+    "prefix": "getString",
+    "body": [
+      "${1:networkMessage}:getString()$2"
+    ],
+    "description": "NetworkMessage:getString"
+  },
+  "NetworkMessage:getPosition": {
+    "prefix": "getPosition",
+    "body": [
+      "${1:networkMessage}:getPosition()$2"
+    ],
+    "description": "NetworkMessage:getPosition"
+  },
+  "NetworkMessage:addByte": {
+    "prefix": "addByte",
+    "body": [
+      "${1:networkMessage}:addByte(${2:number})$3"
+    ],
+    "description": "NetworkMessage:addByte"
+  },
+  "NetworkMessage:addU16": {
+    "prefix": "addU16",
+    "body": [
+      "${1:networkMessage}:addU16(${2:number})$3"
+    ],
+    "description": "NetworkMessage:addU16"
+  },
+  "NetworkMessage:addU32": {
+    "prefix": "addU32",
+    "body": [
+      "${1:networkMessage}:addU32(${2:number})$3"
+    ],
+    "description": "NetworkMessage:addU32"
+  },
+  "NetworkMessage:addU64": {
+    "prefix": "addU64",
+    "body": [
+      "${1:networkMessage}:addU64(${2:number})$3"
+    ],
+    "description": "NetworkMessage:addU64"
+  },
+  "NetworkMessage:addString": {
+    "prefix": "addString",
+    "body": [
+      "${1:networkMessage}:addString(${2:string})$3"
+    ],
+    "description": "NetworkMessage:addString"
+  },
+  "NetworkMessage:addPosition": {
+    "prefix": "addPosition",
+    "body": [
+      "${1:networkMessage}:addPosition(${2:position})$3"
+    ],
+    "description": "NetworkMessage:addPosition"
+  },
+  "NetworkMessage:addDouble": {
+    "prefix": "addDouble",
+    "body": [
+      "${1:networkMessage}:addDouble(${2:number})$3"
+    ],
+    "description": "NetworkMessage:addDouble"
+  },
+  "NetworkMessage:addItem": {
+    "prefix": "addItem",
+    "body": [
+      "${1:networkMessage}:addItem(${2:item})$3"
+    ],
+    "description": "NetworkMessage:addItem"
+  },
+  "NetworkMessage:addItemId": {
+    "prefix": "addItemId",
+    "body": [
+      "${1:networkMessage}:addItemId(${2:itemId})$3"
+    ],
+    "description": "NetworkMessage:addItemId"
+  },
+  "NetworkMessage:reset": {
+    "prefix": "reset",
+    "body": [
+      "${1:networkMessage}:reset()$2"
+    ],
+    "description": "NetworkMessage:reset"
+  },
+  "NetworkMessage:seek": {
+    "prefix": "seek",
+    "body": [
+      "${1:networkMessage}:seek(${2:position})$3"
+    ],
+    "description": "NetworkMessage:seek"
+  },
+  "NetworkMessage:tell": {
+    "prefix": "tell",
+    "body": [
+      "${1:networkMessage}:tell()$2"
+    ],
+    "description": "NetworkMessage:tell"
+  },
+  "NetworkMessage:len": {
+    "prefix": "len",
+    "body": [
+      "${1:networkMessage}:len()$2"
+    ],
+    "description": "NetworkMessage:len"
+  },
+  "NetworkMessage:skipBytes": {
+    "prefix": "skipBytes",
+    "body": [
+      "${1:networkMessage}:skipBytes(${2:number})$3"
+    ],
+    "description": "NetworkMessage:skipBytes"
+  },
+  "NetworkMessage:sendToPlayer": {
+    "prefix": "sendToPlayer",
+    "body": [
+      "${1:networkMessage}:sendToPlayer(${2:player})$3"
+    ],
+    "description": "NetworkMessage:sendToPlayer"
+  },
+  "Item": {
+    "prefix": "Item",
+    "body": [
+      "Item(${1:uid})$2"
+    ],
+    "description": "Item"
+  },
+  "Item:isItem": {
+    "prefix": "isItem",
+    "body": [
+      "${1:item}:isItem()$2"
+    ],
+    "description": "Item:isItem"
+  },
+  "Item:getParent": {
+    "prefix": "getParent",
+    "body": [
+      "${1:item}:getParent()$2"
+    ],
+    "description": "Item:getParent"
+  },
+  "Item:getTopParent": {
+    "prefix": "getTopParent",
+    "body": [
+      "${1:item}:getTopParent()$2"
+    ],
+    "description": "Item:getTopParent"
+  },
+  "Item:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:item}:getId()$2"
+    ],
+    "description": "Item:getId"
+  },
+  "Item:clone": {
+    "prefix": "clone",
+    "body": [
+      "${1:item}:clone()$2"
+    ],
+    "description": "Item:clone"
+  },
+  "Item:split": {
+    "prefix": "split",
+    "body": [
+      "${1:item}:split(${2:[count = 1]})$3"
+    ],
+    "description": "Item:split"
+  },
+  "Item:remove": {
+    "prefix": "remove",
+    "body": [
+      "${1:item}:remove(${2:[count = -1]})$3"
+    ],
+    "description": "Item:remove"
+  },
+  "Item:getUniqueId": {
+    "prefix": "getUniqueId",
+    "body": [
+      "${1:item}:getUniqueId()$2"
+    ],
+    "description": "Item:getUniqueId"
+  },
+  "Item:getRuneSpellName": {
+    "prefix": "getRuneSpellName",
+    "body": [
+      "${1:item}:getRuneSpellName()$2"
+    ],
+    "description": "Item:getRuneSpellName"
+  },
+  "Item:getActionId": {
+    "prefix": "getActionId",
+    "body": [
+      "${1:item}:getActionId()$2"
+    ],
+    "description": "Item:getActionId"
+  },
+  "Item:setActionId": {
+    "prefix": "setActionId",
+    "body": [
+      "${1:item}:setActionId(${2:actionId})$3"
+    ],
+    "description": "Item:setActionId"
+  },
+  "Item:getCount": {
+    "prefix": "getCount",
+    "body": [
+      "${1:item}:getCount()$2"
+    ],
+    "description": "Item:getCount"
+  },
+  "Item:getCharges": {
+    "prefix": "getCharges",
+    "body": [
+      "${1:item}:getCharges()$2"
+    ],
+    "description": "Item:getCharges"
+  },
+  "Item:getFluidType": {
+    "prefix": "getFluidType",
+    "body": [
+      "${1:item}:getFluidType()$2"
+    ],
+    "description": "Item:getFluidType"
+  },
+  "Item:getWeight": {
+    "prefix": "getWeight",
+    "body": [
+      "${1:item}:getWeight()$2"
+    ],
+    "description": "Item:getWeight"
+  },
+  "Item:getSubType": {
+    "prefix": "getSubType",
+    "body": [
+      "${1:item}:getSubType()$2"
+    ],
+    "description": "Item:getSubType"
+  },
+  "Item:getName": {
+    "prefix": "getName",
+    "body": [
+      "${1:item}:getName()$2"
+    ],
+    "description": "Item:getName"
+  },
+  "Item:getPluralName": {
+    "prefix": "getPluralName",
+    "body": [
+      "${1:item}:getPluralName()$2"
+    ],
+    "description": "Item:getPluralName"
+  },
+  "Item:getArticle": {
+    "prefix": "getArticle",
+    "body": [
+      "${1:item}:getArticle()$2"
+    ],
+    "description": "Item:getArticle"
+  },
+  "Item:getPosition": {
+    "prefix": "getPosition",
+    "body": [
+      "${1:item}:getPosition()$2"
+    ],
+    "description": "Item:getPosition"
+  },
+  "Item:getTile": {
+    "prefix": "getTile",
+    "body": [
+      "${1:item}:getTile()$2"
+    ],
+    "description": "Item:getTile"
+  },
+  "Item:hasAttribute": {
+    "prefix": "hasAttribute",
+    "body": [
+      "${1:item}:hasAttribute(${2:key})$3"
+    ],
+    "description": "Item:hasAttribute"
+  },
+  "Item:getAttribute": {
+    "prefix": "getAttribute",
+    "body": [
+      "${1:item}:getAttribute(${2:key})$3"
+    ],
+    "description": "Item:getAttribute"
+  },
+  "Item:setAttribute": {
+    "prefix": "setAttribute",
+    "body": [
+      "${1:item}:setAttribute(${2:key}, ${3:value})$4"
+    ],
+    "description": "Item:setAttribute"
+  },
+  "Item:removeAttribute": {
+    "prefix": "removeAttribute",
+    "body": [
+      "${1:item}:removeAttribute(${2:key})$3"
+    ],
+    "description": "Item:removeAttribute"
+  },
+  "Item:getCustomAttribute": {
+    "prefix": "getCustomAttribute",
+    "body": [
+      "${1:item}:getCustomAttribute(${2:key})$3"
+    ],
+    "description": "Item:getCustomAttribute"
+  },
+  "Item:setCustomAttribute": {
+    "prefix": "setCustomAttribute",
+    "body": [
+      "${1:item}:setCustomAttribute(${2:key}, ${3:value})$4"
+    ],
+    "description": "Item:setCustomAttribute"
+  },
+  "Item:removeCustomAttribute": {
+    "prefix": "removeCustomAttribute",
+    "body": [
+      "${1:item}:removeCustomAttribute(${2:key})$3"
+    ],
+    "description": "Item:removeCustomAttribute"
+  },
+  "Item:moveTo": {
+    "prefix": "moveTo",
+    "body": [
+      "${1:item}:moveTo(${2:position or cylinder[}, ${3:flags]})$4"
+    ],
+    "description": "Item:moveTo"
+  },
+  "Item:transform": {
+    "prefix": "transform",
+    "body": [
+      "${1:item}:transform(${2:itemId[}, ${3:count/subType = -1]})$4"
+    ],
+    "description": "Item:transform"
+  },
+  "Item:decay": {
+    "prefix": "decay",
+    "body": [
+      "${1:item}:decay(${2:decayId})$3"
+    ],
+    "description": "Item:decay"
+  },
+  "Item:getDescription": {
+    "prefix": "getDescription",
+    "body": [
+      "${1:item}:getDescription(${2:distance})$3"
+    ],
+    "description": "Item:getDescription"
+  },
+  "Item:getSpecialDescription": {
+    "prefix": "getSpecialDescription",
+    "body": [
+      "${1:item}:getSpecialDescription()$2"
+    ],
+    "description": "Item:getSpecialDescription"
+  },
+  "Item:hasProperty": {
+    "prefix": "hasProperty",
+    "body": [
+      "${1:item}:hasProperty(${2:property})$3"
+    ],
+    "description": "Item:hasProperty"
+  },
+  "Item:isLoadedFromMap": {
+    "prefix": "isLoadedFromMap",
+    "body": [
+      "${1:item}:isLoadedFromMap()$2"
+    ],
+    "description": "Item:isLoadedFromMap"
+  },
+  "Container": {
+    "prefix": "Container",
+    "body": [
+      "Container(${1:uid})$2"
+    ],
+    "description": "Container"
+  },
+  "Container:getSize": {
+    "prefix": "getSize",
+    "body": [
+      "${1:container}:getSize()$2"
+    ],
+    "description": "Container:getSize"
+  },
+  "Container:getCapacity": {
+    "prefix": "getCapacity",
+    "body": [
+      "${1:container}:getCapacity()$2"
+    ],
+    "description": "Container:getCapacity"
+  },
+  "Container:getEmptySlots": {
+    "prefix": "getEmptySlots",
+    "body": [
+      "${1:container}:getEmptySlots(${2:[recursive = false]})$3"
+    ],
+    "description": "Container:getEmptySlots"
+  },
+  "Container:getItemHoldingCount": {
+    "prefix": "getItemHoldingCount",
+    "body": [
+      "${1:container}:getItemHoldingCount()$2"
+    ],
+    "description": "Container:getItemHoldingCount"
+  },
+  "Container:getItem": {
+    "prefix": "getItem",
+    "body": [
+      "${1:container}:getItem(${2:index})$3"
+    ],
+    "description": "Container:getItem"
+  },
+  "Container:hasItem": {
+    "prefix": "hasItem",
+    "body": [
+      "${1:container}:hasItem(${2:item})$3"
+    ],
+    "description": "Container:hasItem"
+  },
+  "Container:addItem": {
+    "prefix": "addItem",
+    "body": [
+      "${1:container}:addItem(${2:itemId[}, ${3:count/subType = 1[}, ${4:index = INDEX_WHEREEVER[}, ${5:flags = 0]]]})$6"
+    ],
+    "description": "Container:addItem"
+  },
+  "Container:addItemEx": {
+    "prefix": "addItemEx",
+    "body": [
+      "${1:container}:addItemEx(${2:item[}, ${3:index = INDEX_WHEREEVER[}, ${4:flags = 0]]})$5"
+    ],
+    "description": "Container:addItemEx"
+  },
+  "Container:getCorpseOwner": {
+    "prefix": "getCorpseOwner",
+    "body": [
+      "${1:container}:getCorpseOwner()$2"
+    ],
+    "description": "Container:getCorpseOwner"
+  },
+  "Container:getItemCountById": {
+    "prefix": "getItemCountById",
+    "body": [
+      "${1:container}:getItemCountById(${2:itemId[}, ${3:subType = -1]})$4"
+    ],
+    "description": "Container:getItemCountById"
+  },
+  "Container:getContentDescription": {
+    "prefix": "getContentDescription",
+    "body": [
+      "${1:container}:getContentDescription()$2"
+    ],
+    "description": "Container:getContentDescription"
+  },
+  "Container:getItems": {
+    "prefix": "getItems",
+    "body": [
+      "${1:container}:getItems(${2:[recursive = false]})$3"
+    ],
+    "description": "Container:getItems"
+  },
+  "Teleport": {
+    "prefix": "Teleport",
+    "body": [
+      "Teleport(${1:uid})$2"
+    ],
+    "description": "Teleport"
+  },
+  "Teleport:getDestination": {
+    "prefix": "getDestination",
+    "body": [
+      "${1:teleport}:getDestination()$2"
+    ],
+    "description": "Teleport:getDestination"
+  },
+  "Teleport:setDestination": {
+    "prefix": "setDestination",
+    "body": [
+      "${1:teleport}:setDestination(${2:position})$3"
+    ],
+    "description": "Teleport:setDestination"
+  },
+  "Creature": {
+    "prefix": "Creature",
+    "body": [
+      "Creature(${1:idornameoruserdata})$2"
+    ],
+    "description": "Creature"
+  },
+  "Creature:getEvents": {
+    "prefix": "getEvents",
+    "body": [
+      "${1:creature}:getEvents(${2:type})$3"
+    ],
+    "description": "Creature:getEvents"
+  },
+  "Creature:registerEvent": {
+    "prefix": "registerEvent",
+    "body": [
+      "${1:creature}:registerEvent(${2:name})$3"
+    ],
+    "description": "Creature:registerEvent"
+  },
+  "Creature:unregisterEvent": {
+    "prefix": "unregisterEvent",
+    "body": [
+      "${1:creature}:unregisterEvent(${2:name})$3"
+    ],
+    "description": "Creature:unregisterEvent"
+  },
+  "Creature:isRemoved": {
+    "prefix": "isRemoved",
+    "body": [
+      "${1:creature}:isRemoved()$2"
+    ],
+    "description": "Creature:isRemoved"
+  },
+  "Creature:isCreature": {
+    "prefix": "isCreature",
+    "body": [
+      "${1:creature}:isCreature()$2"
+    ],
+    "description": "Creature:isCreature"
+  },
+  "Creature:isInGhostMode": {
+    "prefix": "isInGhostMode",
+    "body": [
+      "${1:creature}:isInGhostMode()$2"
+    ],
+    "description": "Creature:isInGhostMode"
+  },
+  "Creature:isHealthHidden": {
+    "prefix": "isHealthHidden",
+    "body": [
+      "${1:creature}:isHealthHidden()$2"
+    ],
+    "description": "Creature:isHealthHidden"
+  },
+  "Creature:isMovementBlocked": {
+    "prefix": "isMovementBlocked",
+    "body": [
+      "${1:creature}:isMovementBlocked()$2"
+    ],
+    "description": "Creature:isMovementBlocked"
+  },
+  "Creature:canSee": {
+    "prefix": "canSee",
+    "body": [
+      "${1:creature}:canSee(${2:position})$3"
+    ],
+    "description": "Creature:canSee"
+  },
+  "Creature:canSeeCreature": {
+    "prefix": "canSeeCreature",
+    "body": [
+      "${1:creature}:canSeeCreature(${2:creature})$3"
+    ],
+    "description": "Creature:canSeeCreature"
+  },
+  "Creature:canSeeGhostMode": {
+    "prefix": "canSeeGhostMode",
+    "body": [
+      "${1:creature}:canSeeGhostMode(${2:creature})$3"
+    ],
+    "description": "Creature:canSeeGhostMode"
+  },
+  "Creature:canSeeInvisibility": {
+    "prefix": "canSeeInvisibility",
+    "body": [
+      "${1:creature}:canSeeInvisibility()$2"
+    ],
+    "description": "Creature:canSeeInvisibility"
+  },
+  "Creature:getParent": {
+    "prefix": "getParent",
+    "body": [
+      "${1:creature}:getParent()$2"
+    ],
+    "description": "Creature:getParent"
+  },
+  "Creature:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:creature}:getId()$2"
+    ],
+    "description": "Creature:getId"
+  },
+  "Creature:getName": {
+    "prefix": "getName",
+    "body": [
+      "${1:creature}:getName()$2"
+    ],
+    "description": "Creature:getName"
+  },
+  "Creature:getTarget": {
+    "prefix": "getTarget",
+    "body": [
+      "${1:creature}:getTarget()$2"
+    ],
+    "description": "Creature:getTarget"
+  },
+  "Creature:setTarget": {
+    "prefix": "setTarget",
+    "body": [
+      "${1:creature}:setTarget(${2:target})$3"
+    ],
+    "description": "Creature:setTarget"
+  },
+  "Creature:getFollowCreature": {
+    "prefix": "getFollowCreature",
+    "body": [
+      "${1:creature}:getFollowCreature()$2"
+    ],
+    "description": "Creature:getFollowCreature"
+  },
+  "Creature:setFollowCreature": {
+    "prefix": "setFollowCreature",
+    "body": [
+      "${1:creature}:setFollowCreature(${2:followedCreature})$3"
+    ],
+    "description": "Creature:setFollowCreature"
+  },
+  "Creature:getMaster": {
+    "prefix": "getMaster",
+    "body": [
+      "${1:creature}:getMaster()$2"
+    ],
+    "description": "Creature:getMaster"
+  },
+  "Creature:setMaster": {
+    "prefix": "setMaster",
+    "body": [
+      "${1:creature}:setMaster(${2:master})$3"
+    ],
+    "description": "Creature:setMaster"
+  },
+  "Creature:getLight": {
+    "prefix": "getLight",
+    "body": [
+      "${1:creature}:getLight()$2"
+    ],
+    "description": "Creature:getLight"
+  },
+  "Creature:setLight": {
+    "prefix": "setLight",
+    "body": [
+      "${1:creature}:setLight(${2:color}, ${3:level})$4"
+    ],
+    "description": "Creature:setLight"
+  },
+  "Creature:getSpeed": {
+    "prefix": "getSpeed",
+    "body": [
+      "${1:creature}:getSpeed()$2"
+    ],
+    "description": "Creature:getSpeed"
+  },
+  "Creature:getBaseSpeed": {
+    "prefix": "getBaseSpeed",
+    "body": [
+      "${1:creature}:getBaseSpeed()$2"
+    ],
+    "description": "Creature:getBaseSpeed"
+  },
+  "Creature:changeSpeed": {
+    "prefix": "changeSpeed",
+    "body": [
+      "${1:creature}:changeSpeed(${2:delta})$3"
+    ],
+    "description": "Creature:changeSpeed"
+  },
+  "Creature:setDropLoot": {
+    "prefix": "setDropLoot",
+    "body": [
+      "${1:creature}:setDropLoot(${2:doDrop})$3"
+    ],
+    "description": "Creature:setDropLoot"
+  },
+  "Creature:setSkillLoss": {
+    "prefix": "setSkillLoss",
+    "body": [
+      "${1:creature}:setSkillLoss(${2:skillLoss})$3"
+    ],
+    "description": "Creature:setSkillLoss"
+  },
+  "Creature:getPosition": {
+    "prefix": "getPosition",
+    "body": [
+      "${1:creature}:getPosition()$2"
+    ],
+    "description": "Creature:getPosition"
+  },
+  "Creature:getTile": {
+    "prefix": "getTile",
+    "body": [
+      "${1:creature}:getTile()$2"
+    ],
+    "description": "Creature:getTile"
+  },
+  "Creature:getDirection": {
+    "prefix": "getDirection",
+    "body": [
+      "${1:creature}:getDirection()$2"
+    ],
+    "description": "Creature:getDirection"
+  },
+  "Creature:setDirection": {
+    "prefix": "setDirection",
+    "body": [
+      "${1:creature}:setDirection(${2:direction})$3"
+    ],
+    "description": "Creature:setDirection"
+  },
+  "Creature:getHealth": {
+    "prefix": "getHealth",
+    "body": [
+      "${1:creature}:getHealth()$2"
+    ],
+    "description": "Creature:getHealth"
+  },
+  "Creature:setHealth": {
+    "prefix": "setHealth",
+    "body": [
+      "${1:creature}:setHealth(${2:health})$3"
+    ],
+    "description": "Creature:setHealth"
+  },
+  "Creature:addHealth": {
+    "prefix": "addHealth",
+    "body": [
+      "${1:creature}:addHealth(${2:healthChange})$3"
+    ],
+    "description": "Creature:addHealth"
+  },
+  "Creature:getMaxHealth": {
+    "prefix": "getMaxHealth",
+    "body": [
+      "${1:creature}:getMaxHealth()$2"
+    ],
+    "description": "Creature:getMaxHealth"
+  },
+  "Creature:setMaxHealth": {
+    "prefix": "setMaxHealth",
+    "body": [
+      "${1:creature}:setMaxHealth(${2:maxHealth})$3"
+    ],
+    "description": "Creature:setMaxHealth"
+  },
+  "Creature:setHiddenHealth": {
+    "prefix": "setHiddenHealth",
+    "body": [
+      "${1:creature}:setHiddenHealth(${2:hide})$3"
+    ],
+    "description": "Creature:setHiddenHealth"
+  },
+  "Creature:setMovementBlocked": {
+    "prefix": "setMovementBlocked",
+    "body": [
+      "${1:creature}:setMovementBlocked(${2:state})$3"
+    ],
+    "description": "Creature:setMovementBlocked"
+  },
+  "Creature:getSkull": {
+    "prefix": "getSkull",
+    "body": [
+      "${1:creature}:getSkull()$2"
+    ],
+    "description": "Creature:getSkull"
+  },
+  "Creature:setSkull": {
+    "prefix": "setSkull",
+    "body": [
+      "${1:creature}:setSkull(${2:skull})$3"
+    ],
+    "description": "Creature:setSkull"
+  },
+  "Creature:getOutfit": {
+    "prefix": "getOutfit",
+    "body": [
+      "${1:creature}:getOutfit()$2"
+    ],
+    "description": "Creature:getOutfit"
+  },
+  "Creature:setOutfit": {
+    "prefix": "setOutfit",
+    "body": [
+      "${1:creature}:setOutfit(${2:outfit})$3"
+    ],
+    "description": "Creature:setOutfit"
+  },
+  "Creature:getCondition": {
+    "prefix": "getCondition",
+    "body": [
+      "${1:creature}:getCondition(${2:conditionType[}, ${3:conditionId = CONDITIONID_COMBAT[}, ${4:subId = 0]]})$5"
+    ],
+    "description": "Creature:getCondition"
+  },
+  "Creature:addCondition": {
+    "prefix": "addCondition",
+    "body": [
+      "${1:creature}:addCondition(${2:condition[}, ${3:force = false]})$4"
+    ],
+    "description": "Creature:addCondition"
+  },
+  "Creature:removeCondition": {
+    "prefix": "removeCondition",
+    "body": [
+      "${1:creature}:removeCondition(${2:condition[}, ${3:force = false]})$4"
+    ],
+    "description": "Creature:removeCondition"
+  },
+  "Creature:hasCondition": {
+    "prefix": "hasCondition",
+    "body": [
+      "${1:creature}:hasCondition(${2:conditionType[}, ${3:subId = 0]})$4"
+    ],
+    "description": "Creature:hasCondition"
+  },
+  "Creature:isImmune": {
+    "prefix": "isImmune",
+    "body": [
+      "${1:creature}:isImmune(${2:condition or conditionType})$3"
+    ],
+    "description": "Creature:isImmune"
+  },
+  "Creature:remove": {
+    "prefix": "remove",
+    "body": [
+      "${1:creature}:remove()$2"
+    ],
+    "description": "Creature:remove"
+  },
+  "Creature:teleportTo": {
+    "prefix": "teleportTo",
+    "body": [
+      "${1:creature}:teleportTo(${2:position[}, ${3:pushMovement = false]})$4"
+    ],
+    "description": "Creature:teleportTo"
+  },
+  "Creature:say": {
+    "prefix": "say",
+    "body": [
+      "${1:creature}:say(${2:text[}, ${3:type = TALKTYPE_MONSTER_SAY[}, ${4:ghost = false[}, ${5:target = nullptr[}, ${6:position]]]]})$7"
+    ],
+    "description": "Creature:say"
+  },
+  "Creature:getDamageMap": {
+    "prefix": "getDamageMap",
+    "body": [
+      "${1:creature}:getDamageMap()$2"
+    ],
+    "description": "Creature:getDamageMap"
+  },
+  "Creature:getSummons": {
+    "prefix": "getSummons",
+    "body": [
+      "${1:creature}:getSummons()$2"
+    ],
+    "description": "Creature:getSummons"
+  },
+  "Creature:getDescription": {
+    "prefix": "getDescription",
+    "body": [
+      "${1:creature}:getDescription(${2:distance})$3"
+    ],
+    "description": "Creature:getDescription"
+  },
+  "Creature:getPathTo": {
+    "prefix": "getPathTo",
+    "body": [
+      "${1:creature}:getPathTo(${2:pos[}, ${3:minTargetDist = 0[}, ${4:maxTargetDist = 1[}, ${5:fullPathSearch = true[}, ${6:clearSight = true[}, ${7:maxSearchDist = 0]]]]]})$8"
+    ],
+    "description": "Creature:getPathTo"
+  },
+  "Creature:move": {
+    "prefix": "move",
+    "body": [
+      "${1:creature}:move(${2:tile[}, ${3:flags = 0]})$4"
+    ],
+    "description": "Creature:move"
+  },
+  "Creature:getZone": {
+    "prefix": "getZone",
+    "body": [
+      "${1:creature}:getZone()$2"
+    ],
+    "description": "Creature:getZone"
+  },
+  "Player": {
+    "prefix": "Player",
+    "body": [
+      "Player(${1:idorguidornameoruserdata})$2"
+    ],
+    "description": "Player"
+  },
+  "Player:isPlayer": {
+    "prefix": "isPlayer",
+    "body": [
+      "${1:player}:isPlayer()$2"
+    ],
+    "description": "Player:isPlayer"
+  },
+  "Player:getGuid": {
+    "prefix": "getGuid",
+    "body": [
+      "${1:player}:getGuid()$2"
+    ],
+    "description": "Player:getGuid"
+  },
+  "Player:getIp": {
+    "prefix": "getIp",
+    "body": [
+      "${1:player}:getIp()$2"
+    ],
+    "description": "Player:getIp"
+  },
+  "Player:getAccountId": {
+    "prefix": "getAccountId",
+    "body": [
+      "${1:player}:getAccountId()$2"
+    ],
+    "description": "Player:getAccountId"
+  },
+  "Player:getLastLoginSaved": {
+    "prefix": "getLastLoginSaved",
+    "body": [
+      "${1:player}:getLastLoginSaved()$2"
+    ],
+    "description": "Player:getLastLoginSaved"
+  },
+  "Player:getLastLogout": {
+    "prefix": "getLastLogout",
+    "body": [
+      "${1:player}:getLastLogout()$2"
+    ],
+    "description": "Player:getLastLogout"
+  },
+  "Player:getAccountType": {
+    "prefix": "getAccountType",
+    "body": [
+      "${1:player}:getAccountType()$2"
+    ],
+    "description": "Player:getAccountType"
+  },
+  "Player:setAccountType": {
+    "prefix": "setAccountType",
+    "body": [
+      "${1:player}:setAccountType(${2:accountType})$3"
+    ],
+    "description": "Player:setAccountType"
+  },
+  "Player:getCapacity": {
+    "prefix": "getCapacity",
+    "body": [
+      "${1:player}:getCapacity()$2"
+    ],
+    "description": "Player:getCapacity"
+  },
+  "Player:setCapacity": {
+    "prefix": "setCapacity",
+    "body": [
+      "${1:player}:setCapacity(${2:capacity})$3"
+    ],
+    "description": "Player:setCapacity"
+  },
+  "Player:getFreeCapacity": {
+    "prefix": "getFreeCapacity",
+    "body": [
+      "${1:player}:getFreeCapacity()$2"
+    ],
+    "description": "Player:getFreeCapacity"
+  },
+  "Player:getDepotChest": {
+    "prefix": "getDepotChest",
+    "body": [
+      "${1:player}:getDepotChest(${2:depotId[}, ${3:autoCreate = false]})$4"
+    ],
+    "description": "Player:getDepotChest"
+  },
+  "Player:getSkullTime": {
+    "prefix": "getSkullTime",
+    "body": [
+      "${1:player}:getSkullTime()$2"
+    ],
+    "description": "Player:getSkullTime"
+  },
+  "Player:setSkullTime": {
+    "prefix": "setSkullTime",
+    "body": [
+      "${1:player}:setSkullTime(${2:skullTime})$3"
+    ],
+    "description": "Player:setSkullTime"
+  },
+  "Player:getDeathPenalty": {
+    "prefix": "getDeathPenalty",
+    "body": [
+      "${1:player}:getDeathPenalty()$2"
+    ],
+    "description": "Player:getDeathPenalty"
+  },
+  "Player:getExperience": {
+    "prefix": "getExperience",
+    "body": [
+      "${1:player}:getExperience()$2"
+    ],
+    "description": "Player:getExperience"
+  },
+  "Player:addExperience": {
+    "prefix": "addExperience",
+    "body": [
+      "${1:player}:addExperience(${2:experience[}, ${3:sendText = false]})$4"
+    ],
+    "description": "Player:addExperience"
+  },
+  "Player:removeExperience": {
+    "prefix": "removeExperience",
+    "body": [
+      "${1:player}:removeExperience(${2:experience[}, ${3:sendText = false]})$4"
+    ],
+    "description": "Player:removeExperience"
+  },
+  "Player:getLevel": {
+    "prefix": "getLevel",
+    "body": [
+      "${1:player}:getLevel()$2"
+    ],
+    "description": "Player:getLevel"
+  },
+  "Player:getMagicLevel": {
+    "prefix": "getMagicLevel",
+    "body": [
+      "${1:player}:getMagicLevel()$2"
+    ],
+    "description": "Player:getMagicLevel"
+  },
+  "Player:getBaseMagicLevel": {
+    "prefix": "getBaseMagicLevel",
+    "body": [
+      "${1:player}:getBaseMagicLevel()$2"
+    ],
+    "description": "Player:getBaseMagicLevel"
+  },
+  "Player:getMana": {
+    "prefix": "getMana",
+    "body": [
+      "${1:player}:getMana()$2"
+    ],
+    "description": "Player:getMana"
+  },
+  "Player:addMana": {
+    "prefix": "addMana",
+    "body": [
+      "${1:player}:addMana(${2:manaChange[}, ${3:animationOnLoss = false]})$4"
+    ],
+    "description": "Player:addMana"
+  },
+  "Player:getMaxMana": {
+    "prefix": "getMaxMana",
+    "body": [
+      "${1:player}:getMaxMana()$2"
+    ],
+    "description": "Player:getMaxMana"
+  },
+  "Player:setMaxMana": {
+    "prefix": "setMaxMana",
+    "body": [
+      "${1:player}:setMaxMana(${2:maxMana})$3"
+    ],
+    "description": "Player:setMaxMana"
+  },
+  "Player:getManaSpent": {
+    "prefix": "getManaSpent",
+    "body": [
+      "${1:player}:getManaSpent()$2"
+    ],
+    "description": "Player:getManaSpent"
+  },
+  "Player:addManaSpent": {
+    "prefix": "addManaSpent",
+    "body": [
+      "${1:Player}:addManaSpent(${2:...})$3"
+    ],
+    "description": "Player:addManaSpent"
+  },
+  "Player:removeManaSpent": {
+    "prefix": "removeManaSpent",
+    "body": [
+      "${1:player}:removeManaSpent(${2:amount[}, ${3:notify = true]})$4"
+    ],
+    "description": "Player:removeManaSpent"
+  },
+  "Player:getBaseMaxHealth": {
+    "prefix": "getBaseMaxHealth",
+    "body": [
+      "${1:player}:getBaseMaxHealth()$2"
+    ],
+    "description": "Player:getBaseMaxHealth"
+  },
+  "Player:getBaseMaxMana": {
+    "prefix": "getBaseMaxMana",
+    "body": [
+      "${1:player}:getBaseMaxMana()$2"
+    ],
+    "description": "Player:getBaseMaxMana"
+  },
+  "Player:getSkillLevel": {
+    "prefix": "getSkillLevel",
+    "body": [
+      "${1:player}:getSkillLevel(${2:skillType})$3"
+    ],
+    "description": "Player:getSkillLevel"
+  },
+  "Player:getEffectiveSkillLevel": {
+    "prefix": "getEffectiveSkillLevel",
+    "body": [
+      "${1:player}:getEffectiveSkillLevel(${2:skillType})$3"
+    ],
+    "description": "Player:getEffectiveSkillLevel"
+  },
+  "Player:getSkillPercent": {
+    "prefix": "getSkillPercent",
+    "body": [
+      "${1:player}:getSkillPercent(${2:skillType})$3"
+    ],
+    "description": "Player:getSkillPercent"
+  },
+  "Player:getSkillTries": {
+    "prefix": "getSkillTries",
+    "body": [
+      "${1:player}:getSkillTries(${2:skillType})$3"
+    ],
+    "description": "Player:getSkillTries"
+  },
+  "Player:addSkillTries": {
+    "prefix": "addSkillTries",
+    "body": [
+      "${1:Player}:addSkillTries(${2:...})$3"
+    ],
+    "description": "Player:addSkillTries"
+  },
+  "Player:removeSkillTries": {
+    "prefix": "removeSkillTries",
+    "body": [
+      "${1:player}:removeSkillTries(${2:skillType}, ${3:tries[}, ${4:notify = true]})$5"
+    ],
+    "description": "Player:removeSkillTries"
+  },
+  "Player:getSpecialSkill": {
+    "prefix": "getSpecialSkill",
+    "body": [
+      "${1:player}:getSpecialSkill(${2:specialSkillType})$3"
+    ],
+    "description": "Player:getSpecialSkill"
+  },
+  "Player:addSpecialSkill": {
+    "prefix": "addSpecialSkill",
+    "body": [
+      "${1:player}:addSpecialSkill(${2:specialSkillType}, ${3:value})$4"
+    ],
+    "description": "Player:addSpecialSkill"
+  },
+  "Player:getItemCount": {
+    "prefix": "getItemCount",
+    "body": [
+      "${1:player}:getItemCount(${2:itemId[}, ${3:subType = -1]})$4"
+    ],
+    "description": "Player:getItemCount"
+  },
+  "Player:getItemById": {
+    "prefix": "getItemById",
+    "body": [
+      "${1:player}:getItemById(${2:itemId}, ${3:deepSearch[}, ${4:subType = -1]})$5"
+    ],
+    "description": "Player:getItemById"
+  },
+  "Player:getVocation": {
+    "prefix": "getVocation",
+    "body": [
+      "${1:player}:getVocation()$2"
+    ],
+    "description": "Player:getVocation"
+  },
+  "Player:setVocation": {
+    "prefix": "setVocation",
+    "body": [
+      "${1:player}:setVocation(${2:idornameoruserdata})$3"
+    ],
+    "description": "Player:setVocation"
+  },
+  "Player:getSex": {
+    "prefix": "getSex",
+    "body": [
+      "${1:player}:getSex()$2"
+    ],
+    "description": "Player:getSex"
+  },
+  "Player:setSex": {
+    "prefix": "setSex",
+    "body": [
+      "${1:player}:setSex(${2:newSex})$3"
+    ],
+    "description": "Player:setSex"
+  },
+  "Player:getTown": {
+    "prefix": "getTown",
+    "body": [
+      "${1:player}:getTown()$2"
+    ],
+    "description": "Player:getTown"
+  },
+  "Player:setTown": {
+    "prefix": "setTown",
+    "body": [
+      "${1:player}:setTown(${2:town})$3"
+    ],
+    "description": "Player:setTown"
+  },
+  "Player:getGuild": {
+    "prefix": "getGuild",
+    "body": [
+      "${1:player}:getGuild()$2"
+    ],
+    "description": "Player:getGuild"
+  },
+  "Player:setGuild": {
+    "prefix": "setGuild",
+    "body": [
+      "${1:player}:setGuild(${2:guild})$3"
+    ],
+    "description": "Player:setGuild"
+  },
+  "Player:getGuildLevel": {
+    "prefix": "getGuildLevel",
+    "body": [
+      "${1:player}:getGuildLevel()$2"
+    ],
+    "description": "Player:getGuildLevel"
+  },
+  "Player:setGuildLevel": {
+    "prefix": "setGuildLevel",
+    "body": [
+      "${1:player}:setGuildLevel(${2:level})$3"
+    ],
+    "description": "Player:setGuildLevel"
+  },
+  "Player:getGuildNick": {
+    "prefix": "getGuildNick",
+    "body": [
+      "${1:player}:getGuildNick()$2"
+    ],
+    "description": "Player:getGuildNick"
+  },
+  "Player:setGuildNick": {
+    "prefix": "setGuildNick",
+    "body": [
+      "${1:player}:setGuildNick(${2:nick})$3"
+    ],
+    "description": "Player:setGuildNick"
+  },
+  "Player:getGroup": {
+    "prefix": "getGroup",
+    "body": [
+      "${1:player}:getGroup()$2"
+    ],
+    "description": "Player:getGroup"
+  },
+  "Player:setGroup": {
+    "prefix": "setGroup",
+    "body": [
+      "${1:player}:setGroup(${2:group})$3"
+    ],
+    "description": "Player:setGroup"
+  },
+  "Player:getStamina": {
+    "prefix": "getStamina",
+    "body": [
+      "${1:player}:getStamina()$2"
+    ],
+    "description": "Player:getStamina"
+  },
+  "Player:setStamina": {
+    "prefix": "setStamina",
+    "body": [
+      "${1:player}:setStamina(${2:stamina})$3"
+    ],
+    "description": "Player:setStamina"
+  },
+  "Player:getSoul": {
+    "prefix": "getSoul",
+    "body": [
+      "${1:player}:getSoul()$2"
+    ],
+    "description": "Player:getSoul"
+  },
+  "Player:addSoul": {
+    "prefix": "addSoul",
+    "body": [
+      "${1:player}:addSoul(${2:soulChange})$3"
+    ],
+    "description": "Player:addSoul"
+  },
+  "Player:getMaxSoul": {
+    "prefix": "getMaxSoul",
+    "body": [
+      "${1:player}:getMaxSoul()$2"
+    ],
+    "description": "Player:getMaxSoul"
+  },
+  "Player:getBankBalance": {
+    "prefix": "getBankBalance",
+    "body": [
+      "${1:player}:getBankBalance()$2"
+    ],
+    "description": "Player:getBankBalance"
+  },
+  "Player:setBankBalance": {
+    "prefix": "setBankBalance",
+    "body": [
+      "${1:player}:setBankBalance(${2:bankBalance})$3"
+    ],
+    "description": "Player:setBankBalance"
+  },
+  "Player:getStorageValue": {
+    "prefix": "getStorageValue",
+    "body": [
+      "${1:player}:getStorageValue(${2:key})$3"
+    ],
+    "description": "Player:getStorageValue"
+  },
+  "Player:setStorageValue": {
+    "prefix": "setStorageValue",
+    "body": [
+      "${1:player}:setStorageValue(${2:key}, ${3:value})$4"
+    ],
+    "description": "Player:setStorageValue"
+  },
+  "Player:addItem": {
+    "prefix": "addItem",
+    "body": [
+      "${1:player}:addItem(${2:itemId[}, ${3:count = 1[}, ${4:canDropOnMap = true[}, ${5:subType = 1[}, ${6:slot = CONST_SLOT_WHEREEVER]]]]})$7"
+    ],
+    "description": "Player:addItem"
+  },
+  "Player:addItemEx": {
+    "prefix": "addItemEx",
+    "body": [
+      "${1:player}:addItemEx(${2:item[}, ${3:canDropOnMap = true[}, ${4:slot = CONST_SLOT_WHEREEVER]]})$5"
+    ],
+    "description": "Player:addItemEx"
+  },
+  "Player:removeItem": {
+    "prefix": "removeItem",
+    "body": [
+      "${1:player}:removeItem(${2:itemId}, ${3:count[}, ${4:subType = -1[}, ${5:ignoreEquipped = false]]})$6"
+    ],
+    "description": "Player:removeItem"
+  },
+  "Player:getMoney": {
+    "prefix": "getMoney",
+    "body": [
+      "${1:player}:getMoney()$2"
+    ],
+    "description": "Player:getMoney"
+  },
+  "Player:addMoney": {
+    "prefix": "addMoney",
+    "body": [
+      "${1:player}:addMoney(${2:money})$3"
+    ],
+    "description": "Player:addMoney"
+  },
+  "Player:removeMoney": {
+    "prefix": "removeMoney",
+    "body": [
+      "${1:player}:removeMoney(${2:money})$3"
+    ],
+    "description": "Player:removeMoney"
+  },
+  "Player:showTextDialog": {
+    "prefix": "showTextDialog",
+    "body": [
+      "${1:player}:showTextDialog(${2:id or name or userdata[}, ${3:text[}, ${4:canWrite[}, ${5:length]]]})$6"
+    ],
+    "description": "Player:showTextDialog"
+  },
+  "Player:sendTextMessage": {
+    "prefix": "sendTextMessage",
+    "body": [
+      "${1:player}:sendTextMessage(${2:type}, ${3:text}, ${4:channelId})$5"
+    ],
+    "description": "Player:sendTextMessage"
+  },
+  "Player:sendChannelMessage": {
+    "prefix": "sendChannelMessage",
+    "body": [
+      "${1:player}:sendChannelMessage(${2:author}, ${3:text}, ${4:type}, ${5:channelId})$6"
+    ],
+    "description": "Player:sendChannelMessage"
+  },
+  "Player:sendPrivateMessage": {
+    "prefix": "sendPrivateMessage",
+    "body": [
+      "${1:player}:sendPrivateMessage(${2:speaker}, ${3:text[}, ${4:type]})$5"
+    ],
+    "description": "Player:sendPrivateMessage"
+  },
+  "Player:channelSay": {
+    "prefix": "channelSay",
+    "body": [
+      "${1:player}:channelSay(${2:speaker}, ${3:type}, ${4:text}, ${5:channelId})$6"
+    ],
+    "description": "Player:channelSay"
+  },
+  "Player:openChannel": {
+    "prefix": "openChannel",
+    "body": [
+      "${1:player}:openChannel(${2:channelId})$3"
+    ],
+    "description": "Player:openChannel"
+  },
+  "Player:getSlotItem": {
+    "prefix": "getSlotItem",
+    "body": [
+      "${1:player}:getSlotItem(${2:slot})$3"
+    ],
+    "description": "Player:getSlotItem"
+  },
+  "Player:getParty": {
+    "prefix": "getParty",
+    "body": [
+      "${1:player}:getParty()$2"
+    ],
+    "description": "Player:getParty"
+  },
+  "Player:addOutfit": {
+    "prefix": "addOutfit",
+    "body": [
+      "${1:player}:addOutfit(${2:lookType})$3"
+    ],
+    "description": "Player:addOutfit"
+  },
+  "Player:addOutfitAddon": {
+    "prefix": "addOutfitAddon",
+    "body": [
+      "${1:player}:addOutfitAddon(${2:lookType}, ${3:addon})$4"
+    ],
+    "description": "Player:addOutfitAddon"
+  },
+  "Player:removeOutfit": {
+    "prefix": "removeOutfit",
+    "body": [
+      "${1:player}:removeOutfit(${2:lookType})$3"
+    ],
+    "description": "Player:removeOutfit"
+  },
+  "Player:removeOutfitAddon": {
+    "prefix": "removeOutfitAddon",
+    "body": [
+      "${1:player}:removeOutfitAddon(${2:lookType}, ${3:addon})$4"
+    ],
+    "description": "Player:removeOutfitAddon"
+  },
+  "Player:hasOutfit": {
+    "prefix": "hasOutfit",
+    "body": [
+      "${1:player}:hasOutfit(${2:lookType[}, ${3:addon = 0]})$4"
+    ],
+    "description": "Player:hasOutfit"
+  },
+  "Player:canWearOutfit": {
+    "prefix": "canWearOutfit",
+    "body": [
+      "${1:player}:canWearOutfit(${2:lookType[}, ${3:addon = 0]})$4"
+    ],
+    "description": "Player:canWearOutfit"
+  },
+  "Player:sendOutfitWindow": {
+    "prefix": "sendOutfitWindow",
+    "body": [
+      "${1:player}:sendOutfitWindow()$2"
+    ],
+    "description": "Player:sendOutfitWindow"
+  },
+  "Player:getPremiumEndsAt": {
+    "prefix": "getPremiumEndsAt",
+    "body": [
+      "${1:player}:getPremiumEndsAt()$2"
+    ],
+    "description": "Player:getPremiumEndsAt"
+  },
+  "Player:setPremiumEndsAt": {
+    "prefix": "setPremiumEndsAt",
+    "body": [
+      "${1:player}:setPremiumEndsAt(${2:timestamp})$3"
+    ],
+    "description": "Player:setPremiumEndsAt"
+  },
+  "Player:hasBlessing": {
+    "prefix": "hasBlessing",
+    "body": [
+      "${1:player}:hasBlessing(${2:blessing})$3"
+    ],
+    "description": "Player:hasBlessing"
+  },
+  "Player:addBlessing": {
+    "prefix": "addBlessing",
+    "body": [
+      "${1:player}:addBlessing(${2:blessing})$3"
+    ],
+    "description": "Player:addBlessing"
+  },
+  "Player:removeBlessing": {
+    "prefix": "removeBlessing",
+    "body": [
+      "${1:player}:removeBlessing(${2:blessing})$3"
+    ],
+    "description": "Player:removeBlessing"
+  },
+  "Player:canLearnSpell": {
+    "prefix": "canLearnSpell",
+    "body": [
+      "${1:player}:canLearnSpell(${2:spellName})$3"
+    ],
+    "description": "Player:canLearnSpell"
+  },
+  "Player:learnSpell": {
+    "prefix": "learnSpell",
+    "body": [
+      "${1:player}:learnSpell(${2:spellName})$3"
+    ],
+    "description": "Player:learnSpell"
+  },
+  "Player:forgetSpell": {
+    "prefix": "forgetSpell",
+    "body": [
+      "${1:player}:forgetSpell(${2:spellName})$3"
+    ],
+    "description": "Player:forgetSpell"
+  },
+  "Player:hasLearnedSpell": {
+    "prefix": "hasLearnedSpell",
+    "body": [
+      "${1:player}:hasLearnedSpell(${2:spellName})$3"
+    ],
+    "description": "Player:hasLearnedSpell"
+  },
+  "Player:sendTutorial": {
+    "prefix": "sendTutorial",
+    "body": [
+      "${1:player}:sendTutorial(${2:tutorialId})$3"
+    ],
+    "description": "Player:sendTutorial"
+  },
+  "Player:addMapMark": {
+    "prefix": "addMapMark",
+    "body": [
+      "${1:player}:addMapMark(${2:position}, ${3:type}, ${4:description})$5"
+    ],
+    "description": "Player:addMapMark"
+  },
+  "Player:save": {
+    "prefix": "save",
+    "body": [
+      "${1:player}:save()$2"
+    ],
+    "description": "Player:save"
+  },
+  "Player:popupFYI": {
+    "prefix": "popupFYI",
+    "body": [
+      "${1:player}:popupFYI(${2:message})$3"
+    ],
+    "description": "Player:popupFYI"
+  },
+  "Player:isPzLocked": {
+    "prefix": "isPzLocked",
+    "body": [
+      "${1:player}:isPzLocked()$2"
+    ],
+    "description": "Player:isPzLocked"
+  },
+  "Player:getClient": {
+    "prefix": "getClient",
+    "body": [
+      "${1:player}:getClient()$2"
+    ],
+    "description": "Player:getClient"
+  },
+  "Player:getHouse": {
+    "prefix": "getHouse",
+    "body": [
+      "${1:player}:getHouse()$2"
+    ],
+    "description": "Player:getHouse"
+  },
+  "Player:sendHouseWindow": {
+    "prefix": "sendHouseWindow",
+    "body": [
+      "${1:player}:sendHouseWindow(${2:house}, ${3:listId})$4"
+    ],
+    "description": "Player:sendHouseWindow"
+  },
+  "Player:setEditHouse": {
+    "prefix": "setEditHouse",
+    "body": [
+      "${1:player}:setEditHouse(${2:house}, ${3:listId})$4"
+    ],
+    "description": "Player:setEditHouse"
+  },
+  "Player:setGhostMode": {
+    "prefix": "setGhostMode",
+    "body": [
+      "${1:player}:setGhostMode(${2:enabled[}, ${3:showEffect=true]})$4"
+    ],
+    "description": "Player:setGhostMode"
+  },
+  "Player:getContainerId": {
+    "prefix": "getContainerId",
+    "body": [
+      "${1:player}:getContainerId(${2:container})$3"
+    ],
+    "description": "Player:getContainerId"
+  },
+  "Player:getContainerById": {
+    "prefix": "getContainerById",
+    "body": [
+      "${1:player}:getContainerById(${2:id})$3"
+    ],
+    "description": "Player:getContainerById"
+  },
+  "Player:getContainerIndex": {
+    "prefix": "getContainerIndex",
+    "body": [
+      "${1:player}:getContainerIndex(${2:id})$3"
+    ],
+    "description": "Player:getContainerIndex"
+  },
+  "Player:getInstantSpells": {
+    "prefix": "getInstantSpells",
+    "body": [
+      "${1:player}:getInstantSpells()$2"
+    ],
+    "description": "Player:getInstantSpells"
+  },
+  "Player:canCast": {
+    "prefix": "canCast",
+    "body": [
+      "${1:player}:canCast(${2:spell})$3"
+    ],
+    "description": "Player:canCast"
+  },
+  "Player:hasChaseMode": {
+    "prefix": "hasChaseMode",
+    "body": [
+      "${1:player}:hasChaseMode()$2"
+    ],
+    "description": "Player:hasChaseMode"
+  },
+  "Player:hasSecureMode": {
+    "prefix": "hasSecureMode",
+    "body": [
+      "${1:player}:hasSecureMode()$2"
+    ],
+    "description": "Player:hasSecureMode"
+  },
+  "Player:getFightMode": {
+    "prefix": "getFightMode",
+    "body": [
+      "${1:player}:getFightMode()$2"
+    ],
+    "description": "Player:getFightMode"
+  },
+  "Monster": {
+    "prefix": "Monster",
+    "body": [
+      "Monster(${1:idoruserdata})$2"
+    ],
+    "description": "Monster"
+  },
+  "Monster:isMonster": {
+    "prefix": "isMonster",
+    "body": [
+      "${1:monster}:isMonster()$2"
+    ],
+    "description": "Monster:isMonster"
+  },
+  "Monster:getType": {
+    "prefix": "getType",
+    "body": [
+      "${1:monster}:getType()$2"
+    ],
+    "description": "Monster:getType"
+  },
+  "Monster:rename": {
+    "prefix": "rename",
+    "body": [
+      "${1:monster}:rename(${2:name[}, ${3:nameDescription]})$4"
+    ],
+    "description": "Monster:rename"
+  },
+  "Monster:getSpawnPosition": {
+    "prefix": "getSpawnPosition",
+    "body": [
+      "${1:monster}:getSpawnPosition()$2"
+    ],
+    "description": "Monster:getSpawnPosition"
+  },
+  "Monster:isInSpawnRange": {
+    "prefix": "isInSpawnRange",
+    "body": [
+      "${1:monster}:isInSpawnRange(${2:[position]})$3"
+    ],
+    "description": "Monster:isInSpawnRange"
+  },
+  "Monster:isIdle": {
+    "prefix": "isIdle",
+    "body": [
+      "${1:monster}:isIdle()$2"
+    ],
+    "description": "Monster:isIdle"
+  },
+  "Monster:setIdle": {
+    "prefix": "setIdle",
+    "body": [
+      "${1:monster}:setIdle(${2:idle})$3"
+    ],
+    "description": "Monster:setIdle"
+  },
+  "Monster:isTarget": {
+    "prefix": "isTarget",
+    "body": [
+      "${1:monster}:isTarget(${2:creature})$3"
+    ],
+    "description": "Monster:isTarget"
+  },
+  "Monster:isOpponent": {
+    "prefix": "isOpponent",
+    "body": [
+      "${1:monster}:isOpponent(${2:creature})$3"
+    ],
+    "description": "Monster:isOpponent"
+  },
+  "Monster:isFriend": {
+    "prefix": "isFriend",
+    "body": [
+      "${1:monster}:isFriend(${2:creature})$3"
+    ],
+    "description": "Monster:isFriend"
+  },
+  "Monster:addFriend": {
+    "prefix": "addFriend",
+    "body": [
+      "${1:monster}:addFriend(${2:creature})$3"
+    ],
+    "description": "Monster:addFriend"
+  },
+  "Monster:removeFriend": {
+    "prefix": "removeFriend",
+    "body": [
+      "${1:monster}:removeFriend(${2:creature})$3"
+    ],
+    "description": "Monster:removeFriend"
+  },
+  "Monster:getFriendList": {
+    "prefix": "getFriendList",
+    "body": [
+      "${1:monster}:getFriendList()$2"
+    ],
+    "description": "Monster:getFriendList"
+  },
+  "Monster:getFriendCount": {
+    "prefix": "getFriendCount",
+    "body": [
+      "${1:monster}:getFriendCount()$2"
+    ],
+    "description": "Monster:getFriendCount"
+  },
+  "Monster:addTarget": {
+    "prefix": "addTarget",
+    "body": [
+      "${1:monster}:addTarget(${2:creature[}, ${3:pushFront = false]})$4"
+    ],
+    "description": "Monster:addTarget"
+  },
+  "Monster:removeTarget": {
+    "prefix": "removeTarget",
+    "body": [
+      "${1:monster}:removeTarget(${2:creature})$3"
+    ],
+    "description": "Monster:removeTarget"
+  },
+  "Monster:getTargetList": {
+    "prefix": "getTargetList",
+    "body": [
+      "${1:monster}:getTargetList()$2"
+    ],
+    "description": "Monster:getTargetList"
+  },
+  "Monster:getTargetCount": {
+    "prefix": "getTargetCount",
+    "body": [
+      "${1:monster}:getTargetCount()$2"
+    ],
+    "description": "Monster:getTargetCount"
+  },
+  "Monster:selectTarget": {
+    "prefix": "selectTarget",
+    "body": [
+      "${1:monster}:selectTarget(${2:creature})$3"
+    ],
+    "description": "Monster:selectTarget"
+  },
+  "Monster:searchTarget": {
+    "prefix": "searchTarget",
+    "body": [
+      "${1:monster}:searchTarget(${2:[searchType = TARGETSEARCH_DEFAULT]})$3"
+    ],
+    "description": "Monster:searchTarget"
+  },
+  "Monster:isWalkingToSpawn": {
+    "prefix": "isWalkingToSpawn",
+    "body": [
+      "${1:monster}:isWalkingToSpawn()$2"
+    ],
+    "description": "Monster:isWalkingToSpawn"
+  },
+  "Monster:walkToSpawn": {
+    "prefix": "walkToSpawn",
+    "body": [
+      "${1:monster}:walkToSpawn()$2"
+    ],
+    "description": "Monster:walkToSpawn"
+  },
+  "Npc": {
+    "prefix": "Npc",
+    "body": [
+      "Npc(${1:[idornameoruserdata]})$2"
+    ],
+    "description": "Npc"
+  },
+  "Npc:isNpc": {
+    "prefix": "isNpc",
+    "body": [
+      "${1:npc}:isNpc()$2"
+    ],
+    "description": "Npc:isNpc"
+  },
+  "Npc:setMasterPos": {
+    "prefix": "setMasterPos",
+    "body": [
+      "${1:npc}:setMasterPos(${2:pos[}, ${3:radius]})$4"
+    ],
+    "description": "Npc:setMasterPos"
+  },
+  "Guild": {
+    "prefix": "Guild",
+    "body": [
+      "Guild(${1:id})$2"
+    ],
+    "description": "Guild"
+  },
+  "Guild:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:guild}:getId()$2"
+    ],
+    "description": "Guild:getId"
+  },
+  "Guild:getName": {
+    "prefix": "getName",
+    "body": [
+      "${1:guild}:getName()$2"
+    ],
+    "description": "Guild:getName"
+  },
+  "Guild:getMembersOnline": {
+    "prefix": "getMembersOnline",
+    "body": [
+      "${1:guild}:getMembersOnline()$2"
+    ],
+    "description": "Guild:getMembersOnline"
+  },
+  "Guild:addRank": {
+    "prefix": "addRank",
+    "body": [
+      "${1:guild}:addRank(${2:id}, ${3:name}, ${4:level})$5"
+    ],
+    "description": "Guild:addRank"
+  },
+  "Guild:getRankById": {
+    "prefix": "getRankById",
+    "body": [
+      "${1:guild}:getRankById(${2:id})$3"
+    ],
+    "description": "Guild:getRankById"
+  },
+  "Guild:getRankByLevel": {
+    "prefix": "getRankByLevel",
+    "body": [
+      "${1:guild}:getRankByLevel(${2:level})$3"
+    ],
+    "description": "Guild:getRankByLevel"
+  },
+  "Guild:getMotd": {
+    "prefix": "getMotd",
+    "body": [
+      "${1:guild}:getMotd()$2"
+    ],
+    "description": "Guild:getMotd"
+  },
+  "Guild:setMotd": {
+    "prefix": "setMotd",
+    "body": [
+      "${1:guild}:setMotd(${2:motd})$3"
+    ],
+    "description": "Guild:setMotd"
+  },
+  "Group": {
+    "prefix": "Group",
+    "body": [
+      "Group(${1:id})$2"
+    ],
+    "description": "Group"
+  },
+  "Group:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:group}:getId()$2"
+    ],
+    "description": "Group:getId"
+  },
+  "Group:getName": {
+    "prefix": "getName",
+    "body": [
+      "${1:group}:getName()$2"
+    ],
+    "description": "Group:getName"
+  },
+  "Group:getFlags": {
+    "prefix": "getFlags",
+    "body": [
+      "${1:group}:getFlags()$2"
+    ],
+    "description": "Group:getFlags"
+  },
+  "Group:getAccess": {
+    "prefix": "getAccess",
+    "body": [
+      "${1:group}:getAccess()$2"
+    ],
+    "description": "Group:getAccess"
+  },
+  "Group:getMaxDepotItems": {
+    "prefix": "getMaxDepotItems",
+    "body": [
+      "${1:group}:getMaxDepotItems()$2"
+    ],
+    "description": "Group:getMaxDepotItems"
+  },
+  "Group:getMaxVipEntries": {
+    "prefix": "getMaxVipEntries",
+    "body": [
+      "${1:group}:getMaxVipEntries()$2"
+    ],
+    "description": "Group:getMaxVipEntries"
+  },
+  "Group:hasFlag": {
+    "prefix": "hasFlag",
+    "body": [
+      "${1:group}:hasFlag(${2:flag})$3"
+    ],
+    "description": "Group:hasFlag"
+  },
+  "Vocation": {
+    "prefix": "Vocation",
+    "body": [
+      "Vocation(${1:idorname})$2"
+    ],
+    "description": "Vocation"
+  },
+  "Vocation:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:vocation}:getId()$2"
+    ],
+    "description": "Vocation:getId"
+  },
+  "Vocation:getClientId": {
+    "prefix": "getClientId",
+    "body": [
+      "${1:vocation}:getClientId()$2"
+    ],
+    "description": "Vocation:getClientId"
+  },
+  "Vocation:getName": {
+    "prefix": "getName",
+    "body": [
+      "${1:vocation}:getName()$2"
+    ],
+    "description": "Vocation:getName"
+  },
+  "Vocation:getDescription": {
+    "prefix": "getDescription",
+    "body": [
+      "${1:vocation}:getDescription()$2"
+    ],
+    "description": "Vocation:getDescription"
+  },
+  "Vocation:getRequiredSkillTries": {
+    "prefix": "getRequiredSkillTries",
+    "body": [
+      "${1:vocation}:getRequiredSkillTries(${2:skillType}, ${3:skillLevel})$4"
+    ],
+    "description": "Vocation:getRequiredSkillTries"
+  },
+  "Vocation:getRequiredManaSpent": {
+    "prefix": "getRequiredManaSpent",
+    "body": [
+      "${1:vocation}:getRequiredManaSpent(${2:magicLevel})$3"
+    ],
+    "description": "Vocation:getRequiredManaSpent"
+  },
+  "Vocation:getCapacityGain": {
+    "prefix": "getCapacityGain",
+    "body": [
+      "${1:vocation}:getCapacityGain()$2"
+    ],
+    "description": "Vocation:getCapacityGain"
+  },
+  "Vocation:getHealthGain": {
+    "prefix": "getHealthGain",
+    "body": [
+      "${1:vocation}:getHealthGain()$2"
+    ],
+    "description": "Vocation:getHealthGain"
+  },
+  "Vocation:getHealthGainTicks": {
+    "prefix": "getHealthGainTicks",
+    "body": [
+      "${1:vocation}:getHealthGainTicks()$2"
+    ],
+    "description": "Vocation:getHealthGainTicks"
+  },
+  "Vocation:getHealthGainAmount": {
+    "prefix": "getHealthGainAmount",
+    "body": [
+      "${1:vocation}:getHealthGainAmount()$2"
+    ],
+    "description": "Vocation:getHealthGainAmount"
+  },
+  "Vocation:getManaGain": {
+    "prefix": "getManaGain",
+    "body": [
+      "${1:vocation}:getManaGain()$2"
+    ],
+    "description": "Vocation:getManaGain"
+  },
+  "Vocation:getManaGainTicks": {
+    "prefix": "getManaGainTicks",
+    "body": [
+      "${1:vocation}:getManaGainTicks()$2"
+    ],
+    "description": "Vocation:getManaGainTicks"
+  },
+  "Vocation:getManaGainAmount": {
+    "prefix": "getManaGainAmount",
+    "body": [
+      "${1:vocation}:getManaGainAmount()$2"
+    ],
+    "description": "Vocation:getManaGainAmount"
+  },
+  "Vocation:getMaxSoul": {
+    "prefix": "getMaxSoul",
+    "body": [
+      "${1:vocation}:getMaxSoul()$2"
+    ],
+    "description": "Vocation:getMaxSoul"
+  },
+  "Vocation:getSoulGainTicks": {
+    "prefix": "getSoulGainTicks",
+    "body": [
+      "${1:vocation}:getSoulGainTicks()$2"
+    ],
+    "description": "Vocation:getSoulGainTicks"
+  },
+  "Vocation:getAttackSpeed": {
+    "prefix": "getAttackSpeed",
+    "body": [
+      "${1:vocation}:getAttackSpeed()$2"
+    ],
+    "description": "Vocation:getAttackSpeed"
+  },
+  "Vocation:getBaseSpeed": {
+    "prefix": "getBaseSpeed",
+    "body": [
+      "${1:vocation}:getBaseSpeed()$2"
+    ],
+    "description": "Vocation:getBaseSpeed"
+  },
+  "Vocation:getDemotion": {
+    "prefix": "getDemotion",
+    "body": [
+      "${1:vocation}:getDemotion()$2"
+    ],
+    "description": "Vocation:getDemotion"
+  },
+  "Vocation:getPromotion": {
+    "prefix": "getPromotion",
+    "body": [
+      "${1:vocation}:getPromotion()$2"
+    ],
+    "description": "Vocation:getPromotion"
+  },
+  "Vocation:allowsPvp": {
+    "prefix": "allowsPvp",
+    "body": [
+      "${1:vocation}:allowsPvp()$2"
+    ],
+    "description": "Vocation:allowsPvp"
+  },
+  "Town": {
+    "prefix": "Town",
+    "body": [
+      "Town(${1:idorname})$2"
+    ],
+    "description": "Town"
+  },
+  "Town:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:town}:getId()$2"
+    ],
+    "description": "Town:getId"
+  },
+  "Town:getName": {
+    "prefix": "getName",
+    "body": [
+      "${1:town}:getName()$2"
+    ],
+    "description": "Town:getName"
+  },
+  "Town:getTemplePosition": {
+    "prefix": "getTemplePosition",
+    "body": [
+      "${1:town}:getTemplePosition()$2"
+    ],
+    "description": "Town:getTemplePosition"
+  },
+  "House": {
+    "prefix": "House",
+    "body": [
+      "House(${1:id})$2"
+    ],
+    "description": "House"
+  },
+  "House:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:house}:getId()$2"
+    ],
+    "description": "House:getId"
+  },
+  "House:getName": {
+    "prefix": "getName",
+    "body": [
+      "${1:house}:getName()$2"
+    ],
+    "description": "House:getName"
+  },
+  "House:getTown": {
+    "prefix": "getTown",
+    "body": [
+      "${1:house}:getTown()$2"
+    ],
+    "description": "House:getTown"
+  },
+  "House:getExitPosition": {
+    "prefix": "getExitPosition",
+    "body": [
+      "${1:house}:getExitPosition()$2"
+    ],
+    "description": "House:getExitPosition"
+  },
+  "House:getRent": {
+    "prefix": "getRent",
+    "body": [
+      "${1:house}:getRent()$2"
+    ],
+    "description": "House:getRent"
+  },
+  "House:getOwnerGuid": {
+    "prefix": "getOwnerGuid",
+    "body": [
+      "${1:house}:getOwnerGuid()$2"
+    ],
+    "description": "House:getOwnerGuid"
+  },
+  "House:setOwnerGuid": {
+    "prefix": "setOwnerGuid",
+    "body": [
+      "${1:house}:setOwnerGuid(${2:guid[}, ${3:updateDatabase = true]})$4"
+    ],
+    "description": "House:setOwnerGuid"
+  },
+  "House:startTrade": {
+    "prefix": "startTrade",
+    "body": [
+      "${1:house}:startTrade(${2:player}, ${3:tradePartner})$4"
+    ],
+    "description": "House:startTrade"
+  },
+  "House:getBeds": {
+    "prefix": "getBeds",
+    "body": [
+      "${1:house}:getBeds()$2"
+    ],
+    "description": "House:getBeds"
+  },
+  "House:getBedCount": {
+    "prefix": "getBedCount",
+    "body": [
+      "${1:house}:getBedCount()$2"
+    ],
+    "description": "House:getBedCount"
+  },
+  "House:getDoors": {
+    "prefix": "getDoors",
+    "body": [
+      "${1:house}:getDoors()$2"
+    ],
+    "description": "House:getDoors"
+  },
+  "House:getDoorCount": {
+    "prefix": "getDoorCount",
+    "body": [
+      "${1:house}:getDoorCount()$2"
+    ],
+    "description": "House:getDoorCount"
+  },
+  "House:getDoorIdByPosition": {
+    "prefix": "getDoorIdByPosition",
+    "body": [
+      "${1:house}:getDoorIdByPosition(${2:position})$3"
+    ],
+    "description": "House:getDoorIdByPosition"
+  },
+  "House:getTiles": {
+    "prefix": "getTiles",
+    "body": [
+      "${1:house}:getTiles()$2"
+    ],
+    "description": "House:getTiles"
+  },
+  "House:getItems": {
+    "prefix": "getItems",
+    "body": [
+      "${1:house}:getItems()$2"
+    ],
+    "description": "House:getItems"
+  },
+  "House:getTileCount": {
+    "prefix": "getTileCount",
+    "body": [
+      "${1:house}:getTileCount()$2"
+    ],
+    "description": "House:getTileCount"
+  },
+  "House:canEditAccessList": {
+    "prefix": "canEditAccessList",
+    "body": [
+      "${1:house}:canEditAccessList(${2:listId}, ${3:player})$4"
+    ],
+    "description": "House:canEditAccessList"
+  },
+  "House:getAccessList": {
+    "prefix": "getAccessList",
+    "body": [
+      "${1:house}:getAccessList(${2:listId})$3"
+    ],
+    "description": "House:getAccessList"
+  },
+  "House:setAccessList": {
+    "prefix": "setAccessList",
+    "body": [
+      "${1:house}:setAccessList(${2:listId}, ${3:list})$4"
+    ],
+    "description": "House:setAccessList"
+  },
+  "House:kickPlayer": {
+    "prefix": "kickPlayer",
+    "body": [
+      "${1:house}:kickPlayer(${2:player}, ${3:targetPlayer})$4"
+    ],
+    "description": "House:kickPlayer"
+  },
+  "House:save": {
+    "prefix": "save",
+    "body": [
+      "${1:house}:save()$2"
+    ],
+    "description": "House:save"
+  },
+  "ItemType": {
+    "prefix": "ItemType",
+    "body": [
+      "ItemType(${1:idorname})$2"
+    ],
+    "description": "ItemType"
+  },
+  "ItemType:isCorpse": {
+    "prefix": "isCorpse",
+    "body": [
+      "${1:itemType}:isCorpse()$2"
+    ],
+    "description": "ItemType:isCorpse"
+  },
+  "ItemType:isDoor": {
+    "prefix": "isDoor",
+    "body": [
+      "${1:itemType}:isDoor()$2"
+    ],
+    "description": "ItemType:isDoor"
+  },
+  "ItemType:isContainer": {
+    "prefix": "isContainer",
+    "body": [
+      "${1:itemType}:isContainer()$2"
+    ],
+    "description": "ItemType:isContainer"
+  },
+  "ItemType:isFluidContainer": {
+    "prefix": "isFluidContainer",
+    "body": [
+      "${1:itemType}:isFluidContainer()$2"
+    ],
+    "description": "ItemType:isFluidContainer"
+  },
+  "ItemType:isMovable": {
+    "prefix": "isMovable",
+    "body": [
+      "${1:itemType}:isMovable()$2"
+    ],
+    "description": "ItemType:isMovable"
+  },
+  "ItemType:isRune": {
+    "prefix": "isRune",
+    "body": [
+      "${1:itemType}:isRune()$2"
+    ],
+    "description": "ItemType:isRune"
+  },
+  "ItemType:isStackable": {
+    "prefix": "isStackable",
+    "body": [
+      "${1:itemType}:isStackable()$2"
+    ],
+    "description": "ItemType:isStackable"
+  },
+  "ItemType:isReadable": {
+    "prefix": "isReadable",
+    "body": [
+      "${1:itemType}:isReadable()$2"
+    ],
+    "description": "ItemType:isReadable"
+  },
+  "ItemType:isWritable": {
+    "prefix": "isWritable",
+    "body": [
+      "${1:itemType}:isWritable()$2"
+    ],
+    "description": "ItemType:isWritable"
+  },
+  "ItemType:isBlocking": {
+    "prefix": "isBlocking",
+    "body": [
+      "${1:itemType}:isBlocking()$2"
+    ],
+    "description": "ItemType:isBlocking"
+  },
+  "ItemType:isGroundTile": {
+    "prefix": "isGroundTile",
+    "body": [
+      "${1:itemType}:isGroundTile()$2"
+    ],
+    "description": "ItemType:isGroundTile"
+  },
+  "ItemType:isMagicField": {
+    "prefix": "isMagicField",
+    "body": [
+      "${1:itemType}:isMagicField()$2"
+    ],
+    "description": "ItemType:isMagicField"
+  },
+  "ItemType:isUseable": {
+    "prefix": "isUseable",
+    "body": [
+      "${1:itemType}:isUseable()$2"
+    ],
+    "description": "ItemType:isUseable"
+  },
+  "ItemType:isPickupable": {
+    "prefix": "isPickupable",
+    "body": [
+      "${1:itemType}:isPickupable()$2"
+    ],
+    "description": "ItemType:isPickupable"
+  },
+  "ItemType:getType": {
+    "prefix": "getType",
+    "body": [
+      "${1:itemType}:getType()$2"
+    ],
+    "description": "ItemType:getType"
+  },
+  "ItemType:getGroup": {
+    "prefix": "getGroup",
+    "body": [
+      "${1:itemType}:getGroup()$2"
+    ],
+    "description": "ItemType:getGroup"
+  },
+  "ItemType:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:itemType}:getId()$2"
+    ],
+    "description": "ItemType:getId"
+  },
+  "ItemType:getClientId": {
+    "prefix": "getClientId",
+    "body": [
+      "${1:itemType}:getClientId()$2"
+    ],
+    "description": "ItemType:getClientId"
+  },
+  "ItemType:getName": {
+    "prefix": "getName",
+    "body": [
+      "${1:itemType}:getName()$2"
+    ],
+    "description": "ItemType:getName"
+  },
+  "ItemType:getPluralName": {
+    "prefix": "getPluralName",
+    "body": [
+      "${1:itemType}:getPluralName()$2"
+    ],
+    "description": "ItemType:getPluralName"
+  },
+  "ItemType:getArticle": {
+    "prefix": "getArticle",
+    "body": [
+      "${1:itemType}:getArticle()$2"
+    ],
+    "description": "ItemType:getArticle"
+  },
+  "ItemType:getDescription": {
+    "prefix": "getDescription",
+    "body": [
+      "${1:itemType}:getDescription()$2"
+    ],
+    "description": "ItemType:getDescription"
+  },
+  "ItemType:getSlotPosition": {
+    "prefix": "getSlotPosition",
+    "body": [
+      "${1:itemType}:getSlotPosition()$2"
+    ],
+    "description": "ItemType:getSlotPosition"
+  },
+  "ItemType:getCharges": {
+    "prefix": "getCharges",
+    "body": [
+      "${1:itemType}:getCharges()$2"
+    ],
+    "description": "ItemType:getCharges"
+  },
+  "ItemType:getFluidSource": {
+    "prefix": "getFluidSource",
+    "body": [
+      "${1:itemType}:getFluidSource()$2"
+    ],
+    "description": "ItemType:getFluidSource"
+  },
+  "ItemType:getCapacity": {
+    "prefix": "getCapacity",
+    "body": [
+      "${1:itemType}:getCapacity()$2"
+    ],
+    "description": "ItemType:getCapacity"
+  },
+  "ItemType:getWeight": {
+    "prefix": "getWeight",
+    "body": [
+      "${1:itemType}:getWeight(${2:[count = 1]})$3"
+    ],
+    "description": "ItemType:getWeight"
+  },
+  "ItemType:getHitChance": {
+    "prefix": "getHitChance",
+    "body": [
+      "${1:itemType}:getHitChance()$2"
+    ],
+    "description": "ItemType:getHitChance"
+  },
+  "ItemType:getShootRange": {
+    "prefix": "getShootRange",
+    "body": [
+      "${1:itemType}:getShootRange()$2"
+    ],
+    "description": "ItemType:getShootRange"
+  },
+  "ItemType:getAttack": {
+    "prefix": "getAttack",
+    "body": [
+      "${1:itemType}:getAttack()$2"
+    ],
+    "description": "ItemType:getAttack"
+  },
+  "ItemType:getAttackSpeed": {
+    "prefix": "getAttackSpeed",
+    "body": [
+      "${1:itemType}:getAttackSpeed()$2"
+    ],
+    "description": "ItemType:getAttackSpeed"
+  },
+  "ItemType:getDefense": {
+    "prefix": "getDefense",
+    "body": [
+      "${1:itemType}:getDefense()$2"
+    ],
+    "description": "ItemType:getDefense"
+  },
+  "ItemType:getExtraDefense": {
+    "prefix": "getExtraDefense",
+    "body": [
+      "${1:itemType}:getExtraDefense()$2"
+    ],
+    "description": "ItemType:getExtraDefense"
+  },
+  "ItemType:getArmor": {
+    "prefix": "getArmor",
+    "body": [
+      "${1:itemType}:getArmor()$2"
+    ],
+    "description": "ItemType:getArmor"
+  },
+  "ItemType:getWeaponType": {
+    "prefix": "getWeaponType",
+    "body": [
+      "${1:itemType}:getWeaponType()$2"
+    ],
+    "description": "ItemType:getWeaponType"
+  },
+  "ItemType:getAmmoType": {
+    "prefix": "getAmmoType",
+    "body": [
+      "${1:itemType}:getAmmoType()$2"
+    ],
+    "description": "ItemType:getAmmoType"
+  },
+  "ItemType:getCorpseType": {
+    "prefix": "getCorpseType",
+    "body": [
+      "${1:itemType}:getCorpseType()$2"
+    ],
+    "description": "ItemType:getCorpseType"
+  },
+  "ItemType:getAbilities": {
+    "prefix": "getAbilities",
+    "body": [
+      "${1:itemType}:getAbilities()$2"
+    ],
+    "description": "ItemType:getAbilities"
+  },
+  "ItemType:hasShowAttributes": {
+    "prefix": "hasShowAttributes",
+    "body": [
+      "${1:itemType}:hasShowAttributes()$2"
+    ],
+    "description": "ItemType:hasShowAttributes"
+  },
+  "ItemType:hasShowCount": {
+    "prefix": "hasShowCount",
+    "body": [
+      "${1:itemType}:hasShowCount()$2"
+    ],
+    "description": "ItemType:hasShowCount"
+  },
+  "ItemType:hasShowCharges": {
+    "prefix": "hasShowCharges",
+    "body": [
+      "${1:itemType}:hasShowCharges()$2"
+    ],
+    "description": "ItemType:hasShowCharges"
+  },
+  "ItemType:hasShowDuration": {
+    "prefix": "hasShowDuration",
+    "body": [
+      "${1:itemType}:hasShowDuration()$2"
+    ],
+    "description": "ItemType:hasShowDuration"
+  },
+  "ItemType:hasAllowDistRead": {
+    "prefix": "hasAllowDistRead",
+    "body": [
+      "${1:itemType}:hasAllowDistRead()$2"
+    ],
+    "description": "ItemType:hasAllowDistRead"
+  },
+  "ItemType:getWieldInfo": {
+    "prefix": "getWieldInfo",
+    "body": [
+      "${1:itemType}:getWieldInfo()$2"
+    ],
+    "description": "ItemType:getWieldInfo"
+  },
+  "ItemType:getDuration": {
+    "prefix": "getDuration",
+    "body": [
+      "${1:itemType}:getDuration()$2"
+    ],
+    "description": "ItemType:getDuration"
+  },
+  "ItemType:getLevelDoor": {
+    "prefix": "getLevelDoor",
+    "body": [
+      "${1:itemType}:getLevelDoor()$2"
+    ],
+    "description": "ItemType:getLevelDoor"
+  },
+  "ItemType:getVocationString": {
+    "prefix": "getVocationString",
+    "body": [
+      "${1:itemType}:getVocationString()$2"
+    ],
+    "description": "ItemType:getVocationString"
+  },
+  "ItemType:getMinReqLevel": {
+    "prefix": "getMinReqLevel",
+    "body": [
+      "${1:itemType}:getMinReqLevel()$2"
+    ],
+    "description": "ItemType:getMinReqLevel"
+  },
+  "ItemType:getMinReqMagicLevel": {
+    "prefix": "getMinReqMagicLevel",
+    "body": [
+      "${1:itemType}:getMinReqMagicLevel()$2"
+    ],
+    "description": "ItemType:getMinReqMagicLevel"
+  },
+  "ItemType:getElementType": {
+    "prefix": "getElementType",
+    "body": [
+      "${1:itemType}:getElementType()$2"
+    ],
+    "description": "ItemType:getElementType"
+  },
+  "ItemType:getElementDamage": {
+    "prefix": "getElementDamage",
+    "body": [
+      "${1:itemType}:getElementDamage()$2"
+    ],
+    "description": "ItemType:getElementDamage"
+  },
+  "ItemType:getTransformEquipId": {
+    "prefix": "getTransformEquipId",
+    "body": [
+      "${1:itemType}:getTransformEquipId()$2"
+    ],
+    "description": "ItemType:getTransformEquipId"
+  },
+  "ItemType:getTransformDeEquipId": {
+    "prefix": "getTransformDeEquipId",
+    "body": [
+      "${1:itemType}:getTransformDeEquipId()$2"
+    ],
+    "description": "ItemType:getTransformDeEquipId"
+  },
+  "ItemType:getDestroyId": {
+    "prefix": "getDestroyId",
+    "body": [
+      "${1:itemType}:getDestroyId()$2"
+    ],
+    "description": "ItemType:getDestroyId"
+  },
+  "ItemType:getDecayId": {
+    "prefix": "getDecayId",
+    "body": [
+      "${1:itemType}:getDecayId()$2"
+    ],
+    "description": "ItemType:getDecayId"
+  },
+  "ItemType:getRequiredLevel": {
+    "prefix": "getRequiredLevel",
+    "body": [
+      "${1:itemType}:getRequiredLevel()$2"
+    ],
+    "description": "ItemType:getRequiredLevel"
+  },
+  "ItemType:hasSubType": {
+    "prefix": "hasSubType",
+    "body": [
+      "${1:itemType}:hasSubType()$2"
+    ],
+    "description": "ItemType:hasSubType"
+  },
+  "Combat": {
+    "prefix": "Combat",
+    "body": [
+      "Combat()$1"
+    ],
+    "description": "Combat"
+  },
+  "Combat:setParameter": {
+    "prefix": "setParameter",
+    "body": [
+      "${1:combat}:setParameter(${2:key}, ${3:value})$4"
+    ],
+    "description": "Combat:setParameter"
+  },
+  "Combat:getParameter": {
+    "prefix": "getParameter",
+    "body": [
+      "${1:combat}:getParameter(${2:key})$3"
+    ],
+    "description": "Combat:getParameter"
+  },
+  "Combat:setFormula": {
+    "prefix": "setFormula",
+    "body": [
+      "${1:combat}:setFormula(${2:type}, ${3:mina}, ${4:minb}, ${5:maxa}, ${6:maxb})$7"
+    ],
+    "description": "Combat:setFormula"
+  },
+  "Combat:setArea": {
+    "prefix": "setArea",
+    "body": [
+      "${1:combat}:setArea(${2:area})$3"
+    ],
+    "description": "Combat:setArea"
+  },
+  "Combat:addCondition": {
+    "prefix": "addCondition",
+    "body": [
+      "${1:combat}:addCondition(${2:condition})$3"
+    ],
+    "description": "Combat:addCondition"
+  },
+  "Combat:clearConditions": {
+    "prefix": "clearConditions",
+    "body": [
+      "${1:combat}:clearConditions()$2"
+    ],
+    "description": "Combat:clearConditions"
+  },
+  "Combat:setCallback": {
+    "prefix": "setCallback",
+    "body": [
+      "${1:combat}:setCallback(${2:key}, ${3:function})$4"
+    ],
+    "description": "Combat:setCallback"
+  },
+  "Combat:setOrigin": {
+    "prefix": "setOrigin",
+    "body": [
+      "${1:combat}:setOrigin(${2:origin})$3"
+    ],
+    "description": "Combat:setOrigin"
+  },
+  "Combat:execute": {
+    "prefix": "execute",
+    "body": [
+      "${1:combat}:execute(${2:creature}, ${3:variant})$4"
+    ],
+    "description": "Combat:execute"
+  },
+  "Condition": {
+    "prefix": "Condition",
+    "body": [
+      "Condition(${1:conditionType[}, ${2:conditionId = CONDITIONID_COMBAT]})$3"
+    ],
+    "description": "Condition"
+  },
+  "Condition:delete": {
+    "prefix": "delete",
+    "body": [
+      "${1:condition}:delete()$2"
+    ],
+    "description": "Condition:delete"
+  },
+  "Condition:getId": {
+    "prefix": "getId",
+    "body": [
+      "${1:condition}:getId()$2"
+    ],
+    "description": "Condition:getId"
+  },
+  "Condition:getSubId": {
+    "prefix": "getSubId",
+    "body": [
+      "${1:condition}:getSubId()$2"
+    ],
+    "description": "Condition:getSubId"
+  },
+  "Condition:getType": {
+    "prefix": "getType",
+    "body": [
+      "${1:condition}:getType()$2"
+    ],
+    "description": "Condition:getType"
+  },
+  "Condition:getIcons": {
+    "prefix": "getIcons",
+    "body": [
+      "${1:condition}:getIcons()$2"
+    ],
+    "description": "Condition:getIcons"
+  },
+  "Condition:getEndTime": {
+    "prefix": "getEndTime",
+    "body": [
+      "${1:condition}:getEndTime()$2"
+    ],
+    "description": "Condition:getEndTime"
+  },
+  "Condition:clone": {
+    "prefix": "clone",
+    "body": [
+      "${1:condition}:clone()$2"
+    ],
+    "description": "Condition:clone"
+  },
+  "Condition:getTicks": {
+    "prefix": "getTicks",
+    "body": [
+      "${1:condition}:getTicks()$2"
+    ],
+    "description": "Condition:getTicks"
+  },
+  "Condition:setTicks": {
+    "prefix": "setTicks",
+    "body": [
+      "${1:condition}:setTicks(${2:ticks})$3"
+    ],
+    "description": "Condition:setTicks"
+  },
+  "Condition:setParameter": {
+    "prefix": "setParameter",
+    "body": [
+      "${1:condition}:setParameter(${2:key}, ${3:value})$4"
+    ],
+    "description": "Condition:setParameter"
+  },
+  "Condition:getParameter": {
+    "prefix": "getParameter",
+    "body": [
+      "${1:condition}:getParameter(${2:key})$3"
+    ],
+    "description": "Condition:getParameter"
+  },
+  "Condition:setFormula": {
+    "prefix": "setFormula",
+    "body": [
+      "${1:condition}:setFormula(${2:mina}, ${3:minb}, ${4:maxa}, ${5:maxb})$6"
+    ],
+    "description": "Condition:setFormula"
+  },
+  "Condition:setOutfit": {
+    "prefix": "setOutfit",
+    "body": [
+      "${1:condition}:setOutfit(${2:lookTypeEx}, ${3:lookType}, ${4:lookHead}, ${5:lookBody}, ${6:lookLegs}, ${7:lookFeet[}, ${8:lookAddons]})$9"
+    ],
+    "description": "Condition:setOutfit"
+  },
+  "Condition:addDamage": {
+    "prefix": "addDamage",
+    "body": [
+      "${1:condition}:addDamage(${2:rounds}, ${3:time}, ${4:value})$5"
+    ],
+    "description": "Condition:addDamage"
+  },
+  "Outfit": {
+    "prefix": "Outfit",
+    "body": [
+      "Outfit(${1:looktype})$2"
+    ],
+    "description": "Outfit"
+  },
+  "MonsterType": {
+    "prefix": "MonsterType",
+    "body": [
+      "MonsterType(${1:name})$2"
+    ],
+    "description": "MonsterType"
+  },
+  "Get:monsterType:isAttackable": {
+    "prefix": "isAttackable",
+    "body": [
+      "${1:get:monsterType}:isAttackable()$2"
+    ],
+    "description": "Get:monsterType:isAttackable"
+  },
+  "Set:monsterType:isAttackable": {
+    "prefix": "isAttackable",
+    "body": [
+      "${1:set:monsterType}:isAttackable(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isAttackable"
+  },
+  "Get:monsterType:isChallengeable": {
+    "prefix": "isChallengeable",
+    "body": [
+      "${1:get:monsterType}:isChallengeable()$2"
+    ],
+    "description": "Get:monsterType:isChallengeable"
+  },
+  "Set:monsterType:isChallengeable": {
+    "prefix": "isChallengeable",
+    "body": [
+      "${1:set:monsterType}:isChallengeable(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isChallengeable"
+  },
+  "Get:monsterType:isConvinceable": {
+    "prefix": "isConvinceable",
+    "body": [
+      "${1:get:monsterType}:isConvinceable()$2"
+    ],
+    "description": "Get:monsterType:isConvinceable"
+  },
+  "Set:monsterType:isConvinceable": {
+    "prefix": "isConvinceable",
+    "body": [
+      "${1:set:monsterType}:isConvinceable(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isConvinceable"
+  },
+  "Get:monsterType:isSummonable": {
+    "prefix": "isSummonable",
+    "body": [
+      "${1:get:monsterType}:isSummonable()$2"
+    ],
+    "description": "Get:monsterType:isSummonable"
+  },
+  "Set:monsterType:isSummonable": {
+    "prefix": "isSummonable",
+    "body": [
+      "${1:set:monsterType}:isSummonable(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isSummonable"
+  },
+  "Get:monsterType:isIgnoringSpawnBlock": {
+    "prefix": "isIgnoringSpawnBlock",
+    "body": [
+      "${1:get:monsterType}:isIgnoringSpawnBlock()$2"
+    ],
+    "description": "Get:monsterType:isIgnoringSpawnBlock"
+  },
+  "Set:monsterType:isIgnoringSpawnBlock": {
+    "prefix": "isIgnoringSpawnBlock",
+    "body": [
+      "${1:set:monsterType}:isIgnoringSpawnBlock(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isIgnoringSpawnBlock"
+  },
+  "Get:monsterType:isIllusionable": {
+    "prefix": "isIllusionable",
+    "body": [
+      "${1:get:monsterType}:isIllusionable()$2"
+    ],
+    "description": "Get:monsterType:isIllusionable"
+  },
+  "Set:monsterType:isIllusionable": {
+    "prefix": "isIllusionable",
+    "body": [
+      "${1:set:monsterType}:isIllusionable(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isIllusionable"
+  },
+  "Get:monsterType:isHostile": {
+    "prefix": "isHostile",
+    "body": [
+      "${1:get:monsterType}:isHostile()$2"
+    ],
+    "description": "Get:monsterType:isHostile"
+  },
+  "Set:monsterType:isHostile": {
+    "prefix": "isHostile",
+    "body": [
+      "${1:set:monsterType}:isHostile(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isHostile"
+  },
+  "Get:monsterType:isPushable": {
+    "prefix": "isPushable",
+    "body": [
+      "${1:get:monsterType}:isPushable()$2"
+    ],
+    "description": "Get:monsterType:isPushable"
+  },
+  "Set:monsterType:isPushable": {
+    "prefix": "isPushable",
+    "body": [
+      "${1:set:monsterType}:isPushable(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isPushable"
+  },
+  "Get:monsterType:isHealthHidden": {
+    "prefix": "isHealthHidden",
+    "body": [
+      "${1:get:monsterType}:isHealthHidden()$2"
+    ],
+    "description": "Get:monsterType:isHealthHidden"
+  },
+  "Set:monsterType:isHealthHidden": {
+    "prefix": "isHealthHidden",
+    "body": [
+      "${1:set:monsterType}:isHealthHidden(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isHealthHidden"
+  },
+  "Get:monsterType:isBoss": {
+    "prefix": "isBoss",
+    "body": [
+      "${1:get:monsterType}:isBoss()$2"
+    ],
+    "description": "Get:monsterType:isBoss"
+  },
+  "Set:monsterType:isBoss": {
+    "prefix": "isBoss",
+    "body": [
+      "${1:set:monsterType}:isBoss(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:isBoss"
+  },
+  "Get:monsterType:canPushItems": {
+    "prefix": "canPushItems",
+    "body": [
+      "${1:get:monsterType}:canPushItems()$2"
+    ],
+    "description": "Get:monsterType:canPushItems"
+  },
+  "Set:monsterType:canPushItems": {
+    "prefix": "canPushItems",
+    "body": [
+      "${1:set:monsterType}:canPushItems(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:canPushItems"
+  },
+  "Get:monsterType:canPushCreatures": {
+    "prefix": "canPushCreatures",
+    "body": [
+      "${1:get:monsterType}:canPushCreatures()$2"
+    ],
+    "description": "Get:monsterType:canPushCreatures"
+  },
+  "Set:monsterType:canPushCreatures": {
+    "prefix": "canPushCreatures",
+    "body": [
+      "${1:set:monsterType}:canPushCreatures(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:canPushCreatures"
+  },
+  "Get:monsterType:canWalkOnEnergy": {
+    "prefix": "canWalkOnEnergy",
+    "body": [
+      "${1:get:monsterType}:canWalkOnEnergy()$2"
+    ],
+    "description": "Get:monsterType:canWalkOnEnergy"
+  },
+  "Set:monsterType:canWalkOnEnergy": {
+    "prefix": "canWalkOnEnergy",
+    "body": [
+      "${1:set:monsterType}:canWalkOnEnergy(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:canWalkOnEnergy"
+  },
+  "Get:monsterType:canWalkOnFire": {
+    "prefix": "canWalkOnFire",
+    "body": [
+      "${1:get:monsterType}:canWalkOnFire()$2"
+    ],
+    "description": "Get:monsterType:canWalkOnFire"
+  },
+  "Set:monsterType:canWalkOnFire": {
+    "prefix": "canWalkOnFire",
+    "body": [
+      "${1:set:monsterType}:canWalkOnFire(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:canWalkOnFire"
+  },
+  "Get:monsterType:canWalkOnPoison": {
+    "prefix": "canWalkOnPoison",
+    "body": [
+      "${1:get:monsterType}:canWalkOnPoison()$2"
+    ],
+    "description": "Get:monsterType:canWalkOnPoison"
+  },
+  "Set:monsterType:canWalkOnPoison": {
+    "prefix": "canWalkOnPoison",
+    "body": [
+      "${1:set:monsterType}:canWalkOnPoison(${2:bool})$3"
+    ],
+    "description": "Set:monsterType:canWalkOnPoison"
+  },
+  "Get:monsterType:name": {
+    "prefix": "name",
+    "body": [
+      "${1:get:monsterType}:name()$2"
+    ],
+    "description": "Get:monsterType:name"
+  },
+  "Set:monsterType:name": {
+    "prefix": "name",
+    "body": [
+      "${1:set:monsterType}:name(${2:name})$3"
+    ],
+    "description": "Set:monsterType:name"
+  },
+  "Get:monsterType:nameDescription": {
+    "prefix": "nameDescription",
+    "body": [
+      "${1:get:monsterType}:nameDescription()$2"
+    ],
+    "description": "Get:monsterType:nameDescription"
+  },
+  "Set:monsterType:nameDescription": {
+    "prefix": "nameDescription",
+    "body": [
+      "${1:set:monsterType}:nameDescription(${2:desc})$3"
+    ],
+    "description": "Set:monsterType:nameDescription"
+  },
+  "Get:monsterType:health": {
+    "prefix": "health",
+    "body": [
+      "${1:get:monsterType}:health()$2"
+    ],
+    "description": "Get:monsterType:health"
+  },
+  "Set:monsterType:health": {
+    "prefix": "health",
+    "body": [
+      "${1:set:monsterType}:health(${2:health})$3"
+    ],
+    "description": "Set:monsterType:health"
+  },
+  "Get:monsterType:maxHealth": {
+    "prefix": "maxHealth",
+    "body": [
+      "${1:get:monsterType}:maxHealth()$2"
+    ],
+    "description": "Get:monsterType:maxHealth"
+  },
+  "Set:monsterType:maxHealth": {
+    "prefix": "maxHealth",
+    "body": [
+      "${1:set:monsterType}:maxHealth(${2:health})$3"
+    ],
+    "description": "Set:monsterType:maxHealth"
+  },
+  "Get:monsterType:runHealth": {
+    "prefix": "runHealth",
+    "body": [
+      "${1:get:monsterType}:runHealth()$2"
+    ],
+    "description": "Get:monsterType:runHealth"
+  },
+  "Set:monsterType:runHealth": {
+    "prefix": "runHealth",
+    "body": [
+      "${1:set:monsterType}:runHealth(${2:health})$3"
+    ],
+    "description": "Set:monsterType:runHealth"
+  },
+  "Get:monsterType:experience": {
+    "prefix": "experience",
+    "body": [
+      "${1:get:monsterType}:experience()$2"
+    ],
+    "description": "Get:monsterType:experience"
+  },
+  "Set:monsterType:experience": {
+    "prefix": "experience",
+    "body": [
+      "${1:set:monsterType}:experience(${2:exp})$3"
+    ],
+    "description": "Set:monsterType:experience"
+  },
+  "Get:monsterType:skull": {
+    "prefix": "skull",
+    "body": [
+      "${1:get:monsterType}:skull()$2"
+    ],
+    "description": "Get:monsterType:skull"
+  },
+  "Set:monsterType:skull": {
+    "prefix": "skull",
+    "body": [
+      "${1:set:monsterType}:skull(${2:str/constant})$3"
+    ],
+    "description": "Set:monsterType:skull"
+  },
+  "Get:monsterType:combatImmunities": {
+    "prefix": "combatImmunities",
+    "body": [
+      "${1:get:monsterType}:combatImmunities()$2"
+    ],
+    "description": "Get:monsterType:combatImmunities"
+  },
+  "Set:monsterType:combatImmunities": {
+    "prefix": "combatImmunities",
+    "body": [
+      "${1:set:monsterType}:combatImmunities(${2:immunity})$3"
+    ],
+    "description": "Set:monsterType:combatImmunities"
+  },
+  "Get:monsterType:conditionImmunities": {
+    "prefix": "conditionImmunities",
+    "body": [
+      "${1:get:monsterType}:conditionImmunities()$2"
+    ],
+    "description": "Get:monsterType:conditionImmunities"
+  },
+  "Set:monsterType:conditionImmunities": {
+    "prefix": "conditionImmunities",
+    "body": [
+      "${1:set:monsterType}:conditionImmunities(${2:immunity})$3"
+    ],
+    "description": "Set:monsterType:conditionImmunities"
+  },
+  "MonsterType:getAttackList": {
+    "prefix": "getAttackList",
+    "body": [
+      "${1:monsterType}:getAttackList()$2"
+    ],
+    "description": "MonsterType:getAttackList"
+  },
+  "MonsterType:addAttack": {
+    "prefix": "addAttack",
+    "body": [
+      "${1:monsterType}:addAttack(${2:monsterspell})$3"
+    ],
+    "description": "MonsterType:addAttack"
+  },
+  "MonsterType:getDefenseList": {
+    "prefix": "getDefenseList",
+    "body": [
+      "${1:monsterType}:getDefenseList()$2"
+    ],
+    "description": "MonsterType:getDefenseList"
+  },
+  "MonsterType:addDefense": {
+    "prefix": "addDefense",
+    "body": [
+      "${1:monsterType}:addDefense(${2:monsterspell})$3"
+    ],
+    "description": "MonsterType:addDefense"
+  },
+  "MonsterType:getElementList": {
+    "prefix": "getElementList",
+    "body": [
+      "${1:monsterType}:getElementList()$2"
+    ],
+    "description": "MonsterType:getElementList"
+  },
+  "MonsterType:addElement": {
+    "prefix": "addElement",
+    "body": [
+      "${1:monsterType}:addElement(${2:type}, ${3:percent})$4"
+    ],
+    "description": "MonsterType:addElement"
+  },
+  "MonsterType:getVoices": {
+    "prefix": "getVoices",
+    "body": [
+      "${1:monsterType}:getVoices()$2"
+    ],
+    "description": "MonsterType:getVoices"
+  },
+  "MonsterType:addVoice": {
+    "prefix": "addVoice",
+    "body": [
+      "${1:monsterType}:addVoice(${2:sentence}, ${3:interval}, ${4:chance}, ${5:yell})$6"
+    ],
+    "description": "MonsterType:addVoice"
+  },
+  "MonsterType:getLoot": {
+    "prefix": "getLoot",
+    "body": [
+      "${1:monsterType}:getLoot()$2"
+    ],
+    "description": "MonsterType:getLoot"
+  },
+  "MonsterType:addLoot": {
+    "prefix": "addLoot",
+    "body": [
+      "${1:monsterType}:addLoot(${2:loot})$3"
+    ],
+    "description": "MonsterType:addLoot"
+  },
+  "MonsterType:getCreatureEvents": {
+    "prefix": "getCreatureEvents",
+    "body": [
+      "${1:monsterType}:getCreatureEvents()$2"
+    ],
+    "description": "MonsterType:getCreatureEvents"
+  },
+  "MonsterType:registerEvent": {
+    "prefix": "registerEvent",
+    "body": [
+      "${1:monsterType}:registerEvent(${2:name})$3"
+    ],
+    "description": "MonsterType:registerEvent"
+  },
+  "MonsterType:onThink": {
+    "prefix": "onThink",
+    "body": [
+      "${1:monsterType}:onThink(${2:callback})$3"
+    ],
+    "description": "MonsterType:onThink"
+  },
+  "MonsterType:onAppear": {
+    "prefix": "onAppear",
+    "body": [
+      "${1:monsterType}:onAppear(${2:callback})$3"
+    ],
+    "description": "MonsterType:onAppear"
+  },
+  "MonsterType:onDisappear": {
+    "prefix": "onDisappear",
+    "body": [
+      "${1:monsterType}:onDisappear(${2:callback})$3"
+    ],
+    "description": "MonsterType:onDisappear"
+  },
+  "MonsterType:onMove": {
+    "prefix": "onMove",
+    "body": [
+      "${1:monsterType}:onMove(${2:callback})$3"
+    ],
+    "description": "MonsterType:onMove"
+  },
+  "MonsterType:onSay": {
+    "prefix": "onSay",
+    "body": [
+      "${1:monsterType}:onSay(${2:callback})$3"
+    ],
+    "description": "MonsterType:onSay"
+  },
+  "Monstertype:eventType": {
+    "prefix": "eventType",
+    "body": [
+      "${1:monstertype}:eventType(${2:event})$3"
+    ],
+    "description": "Monstertype:eventType"
+  },
+  "MonsterType:getSummonList": {
+    "prefix": "getSummonList",
+    "body": [
+      "${1:monsterType}:getSummonList()$2"
+    ],
+    "description": "MonsterType:getSummonList"
+  },
+  "MonsterType:addSummon": {
+    "prefix": "addSummon",
+    "body": [
+      "${1:monsterType}:addSummon(${2:name}, ${3:interval}, ${4:chance})$5"
+    ],
+    "description": "MonsterType:addSummon"
+  },
+  "Get:monsterType:maxSummons": {
+    "prefix": "maxSummons",
+    "body": [
+      "${1:get:monsterType}:maxSummons()$2"
+    ],
+    "description": "Get:monsterType:maxSummons"
+  },
+  "Set: monsterType:maxSummons": {
+    "prefix": "maxSummons",
+    "body": [
+      "${1:set: monsterType}:maxSummons(${2:ammount})$3"
+    ],
+    "description": "Set: monsterType:maxSummons"
+  },
+  "Get:monsterType:armor": {
+    "prefix": "armor",
+    "body": [
+      "${1:get:monsterType}:armor()$2"
+    ],
+    "description": "Get:monsterType:armor"
+  },
+  "Set: monsterType:armor": {
+    "prefix": "armor",
+    "body": [
+      "${1:set: monsterType}:armor(${2:armor})$3"
+    ],
+    "description": "Set: monsterType:armor"
+  },
+  "Get:monsterType:defense": {
+    "prefix": "defense",
+    "body": [
+      "${1:get:monsterType}:defense()$2"
+    ],
+    "description": "Get:monsterType:defense"
+  },
+  "Set: monsterType:defense": {
+    "prefix": "defense",
+    "body": [
+      "${1:set: monsterType}:defense(${2:defense})$3"
+    ],
+    "description": "Set: monsterType:defense"
+  },
+  "Get:monsterType:outfit": {
+    "prefix": "outfit",
+    "body": [
+      "${1:get:monsterType}:outfit()$2"
+    ],
+    "description": "Get:monsterType:outfit"
+  },
+  "Set: monsterType:outfit": {
+    "prefix": "outfit",
+    "body": [
+      "${1:set: monsterType}:outfit(${2:outfit})$3"
+    ],
+    "description": "Set: monsterType:outfit"
+  },
+  "Get:monsterType:race": {
+    "prefix": "race",
+    "body": [
+      "${1:get:monsterType}:race()$2"
+    ],
+    "description": "Get:monsterType:race"
+  },
+  "Set: monsterType:race": {
+    "prefix": "race",
+    "body": [
+      "${1:set: monsterType}:race(${2:race})$3"
+    ],
+    "description": "Set: monsterType:race"
+  },
+  "Get:monsterType:corpseId": {
+    "prefix": "corpseId",
+    "body": [
+      "${1:get:monsterType}:corpseId()$2"
+    ],
+    "description": "Get:monsterType:corpseId"
+  },
+  "Set: monsterType:corpseId": {
+    "prefix": "corpseId",
+    "body": [
+      "${1:set: monsterType}:corpseId(${2:id})$3"
+    ],
+    "description": "Set: monsterType:corpseId"
+  },
+  "Get:monsterType:manaCost": {
+    "prefix": "manaCost",
+    "body": [
+      "${1:get:monsterType}:manaCost()$2"
+    ],
+    "description": "Get:monsterType:manaCost"
+  },
+  "Set: monsterType:manaCost": {
+    "prefix": "manaCost",
+    "body": [
+      "${1:set: monsterType}:manaCost(${2:mana})$3"
+    ],
+    "description": "Set: monsterType:manaCost"
+  },
+  "Get:monsterType:baseSpeed": {
+    "prefix": "baseSpeed",
+    "body": [
+      "${1:get:monsterType}:baseSpeed()$2"
+    ],
+    "description": "Get:monsterType:baseSpeed"
+  },
+  "Set: monsterType:baseSpeed": {
+    "prefix": "baseSpeed",
+    "body": [
+      "${1:set: monsterType}:baseSpeed(${2:speed})$3"
+    ],
+    "description": "Set: monsterType:baseSpeed"
+  },
+  "Get:monsterType:light": {
+    "prefix": "light",
+    "body": [
+      "${1:get:monsterType}:light()$2"
+    ],
+    "description": "Get:monsterType:light"
+  },
+  "Set: monsterType:light": {
+    "prefix": "light",
+    "body": [
+      "${1:set: monsterType}:light(${2:color}, ${3:level})$4"
+    ],
+    "description": "Set: monsterType:light"
+  },
+  "Get:monsterType:staticAttackChance": {
+    "prefix": "staticAttackChance",
+    "body": [
+      "${1:get:monsterType}:staticAttackChance()$2"
+    ],
+    "description": "Get:monsterType:staticAttackChance"
+  },
+  "Set: monsterType:staticAttackChance": {
+    "prefix": "staticAttackChance",
+    "body": [
+      "${1:set: monsterType}:staticAttackChance(${2:chance})$3"
+    ],
+    "description": "Set: monsterType:staticAttackChance"
+  },
+  "Get:monsterType:targetDistance": {
+    "prefix": "targetDistance",
+    "body": [
+      "${1:get:monsterType}:targetDistance()$2"
+    ],
+    "description": "Get:monsterType:targetDistance"
+  },
+  "Set: monsterType:targetDistance": {
+    "prefix": "targetDistance",
+    "body": [
+      "${1:set: monsterType}:targetDistance(${2:distance})$3"
+    ],
+    "description": "Set: monsterType:targetDistance"
+  },
+  "Get:monsterType:yellChance": {
+    "prefix": "yellChance",
+    "body": [
+      "${1:get:monsterType}:yellChance()$2"
+    ],
+    "description": "Get:monsterType:yellChance"
+  },
+  "Set: monsterType:yellChance": {
+    "prefix": "yellChance",
+    "body": [
+      "${1:set: monsterType}:yellChance(${2:chance})$3"
+    ],
+    "description": "Set: monsterType:yellChance"
+  },
+  "Get:monsterType:yellSpeedTicks": {
+    "prefix": "yellSpeedTicks",
+    "body": [
+      "${1:get:monsterType}:yellSpeedTicks()$2"
+    ],
+    "description": "Get:monsterType:yellSpeedTicks"
+  },
+  "Set: monsterType:yellSpeedTicks": {
+    "prefix": "yellSpeedTicks",
+    "body": [
+      "${1:set: monsterType}:yellSpeedTicks(${2:rate})$3"
+    ],
+    "description": "Set: monsterType:yellSpeedTicks"
+  },
+  "Get:monsterType:changeTargetChance": {
+    "prefix": "changeTargetChance",
+    "body": [
+      "${1:get:monsterType}:changeTargetChance()$2"
+    ],
+    "description": "Get:monsterType:changeTargetChance"
+  },
+  "Set: monsterType:changeTargetChance": {
+    "prefix": "changeTargetChance",
+    "body": [
+      "${1:set: monsterType}:changeTargetChance(${2:chance})$3"
+    ],
+    "description": "Set: monsterType:changeTargetChance"
+  },
+  "Get:monsterType:changeTargetSpeed": {
+    "prefix": "changeTargetSpeed",
+    "body": [
+      "${1:get:monsterType}:changeTargetSpeed()$2"
+    ],
+    "description": "Get:monsterType:changeTargetSpeed"
+  },
+  "Set: monsterType:changeTargetSpeed": {
+    "prefix": "changeTargetSpeed",
+    "body": [
+      "${1:set: monsterType}:changeTargetSpeed(${2:speed})$3"
+    ],
+    "description": "Set: monsterType:changeTargetSpeed"
+  },
+  "Loot": {
+    "prefix": "Loot",
+    "body": [
+      "Loot()$1"
+    ],
+    "description": "Loot"
+  },
+  "Loot:delete": {
+    "prefix": "delete",
+    "body": [
+      "${1:loot}:delete()$2"
+    ],
+    "description": "Loot:delete"
+  },
+  "Loot:setId": {
+    "prefix": "setId",
+    "body": [
+      "${1:loot}:setId(${2:idorname})$3"
+    ],
+    "description": "Loot:setId"
+  },
+  "Loot:setSubType": {
+    "prefix": "setSubType",
+    "body": [
+      "${1:loot}:setSubType(${2:type})$3"
+    ],
+    "description": "Loot:setSubType"
+  },
+  "Loot:setChance": {
+    "prefix": "setChance",
+    "body": [
+      "${1:loot}:setChance(${2:chance})$3"
+    ],
+    "description": "Loot:setChance"
+  },
+  "Loot:setMaxCount": {
+    "prefix": "setMaxCount",
+    "body": [
+      "${1:loot}:setMaxCount(${2:max})$3"
+    ],
+    "description": "Loot:setMaxCount"
+  },
+  "Loot:setActionId": {
+    "prefix": "setActionId",
+    "body": [
+      "${1:loot}:setActionId(${2:actionid})$3"
+    ],
+    "description": "Loot:setActionId"
+  },
+  "Loot:setDescription": {
+    "prefix": "setDescription",
+    "body": [
+      "${1:loot}:setDescription(${2:desc})$3"
+    ],
+    "description": "Loot:setDescription"
+  },
+  "Loot:addChildLoot": {
+    "prefix": "addChildLoot",
+    "body": [
+      "${1:loot}:addChildLoot(${2:loot})$3"
+    ],
+    "description": "Loot:addChildLoot"
+  },
+  "MonsterSpell": {
+    "prefix": "MonsterSpell",
+    "body": [
+      "MonsterSpell()$1"
+    ],
+    "description": "MonsterSpell"
+  },
+  "MonsterSpell:delete": {
+    "prefix": "delete",
+    "body": [
+      "${1:monsterSpell}:delete()$2"
+    ],
+    "description": "MonsterSpell:delete"
+  },
+  "MonsterSpell:setType": {
+    "prefix": "setType",
+    "body": [
+      "${1:monsterSpell}:setType(${2:type})$3"
+    ],
+    "description": "MonsterSpell:setType"
+  },
+  "MonsterSpell:setScriptName": {
+    "prefix": "setScriptName",
+    "body": [
+      "${1:monsterSpell}:setScriptName(${2:name})$3"
+    ],
+    "description": "MonsterSpell:setScriptName"
+  },
+  "MonsterSpell:setChance": {
+    "prefix": "setChance",
+    "body": [
+      "${1:monsterSpell}:setChance(${2:chance})$3"
+    ],
+    "description": "MonsterSpell:setChance"
+  },
+  "MonsterSpell:setInterval": {
+    "prefix": "setInterval",
+    "body": [
+      "${1:monsterSpell}:setInterval(${2:interval})$3"
+    ],
+    "description": "MonsterSpell:setInterval"
+  },
+  "MonsterSpell:setRange": {
+    "prefix": "setRange",
+    "body": [
+      "${1:monsterSpell}:setRange(${2:range})$3"
+    ],
+    "description": "MonsterSpell:setRange"
+  },
+  "MonsterSpell:setCombatValue": {
+    "prefix": "setCombatValue",
+    "body": [
+      "${1:monsterSpell}:setCombatValue(${2:min}, ${3:max})$4"
+    ],
+    "description": "MonsterSpell:setCombatValue"
+  },
+  "MonsterSpell:setCombatType": {
+    "prefix": "setCombatType",
+    "body": [
+      "${1:monsterSpell}:setCombatType(${2:combatType_t})$3"
+    ],
+    "description": "MonsterSpell:setCombatType"
+  },
+  "MonsterSpell:setAttackValue": {
+    "prefix": "setAttackValue",
+    "body": [
+      "${1:monsterSpell}:setAttackValue(${2:attack}, ${3:skill})$4"
+    ],
+    "description": "MonsterSpell:setAttackValue"
+  },
+  "MonsterSpell:setNeedTarget": {
+    "prefix": "setNeedTarget",
+    "body": [
+      "${1:monsterSpell}:setNeedTarget(${2:bool})$3"
+    ],
+    "description": "MonsterSpell:setNeedTarget"
+  },
+  "MonsterSpell:setNeedDirection": {
+    "prefix": "setNeedDirection",
+    "body": [
+      "${1:monsterSpell}:setNeedDirection(${2:bool})$3"
+    ],
+    "description": "MonsterSpell:setNeedDirection"
+  },
+  "MonsterSpell:setCombatLength": {
+    "prefix": "setCombatLength",
+    "body": [
+      "${1:monsterSpell}:setCombatLength(${2:length})$3"
+    ],
+    "description": "MonsterSpell:setCombatLength"
+  },
+  "MonsterSpell:setCombatSpread": {
+    "prefix": "setCombatSpread",
+    "body": [
+      "${1:monsterSpell}:setCombatSpread(${2:spread})$3"
+    ],
+    "description": "MonsterSpell:setCombatSpread"
+  },
+  "MonsterSpell:setCombatRadius": {
+    "prefix": "setCombatRadius",
+    "body": [
+      "${1:monsterSpell}:setCombatRadius(${2:radius})$3"
+    ],
+    "description": "MonsterSpell:setCombatRadius"
+  },
+  "MonsterSpell:setConditionType": {
+    "prefix": "setConditionType",
+    "body": [
+      "${1:monsterSpell}:setConditionType(${2:type})$3"
+    ],
+    "description": "MonsterSpell:setConditionType"
+  },
+  "MonsterSpell:setConditionDamage": {
+    "prefix": "setConditionDamage",
+    "body": [
+      "${1:monsterSpell}:setConditionDamage(${2:min}, ${3:max}, ${4:start})$5"
+    ],
+    "description": "MonsterSpell:setConditionDamage"
+  },
+  "MonsterSpell:setConditionSpeedChange": {
+    "prefix": "setConditionSpeedChange",
+    "body": [
+      "${1:monsterSpell}:setConditionSpeedChange(${2:minSpeed[}, ${3:maxSpeed]})$4"
+    ],
+    "description": "MonsterSpell:setConditionSpeedChange"
+  },
+  "MonsterSpell:setConditionDuration": {
+    "prefix": "setConditionDuration",
+    "body": [
+      "${1:monsterSpell}:setConditionDuration(${2:duration})$3"
+    ],
+    "description": "MonsterSpell:setConditionDuration"
+  },
+  "MonsterSpell:setConditionDrunkenness": {
+    "prefix": "setConditionDrunkenness",
+    "body": [
+      "${1:monsterSpell}:setConditionDrunkenness(${2:drunkenness})$3"
+    ],
+    "description": "MonsterSpell:setConditionDrunkenness"
+  },
+  "MonsterSpell:setConditionTickInterval": {
+    "prefix": "setConditionTickInterval",
+    "body": [
+      "${1:monsterSpell}:setConditionTickInterval(${2:interval})$3"
+    ],
+    "description": "MonsterSpell:setConditionTickInterval"
+  },
+  "MonsterSpell:setCombatShootEffect": {
+    "prefix": "setCombatShootEffect",
+    "body": [
+      "${1:monsterSpell}:setCombatShootEffect(${2:effect})$3"
+    ],
+    "description": "MonsterSpell:setCombatShootEffect"
+  },
+  "MonsterSpell:setCombatEffect": {
+    "prefix": "setCombatEffect",
+    "body": [
+      "${1:monsterSpell}:setCombatEffect(${2:effect})$3"
+    ],
+    "description": "MonsterSpell:setCombatEffect"
+  },
+  "Party": {
+    "prefix": "Party",
+    "body": [
+      "Party(${1:userdata})$2"
+    ],
+    "description": "Party"
+  },
+  "Party:disband": {
+    "prefix": "disband",
+    "body": [
+      "${1:party}:disband()$2"
+    ],
+    "description": "Party:disband"
+  },
+  "Party:getLeader": {
+    "prefix": "getLeader",
+    "body": [
+      "${1:party}:getLeader()$2"
+    ],
+    "description": "Party:getLeader"
+  },
+  "Party:setLeader": {
+    "prefix": "setLeader",
+    "body": [
+      "${1:party}:setLeader(${2:player})$3"
+    ],
+    "description": "Party:setLeader"
+  },
+  "Party:getMembers": {
+    "prefix": "getMembers",
+    "body": [
+      "${1:party}:getMembers()$2"
+    ],
+    "description": "Party:getMembers"
+  },
+  "Party:getMemberCount": {
+    "prefix": "getMemberCount",
+    "body": [
+      "${1:party}:getMemberCount()$2"
+    ],
+    "description": "Party:getMemberCount"
+  },
+  "Party:getInvitees": {
+    "prefix": "getInvitees",
+    "body": [
+      "${1:party}:getInvitees()$2"
+    ],
+    "description": "Party:getInvitees"
+  },
+  "Party:getInviteeCount": {
+    "prefix": "getInviteeCount",
+    "body": [
+      "${1:party}:getInviteeCount()$2"
+    ],
+    "description": "Party:getInviteeCount"
+  },
+  "Party:addInvite": {
+    "prefix": "addInvite",
+    "body": [
+      "${1:party}:addInvite(${2:player})$3"
+    ],
+    "description": "Party:addInvite"
+  },
+  "Party:removeInvite": {
+    "prefix": "removeInvite",
+    "body": [
+      "${1:party}:removeInvite(${2:player})$3"
+    ],
+    "description": "Party:removeInvite"
+  },
+  "Party:addMember": {
+    "prefix": "addMember",
+    "body": [
+      "${1:party}:addMember(${2:player})$3"
+    ],
+    "description": "Party:addMember"
+  },
+  "Party:removeMember": {
+    "prefix": "removeMember",
+    "body": [
+      "${1:party}:removeMember(${2:player})$3"
+    ],
+    "description": "Party:removeMember"
+  },
+  "Party:isSharedExperienceActive": {
+    "prefix": "isSharedExperienceActive",
+    "body": [
+      "${1:party}:isSharedExperienceActive()$2"
+    ],
+    "description": "Party:isSharedExperienceActive"
+  },
+  "Party:isSharedExperienceEnabled": {
+    "prefix": "isSharedExperienceEnabled",
+    "body": [
+      "${1:party}:isSharedExperienceEnabled()$2"
+    ],
+    "description": "Party:isSharedExperienceEnabled"
+  },
+  "Party:shareExperience": {
+    "prefix": "shareExperience",
+    "body": [
+      "${1:party}:shareExperience(${2:experience})$3"
+    ],
+    "description": "Party:shareExperience"
+  },
+  "Party:setSharedExperience": {
+    "prefix": "setSharedExperience",
+    "body": [
+      "${1:party}:setSharedExperience(${2:active})$3"
+    ],
+    "description": "Party:setSharedExperience"
+  },
+  "Spell": {
+    "prefix": "Spell",
+    "body": [
+      "Spell(${1:type})$2"
+    ],
+    "description": "Spell"
+  },
+  "Spell:onCastSpell": {
+    "prefix": "onCastSpell",
+    "body": [
+      "${1:spell}:onCastSpell(${2:callback})$3"
+    ],
+    "description": "Spell:onCastSpell"
+  },
+  "Spell:register": {
+    "prefix": "register",
+    "body": [
+      "${1:spell}:register()$2"
+    ],
+    "description": "Spell:register"
+  },
+  "Spell:name": {
+    "prefix": "name",
+    "body": [
+      "${1:spell}:name(${2:name})$3"
+    ],
+    "description": "Spell:name"
+  },
+  "Spell:id": {
+    "prefix": "id",
+    "body": [
+      "${1:spell}:id(${2:id})$3"
+    ],
+    "description": "Spell:id"
+  },
+  "Spell:cooldown": {
+    "prefix": "cooldown",
+    "body": [
+      "${1:spell}:cooldown(${2:cooldown})$3"
+    ],
+    "description": "Spell:cooldown"
+  },
+  "Spell:group": {
+    "prefix": "group",
+    "body": [
+      "${1:spell}:group(${2:primaryGroup[}, ${3:secondaryGroup]})$4"
+    ],
+    "description": "Spell:group"
+  },
+  "Spell:groupCooldown": {
+    "prefix": "groupCooldown",
+    "body": [
+      "${1:spell}:groupCooldown(${2:primaryGroupCd[}, ${3:secondaryGroupCd]})$4"
+    ],
+    "description": "Spell:groupCooldown"
+  },
+  "Spell:level": {
+    "prefix": "level",
+    "body": [
+      "${1:spell}:level(${2:lvl})$3"
+    ],
+    "description": "Spell:level"
+  },
+  "Spell:magicLevel": {
+    "prefix": "magicLevel",
+    "body": [
+      "${1:spell}:magicLevel(${2:lvl})$3"
+    ],
+    "description": "Spell:magicLevel"
+  },
+  "Spell:mana": {
+    "prefix": "mana",
+    "body": [
+      "${1:spell}:mana(${2:mana})$3"
+    ],
+    "description": "Spell:mana"
+  },
+  "Spell:manaPercent": {
+    "prefix": "manaPercent",
+    "body": [
+      "${1:spell}:manaPercent(${2:percent})$3"
+    ],
+    "description": "Spell:manaPercent"
+  },
+  "Spell:soul": {
+    "prefix": "soul",
+    "body": [
+      "${1:spell}:soul(${2:soul})$3"
+    ],
+    "description": "Spell:soul"
+  },
+  "Spell:range": {
+    "prefix": "range",
+    "body": [
+      "${1:spell}:range(${2:range})$3"
+    ],
+    "description": "Spell:range"
+  },
+  "Spell:isPremium": {
+    "prefix": "isPremium",
+    "body": [
+      "${1:spell}:isPremium(${2:bool})$3"
+    ],
+    "description": "Spell:isPremium"
+  },
+  "Spell:isEnabled": {
+    "prefix": "isEnabled",
+    "body": [
+      "${1:spell}:isEnabled(${2:bool})$3"
+    ],
+    "description": "Spell:isEnabled"
+  },
+  "Spell:needTarget": {
+    "prefix": "needTarget",
+    "body": [
+      "${1:spell}:needTarget(${2:bool})$3"
+    ],
+    "description": "Spell:needTarget"
+  },
+  "Spell:needWeapon": {
+    "prefix": "needWeapon",
+    "body": [
+      "${1:spell}:needWeapon(${2:bool})$3"
+    ],
+    "description": "Spell:needWeapon"
+  },
+  "Spell:needLearn": {
+    "prefix": "needLearn",
+    "body": [
+      "${1:spell}:needLearn(${2:bool})$3"
+    ],
+    "description": "Spell:needLearn"
+  },
+  "Spell:isSelfTarget": {
+    "prefix": "isSelfTarget",
+    "body": [
+      "${1:spell}:isSelfTarget(${2:bool})$3"
+    ],
+    "description": "Spell:isSelfTarget"
+  },
+  "Spell:isBlocking": {
+    "prefix": "isBlocking",
+    "body": [
+      "${1:spell}:isBlocking(${2:blockingSolid}, ${3:blockingCreature})$4"
+    ],
+    "description": "Spell:isBlocking"
+  },
+  "Spell:isAggressive": {
+    "prefix": "isAggressive",
+    "body": [
+      "${1:spell}:isAggressive(${2:bool})$3"
+    ],
+    "description": "Spell:isAggressive"
+  },
+  "Spell:isPzLock": {
+    "prefix": "isPzLock",
+    "body": [
+      "${1:spell}:isPzLock(${2:bool})$3"
+    ],
+    "description": "Spell:isPzLock"
+  },
+  "Spell:vocation": {
+    "prefix": "vocation",
+    "body": [
+      "${1:spell}:vocation(${2:vocation})$3"
+    ],
+    "description": "Spell:vocation"
+  },
+  "Spell:words": {
+    "prefix": "words",
+    "body": [
+      "${1:spell}:words(${2:words[}, ${3:separator = \"\"]})$4"
+    ],
+    "description": "Spell:words"
+  },
+  "Spell:needDirection": {
+    "prefix": "needDirection",
+    "body": [
+      "${1:spell}:needDirection(${2:bool})$3"
+    ],
+    "description": "Spell:needDirection"
+  },
+  "Spell:hasParams": {
+    "prefix": "hasParams",
+    "body": [
+      "${1:spell}:hasParams(${2:bool})$3"
+    ],
+    "description": "Spell:hasParams"
+  },
+  "Spell:hasPlayerNameParam": {
+    "prefix": "hasPlayerNameParam",
+    "body": [
+      "${1:spell}:hasPlayerNameParam(${2:bool})$3"
+    ],
+    "description": "Spell:hasPlayerNameParam"
+  },
+  "Spell:needCasterTargetOrDirection": {
+    "prefix": "needCasterTargetOrDirection",
+    "body": [
+      "${1:spell}:needCasterTargetOrDirection(${2:bool})$3"
+    ],
+    "description": "Spell:needCasterTargetOrDirection"
+  },
+  "Spell:blockWalls": {
+    "prefix": "blockWalls",
+    "body": [
+      "${1:spell}:blockWalls(${2:bool})$3"
+    ],
+    "description": "Spell:blockWalls"
+  },
+  "Spell:runeLevel": {
+    "prefix": "runeLevel",
+    "body": [
+      "${1:spell}:runeLevel(${2:level})$3"
+    ],
+    "description": "Spell:runeLevel"
+  },
+  "Spell:runeMagicLevel": {
+    "prefix": "runeMagicLevel",
+    "body": [
+      "${1:spell}:runeMagicLevel(${2:magLevel})$3"
+    ],
+    "description": "Spell:runeMagicLevel"
+  },
+  "Spell:runeId": {
+    "prefix": "runeId",
+    "body": [
+      "${1:spell}:runeId(${2:id})$3"
+    ],
+    "description": "Spell:runeId"
+  },
+  "Spell:charges": {
+    "prefix": "charges",
+    "body": [
+      "${1:spell}:charges(${2:charges})$3"
+    ],
+    "description": "Spell:charges"
+  },
+  "Spell:allowFarUse": {
+    "prefix": "allowFarUse",
+    "body": [
+      "${1:spell}:allowFarUse(${2:bool})$3"
+    ],
+    "description": "Spell:allowFarUse"
+  },
+  "Spell:checkFloor": {
+    "prefix": "checkFloor",
+    "body": [
+      "${1:spell}:checkFloor(${2:bool})$3"
+    ],
+    "description": "Spell:checkFloor"
+  },
+  "Action": {
+    "prefix": "Action",
+    "body": [
+      "Action()$1"
+    ],
+    "description": "Action"
+  },
+  "Action:onUse": {
+    "prefix": "onUse",
+    "body": [
+      "${1:action}:onUse(${2:callback})$3"
+    ],
+    "description": "Action:onUse"
+  },
+  "Action:register": {
+    "prefix": "register",
+    "body": [
+      "${1:action}:register()$2"
+    ],
+    "description": "Action:register"
+  },
+  "Action:id": {
+    "prefix": "id",
+    "body": [
+      "${1:action}:id(${2:ids})$3"
+    ],
+    "description": "Action:id"
+  },
+  "Action:aid": {
+    "prefix": "aid",
+    "body": [
+      "${1:action}:aid(${2:aids})$3"
+    ],
+    "description": "Action:aid"
+  },
+  "Action:uid": {
+    "prefix": "uid",
+    "body": [
+      "${1:action}:uid(${2:uids})$3"
+    ],
+    "description": "Action:uid"
+  },
+  "Action:allowFarUse": {
+    "prefix": "allowFarUse",
+    "body": [
+      "${1:action}:allowFarUse(${2:bool})$3"
+    ],
+    "description": "Action:allowFarUse"
+  },
+  "Action:blockWalls": {
+    "prefix": "blockWalls",
+    "body": [
+      "${1:action}:blockWalls(${2:bool})$3"
+    ],
+    "description": "Action:blockWalls"
+  },
+  "Action:checkFloor": {
+    "prefix": "checkFloor",
+    "body": [
+      "${1:action}:checkFloor(${2:bool})$3"
+    ],
+    "description": "Action:checkFloor"
+  },
+  "TalkAction": {
+    "prefix": "TalkAction",
+    "body": [
+      "TalkAction(${1:words})$2"
+    ],
+    "description": "TalkAction"
+  },
+  "TalkAction:onSay": {
+    "prefix": "onSay",
+    "body": [
+      "${1:talkAction}:onSay(${2:callback})$3"
+    ],
+    "description": "TalkAction:onSay"
+  },
+  "TalkAction:register": {
+    "prefix": "register",
+    "body": [
+      "${1:talkAction}:register()$2"
+    ],
+    "description": "TalkAction:register"
+  },
+  "TalkAction:separator": {
+    "prefix": "separator",
+    "body": [
+      "${1:talkAction}:separator(${2:sep})$3"
+    ],
+    "description": "TalkAction:separator"
+  },
+  "TalkAction:access": {
+    "prefix": "access",
+    "body": [
+      "${1:talkAction}:access(${2:needAccess = false})$3"
+    ],
+    "description": "TalkAction:access"
+  },
+  "TalkAction:accountType": {
+    "prefix": "accountType",
+    "body": [
+      "${1:talkAction}:accountType(${2:AccountType_t = ACCOUNT_TYPE_NORMAL})$3"
+    ],
+    "description": "TalkAction:accountType"
+  },
+  "CreatureEvent": {
+    "prefix": "CreatureEvent",
+    "body": [
+      "CreatureEvent(${1:eventName})$2"
+    ],
+    "description": "CreatureEvent"
+  },
+  "Creatureevent:type": {
+    "prefix": "type",
+    "body": [
+      "${1:creatureevent}:type(${2:callback})$3"
+    ],
+    "description": "Creatureevent:type"
+  },
+  "Creatureevent:register": {
+    "prefix": "register",
+    "body": [
+      "${1:creatureevent}:register()$2"
+    ],
+    "description": "Creatureevent:register"
+  },
+  "Creatureevent:onLogin": {
+    "prefix": "onLogin",
+    "body": [
+      "${1:creatureevent}:onLogin()$2"
+    ],
+    "description": "Creatureevent:onLogin"
+  },
+  "Creatureevent:onLogout": {
+    "prefix": "onLogout",
+    "body": [
+      "${1:creatureevent}:onLogout()$2"
+    ],
+    "description": "Creatureevent:onLogout"
+  },
+  "MoveEvent": {
+    "prefix": "MoveEvent",
+    "body": [
+      "MoveEvent()$1"
+    ],
+    "description": "MoveEvent"
+  },
+  "Moveevent:type": {
+    "prefix": "type",
+    "body": [
+      "${1:moveevent}:type(${2:callback})$3"
+    ],
+    "description": "Moveevent:type"
+  },
+  "Moveevent:register": {
+    "prefix": "register",
+    "body": [
+      "${1:moveevent}:register()$2"
+    ],
+    "description": "Moveevent:register"
+  },
+  "Moveevent:onEquip": {
+    "prefix": "onEquip",
+    "body": [
+      "${1:moveevent}:onEquip()$2"
+    ],
+    "description": "Moveevent:onEquip"
+  },
+  "Moveevent:onDeEquip": {
+    "prefix": "onDeEquip",
+    "body": [
+      "${1:moveevent}:onDeEquip()$2"
+    ],
+    "description": "Moveevent:onDeEquip"
+  },
+  "Moveevent:slot": {
+    "prefix": "slot",
+    "body": [
+      "${1:moveevent}:slot(${2:slot})$3"
+    ],
+    "description": "Moveevent:slot"
+  },
+  "Moveevent:level": {
+    "prefix": "level",
+    "body": [
+      "${1:moveevent}:level(${2:lvl})$3"
+    ],
+    "description": "Moveevent:level"
+  },
+  "Moveevent:magicLevel": {
+    "prefix": "magicLevel",
+    "body": [
+      "${1:moveevent}:magicLevel(${2:lvl})$3"
+    ],
+    "description": "Moveevent:magicLevel"
+  },
+  "Moveevent:premium": {
+    "prefix": "premium",
+    "body": [
+      "${1:moveevent}:premium(${2:bool})$3"
+    ],
+    "description": "Moveevent:premium"
+  },
+  "Moveevent:vocation": {
+    "prefix": "vocation",
+    "body": [
+      "${1:moveevent}:vocation(${2:vocName[}, ${3:showInDescription = false}, ${4:lastVoc = false]})$5"
+    ],
+    "description": "Moveevent:vocation"
+  },
+  "Moveevent:tileItem": {
+    "prefix": "tileItem",
+    "body": [
+      "${1:moveevent}:tileItem(${2:bool})$3"
+    ],
+    "description": "Moveevent:tileItem"
+  },
+  "Moveevent:id": {
+    "prefix": "id",
+    "body": [
+      "${1:moveevent}:id(${2:ids})$3"
+    ],
+    "description": "Moveevent:id"
+  },
+  "Moveevent:aid": {
+    "prefix": "aid",
+    "body": [
+      "${1:moveevent}:aid(${2:ids})$3"
+    ],
+    "description": "Moveevent:aid"
+  },
+  "Moveevent:uid": {
+    "prefix": "uid",
+    "body": [
+      "${1:moveevent}:uid(${2:ids})$3"
+    ],
+    "description": "Moveevent:uid"
+  },
+  "Moveevent:position": {
+    "prefix": "position",
+    "body": [
+      "${1:moveevent}:position(${2:positions})$3"
+    ],
+    "description": "Moveevent:position"
+  },
+  "GlobalEvent": {
+    "prefix": "GlobalEvent",
+    "body": [
+      "GlobalEvent(${1:eventName})$2"
+    ],
+    "description": "GlobalEvent"
+  },
+  "Globalevent:type": {
+    "prefix": "type",
+    "body": [
+      "${1:globalevent}:type(${2:callback})$3"
+    ],
+    "description": "Globalevent:type"
+  },
+  "Globalevent:register": {
+    "prefix": "register",
+    "body": [
+      "${1:globalevent}:register()$2"
+    ],
+    "description": "Globalevent:register"
+  },
+  "Globalevent:onThink / record / etc. ": {
+    "prefix": "onThink / record / etc. ",
+    "body": [
+      "${1:globalevent}:onThink / record / etc. (${2:callback})$3"
+    ],
+    "description": "Globalevent:onThink / record / etc. "
+  },
+  "Globalevent:time": {
+    "prefix": "time",
+    "body": [
+      "${1:globalevent}:time(${2:time})$3"
+    ],
+    "description": "Globalevent:time"
+  },
+  "Globalevent:interval": {
+    "prefix": "interval",
+    "body": [
+      "${1:globalevent}:interval(${2:interval})$3"
+    ],
+    "description": "Globalevent:interval"
+  },
+  "Weapon": {
+    "prefix": "Weapon",
+    "body": [
+      "Weapon(${1:type})$2"
+    ],
+    "description": "Weapon"
+  },
+  "Weapon:action": {
+    "prefix": "action",
+    "body": [
+      "${1:weapon}:action(${2:callback})$3"
+    ],
+    "description": "Weapon:action"
+  },
+  "Weapon:register": {
+    "prefix": "register",
+    "body": [
+      "${1:weapon}:register()$2"
+    ],
+    "description": "Weapon:register"
+  },
+  "Weapon:onUseWeapon": {
+    "prefix": "onUseWeapon",
+    "body": [
+      "${1:weapon}:onUseWeapon(${2:callback})$3"
+    ],
+    "description": "Weapon:onUseWeapon"
+  },
+  "Weapon:wieldedUnproperly": {
+    "prefix": "wieldedUnproperly",
+    "body": [
+      "${1:weapon}:wieldedUnproperly(${2:bool})$3"
+    ],
+    "description": "Weapon:wieldedUnproperly"
+  },
+  "Weapon:level": {
+    "prefix": "level",
+    "body": [
+      "${1:weapon}:level(${2:lvl})$3"
+    ],
+    "description": "Weapon:level"
+  },
+  "Weapon:magicLevel": {
+    "prefix": "magicLevel",
+    "body": [
+      "${1:weapon}:magicLevel(${2:lvl})$3"
+    ],
+    "description": "Weapon:magicLevel"
+  },
+  "Weapon:mana": {
+    "prefix": "mana",
+    "body": [
+      "${1:weapon}:mana(${2:mana})$3"
+    ],
+    "description": "Weapon:mana"
+  },
+  "Weapon:manaPercent": {
+    "prefix": "manaPercent",
+    "body": [
+      "${1:weapon}:manaPercent(${2:percent})$3"
+    ],
+    "description": "Weapon:manaPercent"
+  },
+  "Weapon:health": {
+    "prefix": "health",
+    "body": [
+      "${1:weapon}:health(${2:health})$3"
+    ],
+    "description": "Weapon:health"
+  },
+  "Weapon:healthPercent": {
+    "prefix": "healthPercent",
+    "body": [
+      "${1:weapon}:healthPercent(${2:percent})$3"
+    ],
+    "description": "Weapon:healthPercent"
+  },
+  "Weapon:soul": {
+    "prefix": "soul",
+    "body": [
+      "${1:weapon}:soul(${2:soul})$3"
+    ],
+    "description": "Weapon:soul"
+  },
+  "Weapon:breakChance": {
+    "prefix": "breakChance",
+    "body": [
+      "${1:weapon}:breakChance(${2:percent})$3"
+    ],
+    "description": "Weapon:breakChance"
+  },
+  "Weapon:damage": {
+    "prefix": "damage",
+    "body": [
+      "${1:weapon}:damage(${2:damage[min}, ${3:max]})$4"
+    ],
+    "description": "Weapon:damage"
+  },
+  "Weapon:element": {
+    "prefix": "element",
+    "body": [
+      "${1:weapon}:element(${2:combatType})$3"
+    ],
+    "description": "Weapon:element"
+  },
+  "Weapon:premium": {
+    "prefix": "premium",
+    "body": [
+      "${1:weapon}:premium(${2:bool})$3"
+    ],
+    "description": "Weapon:premium"
+  },
+  "Weapon:vocation": {
+    "prefix": "vocation",
+    "body": [
+      "${1:weapon}:vocation(${2:vocName[}, ${3:showInDescription = false}, ${4:lastVoc = false]})$5"
+    ],
+    "description": "Weapon:vocation"
+  },
+  "Weapon:id": {
+    "prefix": "id",
+    "body": [
+      "${1:weapon}:id(${2:id})$3"
+    ],
+    "description": "Weapon:id"
+  },
+  "Weapon:attack": {
+    "prefix": "attack",
+    "body": [
+      "${1:weapon}:attack(${2:atk})$3"
+    ],
+    "description": "Weapon:attack"
+  },
+  "Weapon:defense": {
+    "prefix": "defense",
+    "body": [
+      "${1:weapon}:defense(${2:defense[}, ${3:extraDefense]})$4"
+    ],
+    "description": "Weapon:defense"
+  },
+  "Weapon:range": {
+    "prefix": "range",
+    "body": [
+      "${1:weapon}:range(${2:range})$3"
+    ],
+    "description": "Weapon:range"
+  },
+  "Weapon:charges": {
+    "prefix": "charges",
+    "body": [
+      "${1:weapon}:charges(${2:charges[}, ${3:showCharges = true]})$4"
+    ],
+    "description": "Weapon:charges"
+  },
+  "Weapon:duration": {
+    "prefix": "duration",
+    "body": [
+      "${1:weapon}:duration(${2:duration[}, ${3:showDuration = true]})$4"
+    ],
+    "description": "Weapon:duration"
+  },
+  "Weapon:decayTo": {
+    "prefix": "decayTo",
+    "body": [
+      "${1:weapon}:decayTo(${2:[itemid = 0]})$3"
+    ],
+    "description": "Weapon:decayTo"
+  },
+  "Weapon:transformEquipTo": {
+    "prefix": "transformEquipTo",
+    "body": [
+      "${1:weapon}:transformEquipTo(${2:itemid})$3"
+    ],
+    "description": "Weapon:transformEquipTo"
+  },
+  "Weapon:transformDeEquipTo": {
+    "prefix": "transformDeEquipTo",
+    "body": [
+      "${1:weapon}:transformDeEquipTo(${2:itemid})$3"
+    ],
+    "description": "Weapon:transformDeEquipTo"
+  },
+  "Weapon:shootType": {
+    "prefix": "shootType",
+    "body": [
+      "${1:weapon}:shootType(${2:type})$3"
+    ],
+    "description": "Weapon:shootType"
+  },
+  "Weapon:slotType": {
+    "prefix": "slotType",
+    "body": [
+      "${1:weapon}:slotType(${2:slot})$3"
+    ],
+    "description": "Weapon:slotType"
+  },
+  "Weapon:ammoType": {
+    "prefix": "ammoType",
+    "body": [
+      "${1:weapon}:ammoType(${2:type})$3"
+    ],
+    "description": "Weapon:ammoType"
+  },
+  "Weapon:hitChance": {
+    "prefix": "hitChance",
+    "body": [
+      "${1:weapon}:hitChance(${2:chance})$3"
+    ],
+    "description": "Weapon:hitChance"
+  },
+  "Weapon:maxHitChance": {
+    "prefix": "maxHitChance",
+    "body": [
+      "${1:weapon}:maxHitChance(${2:max})$3"
+    ],
+    "description": "Weapon:maxHitChance"
+  },
+  "Weapon:extraElement": {
+    "prefix": "extraElement",
+    "body": [
+      "${1:weapon}:extraElement(${2:atk}, ${3:combatType})$4"
+    ],
+    "description": "Weapon:extraElement"
+  },
+  "getAchievementInfoById": {
+    "prefix": "getAchievementInfoById",
+    "body": [
+      "getAchievementInfoById(${1:achievement_id})$2"
+    ],
+    "description": "getAchievementInfoById"
+  },
+  "getAchievementInfoByName": {
+    "prefix": "getAchievementInfoByName",
+    "body": [
+      "getAchievementInfoByName(${1:achievement_name})$2"
+    ],
+    "description": "getAchievementInfoByName"
+  },
+  "getSecretAchievements": {
+    "prefix": "getSecretAchievements",
+    "body": [
+      "getSecretAchievements()$1"
+    ],
+    "description": "getSecretAchievements"
+  },
+  "getPublicAchievements": {
+    "prefix": "getPublicAchievements",
+    "body": [
+      "getPublicAchievements()$1"
+    ],
+    "description": "getPublicAchievements"
+  },
+  "getAchievements": {
+    "prefix": "getAchievements",
+    "body": [
+      "getAchievements()$1"
+    ],
+    "description": "getAchievements"
+  },
+  "Player:addAchievement": {
+    "prefix": "addAchievement",
+    "body": [
+      "${1:Player}:addAchievement(${2:achievement_id/name[}, ${3:hideMsg]})$4"
+    ],
+    "description": "Player:addAchievement"
+  },
+  "Player:removeAchievement": {
+    "prefix": "removeAchievement",
+    "body": [
+      "${1:Player}:removeAchievement(${2:achievement_id/name})$3"
+    ],
+    "description": "Player:removeAchievement"
+  },
+  "Player:hasAchievement": {
+    "prefix": "hasAchievement",
+    "body": [
+      "${1:Player}:hasAchievement(${2:achievement_id/name})$3"
+    ],
+    "description": "Player:hasAchievement"
+  },
+  "Player:addAllAchievements": {
+    "prefix": "addAllAchievements",
+    "body": [
+      "${1:Player}:addAllAchievements(${2:[hideMsg]})$3"
+    ],
+    "description": "Player:addAllAchievements"
+  },
+  "Player:removeAllAchievements": {
+    "prefix": "removeAllAchievements",
+    "body": [
+      "${1:Player}:removeAllAchievements()$2"
+    ],
+    "description": "Player:removeAllAchievements"
+  },
+  "Player:getSecretAchievements": {
+    "prefix": "getSecretAchievements",
+    "body": [
+      "${1:Player}:getSecretAchievements()$2"
+    ],
+    "description": "Player:getSecretAchievements"
+  },
+  "Player:getPublicAchievements": {
+    "prefix": "getPublicAchievements",
+    "body": [
+      "${1:Player}:getPublicAchievements()$2"
+    ],
+    "description": "Player:getPublicAchievements"
+  },
+  "Player:getAchievements": {
+    "prefix": "getAchievements",
+    "body": [
+      "${1:Player}:getAchievements()$2"
+    ],
+    "description": "Player:getAchievements"
+  },
+  "isAchievementSecret": {
+    "prefix": "isAchievementSecret",
+    "body": [
+      "isAchievementSecret(${1:achievement_id/name})$2"
+    ],
+    "description": "isAchievementSecret"
+  },
+  "Player:getAchievementPoints": {
+    "prefix": "getAchievementPoints",
+    "body": [
+      "${1:Player}:getAchievementPoints()$2"
+    ],
+    "description": "Player:getAchievementPoints"
+  },
+  "Player:addAchievementProgress": {
+    "prefix": "addAchievementProgress",
+    "body": [
+      "${1:Player}:addAchievementProgress()$2"
+    ],
+    "description": "Player:addAchievementProgress"
+  },
+  "Combat:getPositions": {
+    "prefix": "getPositions",
+    "body": [
+      "${1:Combat}:getPositions(${2:creature}, ${3:variant})$4"
+    ],
+    "description": "Combat:getPositions"
+  },
+  "Combat:getTargets": {
+    "prefix": "getTargets",
+    "body": [
+      "${1:Combat}:getTargets(${2:creature}, ${3:variant})$4"
+    ],
+    "description": "Combat:getTargets"
+  },
+  "Container:isContainer": {
+    "prefix": "isContainer",
+    "body": [
+      "${1:container}:isContainer()$2"
+    ],
+    "description": "Container:isContainer"
+  },
+  "Container:createLootItem": {
+    "prefix": "createLootItem",
+    "body": [
+      "${1:container}:createLootItem(${2:item})$3"
+    ],
+    "description": "Container:createLootItem"
+  },
+  "Creature:getClosestFreePosition": {
+    "prefix": "getClosestFreePosition",
+    "body": [
+      "${1:creature}:getClosestFreePosition(${2:self}, ${3:position}, ${4:maxRadius}, ${5:mustBeReachable})$6"
+    ],
+    "description": "Creature:getClosestFreePosition"
+  },
+  "Creature:getPlayer": {
+    "prefix": "getPlayer",
+    "body": [
+      "${1:creature}:getPlayer(${2:self})$3"
+    ],
+    "description": "Creature:getPlayer"
+  },
+  "Creature:isContainer": {
+    "prefix": "isContainer",
+    "body": [
+      "${1:creature}:isContainer(${2:self})$3"
+    ],
+    "description": "Creature:isContainer"
+  },
+  "Creature:isItem": {
+    "prefix": "isItem",
+    "body": [
+      "${1:creature}:isItem(${2:self})$3"
+    ],
+    "description": "Creature:isItem"
+  },
+  "Creature:isMonster": {
+    "prefix": "isMonster",
+    "body": [
+      "${1:creature}:isMonster(${2:self})$3"
+    ],
+    "description": "Creature:isMonster"
+  },
+  "Creature:isNpc": {
+    "prefix": "isNpc",
+    "body": [
+      "${1:creature}:isNpc(${2:self})$3"
+    ],
+    "description": "Creature:isNpc"
+  },
+  "Creature:isPlayer": {
+    "prefix": "isPlayer",
+    "body": [
+      "${1:creature}:isPlayer(${2:self})$3"
+    ],
+    "description": "Creature:isPlayer"
+  },
+  "Creature:isTeleport": {
+    "prefix": "isTeleport",
+    "body": [
+      "${1:creature}:isTeleport(${2:self})$3"
+    ],
+    "description": "Creature:isTeleport"
+  },
+  "Creature:isTile": {
+    "prefix": "isTile",
+    "body": [
+      "${1:creature}:isTile(${2:self})$3"
+    ],
+    "description": "Creature:isTile"
+  },
+  "Creature:setMonsterOutfit": {
+    "prefix": "setMonsterOutfit",
+    "body": [
+      "${1:creature}:setMonsterOutfit(${2:monster}, ${3:time})$4"
+    ],
+    "description": "Creature:setMonsterOutfit"
+  },
+  "Creature:setItemOutfit": {
+    "prefix": "setItemOutfit",
+    "body": [
+      "${1:creature}:setItemOutfit(${2:item}, ${3:time})$4"
+    ],
+    "description": "Creature:setItemOutfit"
+  },
+  "Creature:addSummon": {
+    "prefix": "addSummon",
+    "body": [
+      "${1:creature}:addSummon(${2:monster})$3"
+    ],
+    "description": "Creature:addSummon"
+  },
+  "Creature:removeSummon": {
+    "prefix": "removeSummon",
+    "body": [
+      "${1:creature}:removeSummon(${2:monster})$3"
+    ],
+    "description": "Creature:removeSummon"
+  },
+  "Creature:addDamageCondition": {
+    "prefix": "addDamageCondition",
+    "body": [
+      "${1:creature}:addDamageCondition(${2:target}, ${3:type}, ${4:list}, ${5:damage}, ${6:period}, ${7:rounds})$8"
+    ],
+    "description": "Creature:addDamageCondition"
+  },
+  "Creature:canAccessPz": {
+    "prefix": "canAccessPz",
+    "body": [
+      "${1:creature}:canAccessPz()$2"
+    ],
+    "description": "Creature:canAccessPz"
+  },
+  "Game.broadcastMessage": {
+    "prefix": "Game.broadcastMessage",
+    "body": [
+      "Game.broadcastMessage(${1:message}, ${2:messageType})$3"
+    ],
+    "description": "Game.broadcastMessage"
+  },
+  "Game.convertIpToString": {
+    "prefix": "Game.convertIpToString",
+    "body": [
+      "Game.convertIpToString(${1:ip})$2"
+    ],
+    "description": "Game.convertIpToString"
+  },
+  "Game.getReverseDirection": {
+    "prefix": "Game.getReverseDirection",
+    "body": [
+      "Game.getReverseDirection(${1:direction})$2"
+    ],
+    "description": "Game.getReverseDirection"
+  },
+  "Game.getSkillType": {
+    "prefix": "Game.getSkillType",
+    "body": [
+      "Game.getSkillType(${1:weaponType})$2"
+    ],
+    "description": "Game.getSkillType"
+  },
+  "Game.getStorageValue": {
+    "prefix": "Game.getStorageValue",
+    "body": [
+      "Game.getStorageValue(${1:key})$2"
+    ],
+    "description": "Game.getStorageValue"
+  },
+  "Game.setStorageValue": {
+    "prefix": "Game.setStorageValue",
+    "body": [
+      "Game.setStorageValue(${1:key}, ${2:value})$3"
+    ],
+    "description": "Game.setStorageValue"
+  },
+  "Item:getType": {
+    "prefix": "getType",
+    "body": [
+      "${1:Item}:getType(${2:self})$3"
+    ],
+    "description": "Item:getType"
+  },
+  "Item:isContainer": {
+    "prefix": "isContainer",
+    "body": [
+      "${1:Item}:isContainer(${2:self})$3"
+    ],
+    "description": "Item:isContainer"
+  },
+  "Item:isCreature": {
+    "prefix": "isCreature",
+    "body": [
+      "${1:Item}:isCreature(${2:self})$3"
+    ],
+    "description": "Item:isCreature"
+  },
+  "Item:isMonster": {
+    "prefix": "isMonster",
+    "body": [
+      "${1:Item}:isMonster(${2:self})$3"
+    ],
+    "description": "Item:isMonster"
+  },
+  "Item:isNpc": {
+    "prefix": "isNpc",
+    "body": [
+      "${1:Item}:isNpc(${2:self})$3"
+    ],
+    "description": "Item:isNpc"
+  },
+  "Item:isPlayer": {
+    "prefix": "isPlayer",
+    "body": [
+      "${1:Item}:isPlayer(${2:self})$3"
+    ],
+    "description": "Item:isPlayer"
+  },
+  "Item:isTeleport": {
+    "prefix": "isTeleport",
+    "body": [
+      "${1:Item}:isTeleport(${2:self})$3"
+    ],
+    "description": "Item:isTeleport"
+  },
+  "Item:isTile": {
+    "prefix": "isTile",
+    "body": [
+      "${1:Item}:isTile(${2:self})$3"
+    ],
+    "description": "Item:isTile"
+  },
+  "ItemType:usesSlot": {
+    "prefix": "usesSlot",
+    "body": [
+      "${1:ItemType}:usesSlot(${2:self}, ${3:slot})$4"
+    ],
+    "description": "ItemType:usesSlot"
+  },
+  "Party:broadcastPartyLoot": {
+    "prefix": "broadcastPartyLoot",
+    "body": [
+      "${1:Party}:broadcastPartyLoot(${2:self}, ${3:text})$4"
+    ],
+    "description": "Party:broadcastPartyLoot"
+  },
+  "Player:feed": {
+    "prefix": "feed",
+    "body": [
+      "${1:Player}:feed(${2:self}, ${3:food})$4"
+    ],
+    "description": "Player:feed"
+  },
+  "Player:getClosestFreePosition": {
+    "prefix": "getClosestFreePosition",
+    "body": [
+      "${1:Player}:getClosestFreePosition(${2:self}, ${3:position}, ${4:extended})$5"
+    ],
+    "description": "Player:getClosestFreePosition"
+  },
+  "Player:getDepotItems": {
+    "prefix": "getDepotItems",
+    "body": [
+      "${1:Player}:getDepotItems(${2:self}, ${3:depotId})$4"
+    ],
+    "description": "Player:getDepotItems"
+  },
+  "Player:hasFlag": {
+    "prefix": "hasFlag",
+    "body": [
+      "${1:Player}:hasFlag(${2:self}, ${3:flag})$4"
+    ],
+    "description": "Player:hasFlag"
+  },
+  "Player:getLossPercent": {
+    "prefix": "getLossPercent",
+    "body": [
+      "${1:Player}:getLossPercent(${2:self})$3"
+    ],
+    "description": "Player:getLossPercent"
+  },
+  "Player:getPremiumTime": {
+    "prefix": "getPremiumTime",
+    "body": [
+      "${1:Player}:getPremiumTime(${2:self})$3"
+    ],
+    "description": "Player:getPremiumTime"
+  },
+  "Player:setPremiumTime": {
+    "prefix": "setPremiumTime",
+    "body": [
+      "${1:Player}:setPremiumTime(${2:self}, ${3:seconds})$4"
+    ],
+    "description": "Player:setPremiumTime"
+  },
+  "Player:addPremiumTime": {
+    "prefix": "addPremiumTime",
+    "body": [
+      "${1:Player}:addPremiumTime(${2:self}, ${3:seconds})$4"
+    ],
+    "description": "Player:addPremiumTime"
+  },
+  "Player:removePremiumTime": {
+    "prefix": "removePremiumTime",
+    "body": [
+      "${1:Player}:removePremiumTime(${2:self}, ${3:seconds})$4"
+    ],
+    "description": "Player:removePremiumTime"
+  },
+  "Player:getPremiumDays": {
+    "prefix": "getPremiumDays",
+    "body": [
+      "${1:Player}:getPremiumDays(${2:self})$3"
+    ],
+    "description": "Player:getPremiumDays"
+  },
+  "Player:addPremiumDays": {
+    "prefix": "addPremiumDays",
+    "body": [
+      "${1:Player}:addPremiumDays(${2:self}, ${3:days})$4"
+    ],
+    "description": "Player:addPremiumDays"
+  },
+  "Player:removePremiumDays": {
+    "prefix": "removePremiumDays",
+    "body": [
+      "${1:Player}:removePremiumDays(${2:self}, ${3:days})$4"
+    ],
+    "description": "Player:removePremiumDays"
+  },
+  "Player:isPremium": {
+    "prefix": "isPremium",
+    "body": [
+      "${1:Player}:isPremium(${2:self})$3"
+    ],
+    "description": "Player:isPremium"
+  },
+  "Player:sendCancelMessage": {
+    "prefix": "sendCancelMessage",
+    "body": [
+      "${1:Player}:sendCancelMessage(${2:self}, ${3:message})$4"
+    ],
+    "description": "Player:sendCancelMessage"
+  },
+  "Player:isUsingOtClient": {
+    "prefix": "isUsingOtClient",
+    "body": [
+      "${1:Player}:isUsingOtClient(${2:self})$3"
+    ],
+    "description": "Player:isUsingOtClient"
+  },
+  "Player:sendExtendedOpcode": {
+    "prefix": "sendExtendedOpcode",
+    "body": [
+      "${1:Player}:sendExtendedOpcode(${2:self}, ${3:opcode}, ${4:buffer})$5"
+    ],
+    "description": "Player:sendExtendedOpcode"
+  },
+  "Player:transferMoneyTo": {
+    "prefix": "transferMoneyTo",
+    "body": [
+      "${1:Player}:transferMoneyTo(${2:self}, ${3:target}, ${4:amount})$5"
+    ],
+    "description": "Player:transferMoneyTo"
+  },
+  "Player:canCarryMoney": {
+    "prefix": "canCarryMoney",
+    "body": [
+      "${1:Player}:canCarryMoney(${2:self}, ${3:amount})$4"
+    ],
+    "description": "Player:canCarryMoney"
+  },
+  "Player:withdrawMoney": {
+    "prefix": "withdrawMoney",
+    "body": [
+      "${1:Player}:withdrawMoney(${2:self}, ${3:amount})$4"
+    ],
+    "description": "Player:withdrawMoney"
+  },
+  "Player:depositMoney": {
+    "prefix": "depositMoney",
+    "body": [
+      "${1:Player}:depositMoney(${2:self}, ${3:amount})$4"
+    ],
+    "description": "Player:depositMoney"
+  },
+  "Player:removeTotalMoney": {
+    "prefix": "removeTotalMoney",
+    "body": [
+      "${1:Player}:removeTotalMoney(${2:self}, ${3:amount})$4"
+    ],
+    "description": "Player:removeTotalMoney"
+  },
+  "Player:addLevel": {
+    "prefix": "addLevel",
+    "body": [
+      "${1:Player}:addLevel(${2:self}, ${3:amount}, ${4:round})$5"
+    ],
+    "description": "Player:addLevel"
+  },
+  "Player:addMagicLevel": {
+    "prefix": "addMagicLevel",
+    "body": [
+      "${1:Player}:addMagicLevel(${2:self}, ${3:value})$4"
+    ],
+    "description": "Player:addMagicLevel"
+  },
+  "Player:addSkillLevel": {
+    "prefix": "addSkillLevel",
+    "body": [
+      "${1:Player}:addSkillLevel(${2:self}, ${3:skillId}, ${4:value})$5"
+    ],
+    "description": "Player:addSkillLevel"
+  },
+  "Player:addSkill": {
+    "prefix": "addSkill",
+    "body": [
+      "${1:Player}:addSkill(${2:self}, ${3:skillId}, ${4:value}, ${5:round})$6"
+    ],
+    "description": "Player:addSkill"
+  },
+  "Player:getWeaponType": {
+    "prefix": "getWeaponType",
+    "body": [
+      "${1:Player}:getWeaponType(${2:self})$3"
+    ],
+    "description": "Player:getWeaponType"
+  },
+  "Player:getTaskCredits": {
+    "prefix": "getTaskCredits",
+    "body": [
+      "${1:Player}:getTaskCredits()$2"
+    ],
+    "description": "Player:getTaskCredits"
+  },
+  "Player:setTaskCredits": {
+    "prefix": "setTaskCredits",
+    "body": [
+      "${1:Player}:setTaskCredits(${2:credits})$3"
+    ],
+    "description": "Player:setTaskCredits"
+  },
+  "Player:getPremiumPoints": {
+    "prefix": "getPremiumPoints",
+    "body": [
+      "${1:Player}:getPremiumPoints()$2"
+    ],
+    "description": "Player:getPremiumPoints"
+  },
+  "Player:setPremiumPoints": {
+    "prefix": "setPremiumPoints",
+    "body": [
+      "${1:Player}:setPremiumPoints(${2:points})$3"
+    ],
+    "description": "Player:setPremiumPoints"
+  },
+  "Position:getNextPosition": {
+    "prefix": "getNextPosition",
+    "body": [
+      "${1:Position}:getNextPosition(${2:direction}, ${3:steps})$4"
+    ],
+    "description": "Position:getNextPosition"
+  },
+  "Position:moveUpstairs": {
+    "prefix": "moveUpstairs",
+    "body": [
+      "${1:Position}:moveUpstairs()$2"
+    ],
+    "description": "Position:moveUpstairs"
+  },
+  "Position:isInRange": {
+    "prefix": "isInRange",
+    "body": [
+      "${1:Position}:isInRange(${2:from}, ${3:to})$4"
+    ],
+    "description": "Position:isInRange"
+  },
+  "Position:notifySummonAppear": {
+    "prefix": "notifySummonAppear",
+    "body": [
+      "${1:Position}:notifySummonAppear(${2:summon})$3"
+    ],
+    "description": "Position:notifySummonAppear"
+  },
+  "Teleport:isTeleport": {
+    "prefix": "isTeleport",
+    "body": [
+      "${1:Teleport}:isTeleport(${2:self})$3"
+    ],
+    "description": "Teleport:isTeleport"
+  },
+  "Tile:isCreature": {
+    "prefix": "isCreature",
+    "body": [
+      "${1:Tile}:isCreature(${2:self})$3"
+    ],
+    "description": "Tile:isCreature"
+  },
+  "Tile:isItem": {
+    "prefix": "isItem",
+    "body": [
+      "${1:Tile}:isItem(${2:self})$3"
+    ],
+    "description": "Tile:isItem"
+  },
+  "Tile:isTile": {
+    "prefix": "isTile",
+    "body": [
+      "${1:Tile}:isTile(${2:self})$3"
+    ],
+    "description": "Tile:isTile"
+  },
+  "Tile:isContainer": {
+    "prefix": "isContainer",
+    "body": [
+      "${1:Tile}:isContainer(${2:self})$3"
+    ],
+    "description": "Tile:isContainer"
+  },
+  "Tile:relocateTo": {
+    "prefix": "relocateTo",
+    "body": [
+      "${1:Tile}:relocateTo(${2:self}, ${3:toPosition})$4"
+    ],
+    "description": "Tile:relocateTo"
+  },
+  "Tile:isWalkable": {
+    "prefix": "isWalkable",
+    "body": [
+      "${1:Tile}:isWalkable(${2:self})$3"
+    ],
+    "description": "Tile:isWalkable"
+  },
+  "Vocation:getBase": {
+    "prefix": "getBase",
+    "body": [
+      "${1:Vocation}:getBase(${2:self})$3"
+    ],
+    "description": "Vocation:getBase"
+  },
+  "CONST_ME_NONE": {
+    "prefix": "CONST_ME_NONE",
+    "body": [
+      "CONST_ME_NONE"
+    ],
+    "description": "CONST_ME_NONE"
+  },
+  "CONST_ME_DRAWBLOOD": {
+    "prefix": "CONST_ME_DRAWBLOOD",
+    "body": [
+      "CONST_ME_DRAWBLOOD"
+    ],
+    "description": "CONST_ME_DRAWBLOOD"
+  },
+  "CONST_ME_LOSEENERGY": {
+    "prefix": "CONST_ME_LOSEENERGY",
+    "body": [
+      "CONST_ME_LOSEENERGY"
+    ],
+    "description": "CONST_ME_LOSEENERGY"
+  },
+  "CONST_ME_POFF": {
+    "prefix": "CONST_ME_POFF",
+    "body": [
+      "CONST_ME_POFF"
+    ],
+    "description": "CONST_ME_POFF"
+  },
+  "CONST_ME_BLOCKHIT": {
+    "prefix": "CONST_ME_BLOCKHIT",
+    "body": [
+      "CONST_ME_BLOCKHIT"
+    ],
+    "description": "CONST_ME_BLOCKHIT"
+  },
+  "CONST_ME_EXPLOSIONAREA": {
+    "prefix": "CONST_ME_EXPLOSIONAREA",
+    "body": [
+      "CONST_ME_EXPLOSIONAREA"
+    ],
+    "description": "CONST_ME_EXPLOSIONAREA"
+  },
+  "CONST_ME_EXPLOSIONHIT": {
+    "prefix": "CONST_ME_EXPLOSIONHIT",
+    "body": [
+      "CONST_ME_EXPLOSIONHIT"
+    ],
+    "description": "CONST_ME_EXPLOSIONHIT"
+  },
+  "CONST_ME_FIREAREA": {
+    "prefix": "CONST_ME_FIREAREA",
+    "body": [
+      "CONST_ME_FIREAREA"
+    ],
+    "description": "CONST_ME_FIREAREA"
+  },
+  "CONST_ME_YELLOW_RINGS": {
+    "prefix": "CONST_ME_YELLOW_RINGS",
+    "body": [
+      "CONST_ME_YELLOW_RINGS"
+    ],
+    "description": "CONST_ME_YELLOW_RINGS"
+  },
+  "CONST_ME_GREEN_RINGS": {
+    "prefix": "CONST_ME_GREEN_RINGS",
+    "body": [
+      "CONST_ME_GREEN_RINGS"
+    ],
+    "description": "CONST_ME_GREEN_RINGS"
+  },
+  "CONST_ME_HITAREA": {
+    "prefix": "CONST_ME_HITAREA",
+    "body": [
+      "CONST_ME_HITAREA"
+    ],
+    "description": "CONST_ME_HITAREA"
+  },
+  "CONST_ME_TELEPORT": {
+    "prefix": "CONST_ME_TELEPORT",
+    "body": [
+      "CONST_ME_TELEPORT"
+    ],
+    "description": "CONST_ME_TELEPORT"
+  },
+  "CONST_ME_ENERGYHIT": {
+    "prefix": "CONST_ME_ENERGYHIT",
+    "body": [
+      "CONST_ME_ENERGYHIT"
+    ],
+    "description": "CONST_ME_ENERGYHIT"
+  },
+  "CONST_ME_MAGIC_BLUE": {
+    "prefix": "CONST_ME_MAGIC_BLUE",
+    "body": [
+      "CONST_ME_MAGIC_BLUE"
+    ],
+    "description": "CONST_ME_MAGIC_BLUE"
+  },
+  "CONST_ME_MAGIC_RED": {
+    "prefix": "CONST_ME_MAGIC_RED",
+    "body": [
+      "CONST_ME_MAGIC_RED"
+    ],
+    "description": "CONST_ME_MAGIC_RED"
+  },
+  "CONST_ME_MAGIC_GREEN": {
+    "prefix": "CONST_ME_MAGIC_GREEN",
+    "body": [
+      "CONST_ME_MAGIC_GREEN"
+    ],
+    "description": "CONST_ME_MAGIC_GREEN"
+  },
+  "CONST_ME_HITBYFIRE": {
+    "prefix": "CONST_ME_HITBYFIRE",
+    "body": [
+      "CONST_ME_HITBYFIRE"
+    ],
+    "description": "CONST_ME_HITBYFIRE"
+  },
+  "CONST_ME_HITBYPOISON": {
+    "prefix": "CONST_ME_HITBYPOISON",
+    "body": [
+      "CONST_ME_HITBYPOISON"
+    ],
+    "description": "CONST_ME_HITBYPOISON"
+  },
+  "CONST_ME_MORTAREA": {
+    "prefix": "CONST_ME_MORTAREA",
+    "body": [
+      "CONST_ME_MORTAREA"
+    ],
+    "description": "CONST_ME_MORTAREA"
+  },
+  "CONST_ME_SOUND_GREEN": {
+    "prefix": "CONST_ME_SOUND_GREEN",
+    "body": [
+      "CONST_ME_SOUND_GREEN"
+    ],
+    "description": "CONST_ME_SOUND_GREEN"
+  },
+  "CONST_ME_SOUND_RED": {
+    "prefix": "CONST_ME_SOUND_RED",
+    "body": [
+      "CONST_ME_SOUND_RED"
+    ],
+    "description": "CONST_ME_SOUND_RED"
+  },
+  "CONST_ME_POISONAREA": {
+    "prefix": "CONST_ME_POISONAREA",
+    "body": [
+      "CONST_ME_POISONAREA"
+    ],
+    "description": "CONST_ME_POISONAREA"
+  },
+  "CONST_ME_SOUND_YELLOW": {
+    "prefix": "CONST_ME_SOUND_YELLOW",
+    "body": [
+      "CONST_ME_SOUND_YELLOW"
+    ],
+    "description": "CONST_ME_SOUND_YELLOW"
+  },
+  "CONST_ME_SOUND_PURPLE": {
+    "prefix": "CONST_ME_SOUND_PURPLE",
+    "body": [
+      "CONST_ME_SOUND_PURPLE"
+    ],
+    "description": "CONST_ME_SOUND_PURPLE"
+  },
+  "CONST_ME_SOUND_BLUE": {
+    "prefix": "CONST_ME_SOUND_BLUE",
+    "body": [
+      "CONST_ME_SOUND_BLUE"
+    ],
+    "description": "CONST_ME_SOUND_BLUE"
+  },
+  "CONST_ME_SOUND_WHITE": {
+    "prefix": "CONST_ME_SOUND_WHITE",
+    "body": [
+      "CONST_ME_SOUND_WHITE"
+    ],
+    "description": "CONST_ME_SOUND_WHITE"
+  },
+  "CONST_ME_BUBBLES": {
+    "prefix": "CONST_ME_BUBBLES",
+    "body": [
+      "CONST_ME_BUBBLES"
+    ],
+    "description": "CONST_ME_BUBBLES"
+  },
+  "CONST_ME_CRAPS": {
+    "prefix": "CONST_ME_CRAPS",
+    "body": [
+      "CONST_ME_CRAPS"
+    ],
+    "description": "CONST_ME_CRAPS"
+  },
+  "CONST_ME_GIFT_WRAPS": {
+    "prefix": "CONST_ME_GIFT_WRAPS",
+    "body": [
+      "CONST_ME_GIFT_WRAPS"
+    ],
+    "description": "CONST_ME_GIFT_WRAPS"
+  },
+  "CONST_ME_FIREWORK_YELLOW": {
+    "prefix": "CONST_ME_FIREWORK_YELLOW",
+    "body": [
+      "CONST_ME_FIREWORK_YELLOW"
+    ],
+    "description": "CONST_ME_FIREWORK_YELLOW"
+  },
+  "CONST_ME_FIREWORK_RED": {
+    "prefix": "CONST_ME_FIREWORK_RED",
+    "body": [
+      "CONST_ME_FIREWORK_RED"
+    ],
+    "description": "CONST_ME_FIREWORK_RED"
+  },
+  "CONST_ME_FIREWORK_BLUE": {
+    "prefix": "CONST_ME_FIREWORK_BLUE",
+    "body": [
+      "CONST_ME_FIREWORK_BLUE"
+    ],
+    "description": "CONST_ME_FIREWORK_BLUE"
+  },
+  "CONST_ME_STUN": {
+    "prefix": "CONST_ME_STUN",
+    "body": [
+      "CONST_ME_STUN"
+    ],
+    "description": "CONST_ME_STUN"
+  },
+  "CONST_ME_SLEEP": {
+    "prefix": "CONST_ME_SLEEP",
+    "body": [
+      "CONST_ME_SLEEP"
+    ],
+    "description": "CONST_ME_SLEEP"
+  },
+  "CONST_ME_WATERCREATURE": {
+    "prefix": "CONST_ME_WATERCREATURE",
+    "body": [
+      "CONST_ME_WATERCREATURE"
+    ],
+    "description": "CONST_ME_WATERCREATURE"
+  },
+  "CONST_ME_GROUNDSHAKER": {
+    "prefix": "CONST_ME_GROUNDSHAKER",
+    "body": [
+      "CONST_ME_GROUNDSHAKER"
+    ],
+    "description": "CONST_ME_GROUNDSHAKER"
+  },
+  "CONST_ME_HEARTS": {
+    "prefix": "CONST_ME_HEARTS",
+    "body": [
+      "CONST_ME_HEARTS"
+    ],
+    "description": "CONST_ME_HEARTS"
+  },
+  "CONST_ME_FIREATTACK": {
+    "prefix": "CONST_ME_FIREATTACK",
+    "body": [
+      "CONST_ME_FIREATTACK"
+    ],
+    "description": "CONST_ME_FIREATTACK"
+  },
+  "CONST_ME_ENERGYAREA": {
+    "prefix": "CONST_ME_ENERGYAREA",
+    "body": [
+      "CONST_ME_ENERGYAREA"
+    ],
+    "description": "CONST_ME_ENERGYAREA"
+  },
+  "CONST_ME_SMALLCLOUDS": {
+    "prefix": "CONST_ME_SMALLCLOUDS",
+    "body": [
+      "CONST_ME_SMALLCLOUDS"
+    ],
+    "description": "CONST_ME_SMALLCLOUDS"
+  },
+  "CONST_ME_HOLYDAMAGE": {
+    "prefix": "CONST_ME_HOLYDAMAGE",
+    "body": [
+      "CONST_ME_HOLYDAMAGE"
+    ],
+    "description": "CONST_ME_HOLYDAMAGE"
+  },
+  "CONST_ME_BIGCLOUDS": {
+    "prefix": "CONST_ME_BIGCLOUDS",
+    "body": [
+      "CONST_ME_BIGCLOUDS"
+    ],
+    "description": "CONST_ME_BIGCLOUDS"
+  },
+  "CONST_ME_ICEAREA": {
+    "prefix": "CONST_ME_ICEAREA",
+    "body": [
+      "CONST_ME_ICEAREA"
+    ],
+    "description": "CONST_ME_ICEAREA"
+  },
+  "CONST_ME_ICETORNADO": {
+    "prefix": "CONST_ME_ICETORNADO",
+    "body": [
+      "CONST_ME_ICETORNADO"
+    ],
+    "description": "CONST_ME_ICETORNADO"
+  },
+  "CONST_ME_ICEATTACK": {
+    "prefix": "CONST_ME_ICEATTACK",
+    "body": [
+      "CONST_ME_ICEATTACK"
+    ],
+    "description": "CONST_ME_ICEATTACK"
+  },
+  "CONST_ME_STONES": {
+    "prefix": "CONST_ME_STONES",
+    "body": [
+      "CONST_ME_STONES"
+    ],
+    "description": "CONST_ME_STONES"
+  },
+  "CONST_ME_SMALLPLANTS": {
+    "prefix": "CONST_ME_SMALLPLANTS",
+    "body": [
+      "CONST_ME_SMALLPLANTS"
+    ],
+    "description": "CONST_ME_SMALLPLANTS"
+  },
+  "CONST_ME_CARNIPHILA": {
+    "prefix": "CONST_ME_CARNIPHILA",
+    "body": [
+      "CONST_ME_CARNIPHILA"
+    ],
+    "description": "CONST_ME_CARNIPHILA"
+  },
+  "CONST_ME_PURPLEENERGY": {
+    "prefix": "CONST_ME_PURPLEENERGY",
+    "body": [
+      "CONST_ME_PURPLEENERGY"
+    ],
+    "description": "CONST_ME_PURPLEENERGY"
+  },
+  "CONST_ME_YELLOWENERGY": {
+    "prefix": "CONST_ME_YELLOWENERGY",
+    "body": [
+      "CONST_ME_YELLOWENERGY"
+    ],
+    "description": "CONST_ME_YELLOWENERGY"
+  },
+  "CONST_ME_HOLYAREA": {
+    "prefix": "CONST_ME_HOLYAREA",
+    "body": [
+      "CONST_ME_HOLYAREA"
+    ],
+    "description": "CONST_ME_HOLYAREA"
+  },
+  "CONST_ME_BIGPLANTS": {
+    "prefix": "CONST_ME_BIGPLANTS",
+    "body": [
+      "CONST_ME_BIGPLANTS"
+    ],
+    "description": "CONST_ME_BIGPLANTS"
+  },
+  "CONST_ME_CAKE": {
+    "prefix": "CONST_ME_CAKE",
+    "body": [
+      "CONST_ME_CAKE"
+    ],
+    "description": "CONST_ME_CAKE"
+  },
+  "CONST_ME_GIANTICE": {
+    "prefix": "CONST_ME_GIANTICE",
+    "body": [
+      "CONST_ME_GIANTICE"
+    ],
+    "description": "CONST_ME_GIANTICE"
+  },
+  "CONST_ME_WATERSPLASH": {
+    "prefix": "CONST_ME_WATERSPLASH",
+    "body": [
+      "CONST_ME_WATERSPLASH"
+    ],
+    "description": "CONST_ME_WATERSPLASH"
+  },
+  "CONST_ME_PLANTATTACK": {
+    "prefix": "CONST_ME_PLANTATTACK",
+    "body": [
+      "CONST_ME_PLANTATTACK"
+    ],
+    "description": "CONST_ME_PLANTATTACK"
+  },
+  "CONST_ME_TUTORIALARROW": {
+    "prefix": "CONST_ME_TUTORIALARROW",
+    "body": [
+      "CONST_ME_TUTORIALARROW"
+    ],
+    "description": "CONST_ME_TUTORIALARROW"
+  },
+  "CONST_ME_TUTORIALSQUARE": {
+    "prefix": "CONST_ME_TUTORIALSQUARE",
+    "body": [
+      "CONST_ME_TUTORIALSQUARE"
+    ],
+    "description": "CONST_ME_TUTORIALSQUARE"
+  },
+  "CONST_ME_MIRRORHORIZONTAL": {
+    "prefix": "CONST_ME_MIRRORHORIZONTAL",
+    "body": [
+      "CONST_ME_MIRRORHORIZONTAL"
+    ],
+    "description": "CONST_ME_MIRRORHORIZONTAL"
+  },
+  "CONST_ME_MIRRORVERTICAL": {
+    "prefix": "CONST_ME_MIRRORVERTICAL",
+    "body": [
+      "CONST_ME_MIRRORVERTICAL"
+    ],
+    "description": "CONST_ME_MIRRORVERTICAL"
+  },
+  "CONST_ME_SKULLHORIZONTAL": {
+    "prefix": "CONST_ME_SKULLHORIZONTAL",
+    "body": [
+      "CONST_ME_SKULLHORIZONTAL"
+    ],
+    "description": "CONST_ME_SKULLHORIZONTAL"
+  },
+  "CONST_ME_SKULLVERTICAL": {
+    "prefix": "CONST_ME_SKULLVERTICAL",
+    "body": [
+      "CONST_ME_SKULLVERTICAL"
+    ],
+    "description": "CONST_ME_SKULLVERTICAL"
+  },
+  "CONST_ME_ASSASSIN": {
+    "prefix": "CONST_ME_ASSASSIN",
+    "body": [
+      "CONST_ME_ASSASSIN"
+    ],
+    "description": "CONST_ME_ASSASSIN"
+  },
+  "CONST_ME_STEPSHORIZONTAL": {
+    "prefix": "CONST_ME_STEPSHORIZONTAL",
+    "body": [
+      "CONST_ME_STEPSHORIZONTAL"
+    ],
+    "description": "CONST_ME_STEPSHORIZONTAL"
+  },
+  "CONST_ME_BLOODYSTEPS": {
+    "prefix": "CONST_ME_BLOODYSTEPS",
+    "body": [
+      "CONST_ME_BLOODYSTEPS"
+    ],
+    "description": "CONST_ME_BLOODYSTEPS"
+  },
+  "CONST_ME_STEPSVERTICAL": {
+    "prefix": "CONST_ME_STEPSVERTICAL",
+    "body": [
+      "CONST_ME_STEPSVERTICAL"
+    ],
+    "description": "CONST_ME_STEPSVERTICAL"
+  },
+  "CONST_ME_YALAHARIGHOST": {
+    "prefix": "CONST_ME_YALAHARIGHOST",
+    "body": [
+      "CONST_ME_YALAHARIGHOST"
+    ],
+    "description": "CONST_ME_YALAHARIGHOST"
+  },
+  "CONST_ME_BATS": {
+    "prefix": "CONST_ME_BATS",
+    "body": [
+      "CONST_ME_BATS"
+    ],
+    "description": "CONST_ME_BATS"
+  },
+  "CONST_ME_SMOKE": {
+    "prefix": "CONST_ME_SMOKE",
+    "body": [
+      "CONST_ME_SMOKE"
+    ],
+    "description": "CONST_ME_SMOKE"
+  },
+  "CONST_ME_INSECTS": {
+    "prefix": "CONST_ME_INSECTS",
+    "body": [
+      "CONST_ME_INSECTS"
+    ],
+    "description": "CONST_ME_INSECTS"
+  },
+  "CONST_ME_DRAGONHEAD": {
+    "prefix": "CONST_ME_DRAGONHEAD",
+    "body": [
+      "CONST_ME_DRAGONHEAD"
+    ],
+    "description": "CONST_ME_DRAGONHEAD"
+  },
+  "CONST_ANI_NONE": {
+    "prefix": "CONST_ANI_NONE",
+    "body": [
+      "CONST_ANI_NONE"
+    ],
+    "description": "CONST_ANI_NONE"
+  },
+  "CONST_ANI_SPEAR": {
+    "prefix": "CONST_ANI_SPEAR",
+    "body": [
+      "CONST_ANI_SPEAR"
+    ],
+    "description": "CONST_ANI_SPEAR"
+  },
+  "CONST_ANI_BOLT": {
+    "prefix": "CONST_ANI_BOLT",
+    "body": [
+      "CONST_ANI_BOLT"
+    ],
+    "description": "CONST_ANI_BOLT"
+  },
+  "CONST_ANI_ARROW": {
+    "prefix": "CONST_ANI_ARROW",
+    "body": [
+      "CONST_ANI_ARROW"
+    ],
+    "description": "CONST_ANI_ARROW"
+  },
+  "CONST_ANI_FIRE": {
+    "prefix": "CONST_ANI_FIRE",
+    "body": [
+      "CONST_ANI_FIRE"
+    ],
+    "description": "CONST_ANI_FIRE"
+  },
+  "CONST_ANI_ENERGY": {
+    "prefix": "CONST_ANI_ENERGY",
+    "body": [
+      "CONST_ANI_ENERGY"
+    ],
+    "description": "CONST_ANI_ENERGY"
+  },
+  "CONST_ANI_POISONARROW": {
+    "prefix": "CONST_ANI_POISONARROW",
+    "body": [
+      "CONST_ANI_POISONARROW"
+    ],
+    "description": "CONST_ANI_POISONARROW"
+  },
+  "CONST_ANI_BURSTARROW": {
+    "prefix": "CONST_ANI_BURSTARROW",
+    "body": [
+      "CONST_ANI_BURSTARROW"
+    ],
+    "description": "CONST_ANI_BURSTARROW"
+  },
+  "CONST_ANI_THROWINGSTAR": {
+    "prefix": "CONST_ANI_THROWINGSTAR",
+    "body": [
+      "CONST_ANI_THROWINGSTAR"
+    ],
+    "description": "CONST_ANI_THROWINGSTAR"
+  },
+  "CONST_ANI_THROWINGKNIFE": {
+    "prefix": "CONST_ANI_THROWINGKNIFE",
+    "body": [
+      "CONST_ANI_THROWINGKNIFE"
+    ],
+    "description": "CONST_ANI_THROWINGKNIFE"
+  },
+  "CONST_ANI_SMALLSTONE": {
+    "prefix": "CONST_ANI_SMALLSTONE",
+    "body": [
+      "CONST_ANI_SMALLSTONE"
+    ],
+    "description": "CONST_ANI_SMALLSTONE"
+  },
+  "CONST_ANI_DEATH": {
+    "prefix": "CONST_ANI_DEATH",
+    "body": [
+      "CONST_ANI_DEATH"
+    ],
+    "description": "CONST_ANI_DEATH"
+  },
+  "CONST_ANI_LARGEROCK": {
+    "prefix": "CONST_ANI_LARGEROCK",
+    "body": [
+      "CONST_ANI_LARGEROCK"
+    ],
+    "description": "CONST_ANI_LARGEROCK"
+  },
+  "CONST_ANI_SNOWBALL": {
+    "prefix": "CONST_ANI_SNOWBALL",
+    "body": [
+      "CONST_ANI_SNOWBALL"
+    ],
+    "description": "CONST_ANI_SNOWBALL"
+  },
+  "CONST_ANI_POWERBOLT": {
+    "prefix": "CONST_ANI_POWERBOLT",
+    "body": [
+      "CONST_ANI_POWERBOLT"
+    ],
+    "description": "CONST_ANI_POWERBOLT"
+  },
+  "CONST_ANI_POISON": {
+    "prefix": "CONST_ANI_POISON",
+    "body": [
+      "CONST_ANI_POISON"
+    ],
+    "description": "CONST_ANI_POISON"
+  },
+  "CONST_ANI_INFERNALBOLT": {
+    "prefix": "CONST_ANI_INFERNALBOLT",
+    "body": [
+      "CONST_ANI_INFERNALBOLT"
+    ],
+    "description": "CONST_ANI_INFERNALBOLT"
+  },
+  "CONST_ANI_HUNTINGSPEAR": {
+    "prefix": "CONST_ANI_HUNTINGSPEAR",
+    "body": [
+      "CONST_ANI_HUNTINGSPEAR"
+    ],
+    "description": "CONST_ANI_HUNTINGSPEAR"
+  },
+  "CONST_ANI_ENCHANTEDSPEAR": {
+    "prefix": "CONST_ANI_ENCHANTEDSPEAR",
+    "body": [
+      "CONST_ANI_ENCHANTEDSPEAR"
+    ],
+    "description": "CONST_ANI_ENCHANTEDSPEAR"
+  },
+  "CONST_ANI_REDSTAR": {
+    "prefix": "CONST_ANI_REDSTAR",
+    "body": [
+      "CONST_ANI_REDSTAR"
+    ],
+    "description": "CONST_ANI_REDSTAR"
+  },
+  "CONST_ANI_GREENSTAR": {
+    "prefix": "CONST_ANI_GREENSTAR",
+    "body": [
+      "CONST_ANI_GREENSTAR"
+    ],
+    "description": "CONST_ANI_GREENSTAR"
+  },
+  "CONST_ANI_ROYALSPEAR": {
+    "prefix": "CONST_ANI_ROYALSPEAR",
+    "body": [
+      "CONST_ANI_ROYALSPEAR"
+    ],
+    "description": "CONST_ANI_ROYALSPEAR"
+  },
+  "CONST_ANI_SNIPERARROW": {
+    "prefix": "CONST_ANI_SNIPERARROW",
+    "body": [
+      "CONST_ANI_SNIPERARROW"
+    ],
+    "description": "CONST_ANI_SNIPERARROW"
+  },
+  "CONST_ANI_ONYXARROW": {
+    "prefix": "CONST_ANI_ONYXARROW",
+    "body": [
+      "CONST_ANI_ONYXARROW"
+    ],
+    "description": "CONST_ANI_ONYXARROW"
+  },
+  "CONST_ANI_PIERCINGBOLT": {
+    "prefix": "CONST_ANI_PIERCINGBOLT",
+    "body": [
+      "CONST_ANI_PIERCINGBOLT"
+    ],
+    "description": "CONST_ANI_PIERCINGBOLT"
+  },
+  "CONST_ANI_WHIRLWINDSWORD": {
+    "prefix": "CONST_ANI_WHIRLWINDSWORD",
+    "body": [
+      "CONST_ANI_WHIRLWINDSWORD"
+    ],
+    "description": "CONST_ANI_WHIRLWINDSWORD"
+  },
+  "CONST_ANI_WHIRLWINDAXE": {
+    "prefix": "CONST_ANI_WHIRLWINDAXE",
+    "body": [
+      "CONST_ANI_WHIRLWINDAXE"
+    ],
+    "description": "CONST_ANI_WHIRLWINDAXE"
+  },
+  "CONST_ANI_WHIRLWINDCLUB": {
+    "prefix": "CONST_ANI_WHIRLWINDCLUB",
+    "body": [
+      "CONST_ANI_WHIRLWINDCLUB"
+    ],
+    "description": "CONST_ANI_WHIRLWINDCLUB"
+  },
+  "CONST_ANI_ETHEREALSPEAR": {
+    "prefix": "CONST_ANI_ETHEREALSPEAR",
+    "body": [
+      "CONST_ANI_ETHEREALSPEAR"
+    ],
+    "description": "CONST_ANI_ETHEREALSPEAR"
+  },
+  "CONST_ANI_ICE": {
+    "prefix": "CONST_ANI_ICE",
+    "body": [
+      "CONST_ANI_ICE"
+    ],
+    "description": "CONST_ANI_ICE"
+  },
+  "CONST_ANI_EARTH": {
+    "prefix": "CONST_ANI_EARTH",
+    "body": [
+      "CONST_ANI_EARTH"
+    ],
+    "description": "CONST_ANI_EARTH"
+  },
+  "CONST_ANI_HOLY": {
+    "prefix": "CONST_ANI_HOLY",
+    "body": [
+      "CONST_ANI_HOLY"
+    ],
+    "description": "CONST_ANI_HOLY"
+  },
+  "CONST_ANI_SUDDENDEATH": {
+    "prefix": "CONST_ANI_SUDDENDEATH",
+    "body": [
+      "CONST_ANI_SUDDENDEATH"
+    ],
+    "description": "CONST_ANI_SUDDENDEATH"
+  },
+  "CONST_ANI_FLASHARROW": {
+    "prefix": "CONST_ANI_FLASHARROW",
+    "body": [
+      "CONST_ANI_FLASHARROW"
+    ],
+    "description": "CONST_ANI_FLASHARROW"
+  },
+  "CONST_ANI_FLAMMINGARROW": {
+    "prefix": "CONST_ANI_FLAMMINGARROW",
+    "body": [
+      "CONST_ANI_FLAMMINGARROW"
+    ],
+    "description": "CONST_ANI_FLAMMINGARROW"
+  },
+  "CONST_ANI_SHIVERARROW": {
+    "prefix": "CONST_ANI_SHIVERARROW",
+    "body": [
+      "CONST_ANI_SHIVERARROW"
+    ],
+    "description": "CONST_ANI_SHIVERARROW"
+  },
+  "CONST_ANI_ENERGYBALL": {
+    "prefix": "CONST_ANI_ENERGYBALL",
+    "body": [
+      "CONST_ANI_ENERGYBALL"
+    ],
+    "description": "CONST_ANI_ENERGYBALL"
+  },
+  "CONST_ANI_SMALLICE": {
+    "prefix": "CONST_ANI_SMALLICE",
+    "body": [
+      "CONST_ANI_SMALLICE"
+    ],
+    "description": "CONST_ANI_SMALLICE"
+  },
+  "CONST_ANI_SMALLHOLY": {
+    "prefix": "CONST_ANI_SMALLHOLY",
+    "body": [
+      "CONST_ANI_SMALLHOLY"
+    ],
+    "description": "CONST_ANI_SMALLHOLY"
+  },
+  "CONST_ANI_SMALLEARTH": {
+    "prefix": "CONST_ANI_SMALLEARTH",
+    "body": [
+      "CONST_ANI_SMALLEARTH"
+    ],
+    "description": "CONST_ANI_SMALLEARTH"
+  },
+  "CONST_ANI_EARTHARROW": {
+    "prefix": "CONST_ANI_EARTHARROW",
+    "body": [
+      "CONST_ANI_EARTHARROW"
+    ],
+    "description": "CONST_ANI_EARTHARROW"
+  },
+  "CONST_ANI_EXPLOSION": {
+    "prefix": "CONST_ANI_EXPLOSION",
+    "body": [
+      "CONST_ANI_EXPLOSION"
+    ],
+    "description": "CONST_ANI_EXPLOSION"
+  },
+  "CONST_ANI_WEAPONTYPE": {
+    "prefix": "CONST_ANI_WEAPONTYPE",
+    "body": [
+      "CONST_ANI_WEAPONTYPE"
+    ],
+    "description": "CONST_ANI_WEAPONTYPE"
+  },
+  "TALKTYPE_SAY": {
+    "prefix": "TALKTYPE_SAY",
+    "body": [
+      "TALKTYPE_SAY"
+    ],
+    "description": "TALKTYPE_SAY"
+  },
+  "TALKTYPE_WHISPER": {
+    "prefix": "TALKTYPE_WHISPER",
+    "body": [
+      "TALKTYPE_WHISPER"
+    ],
+    "description": "TALKTYPE_WHISPER"
+  },
+  "TALKTYPE_YELL": {
+    "prefix": "TALKTYPE_YELL",
+    "body": [
+      "TALKTYPE_YELL"
+    ],
+    "description": "TALKTYPE_YELL"
+  },
+  "TALKTYPE_PRIVATE_PN": {
+    "prefix": "TALKTYPE_PRIVATE_PN",
+    "body": [
+      "TALKTYPE_PRIVATE_PN"
+    ],
+    "description": "TALKTYPE_PRIVATE_PN"
+  },
+  "TALKTYPE_PRIVATE_NP": {
+    "prefix": "TALKTYPE_PRIVATE_NP",
+    "body": [
+      "TALKTYPE_PRIVATE_NP"
+    ],
+    "description": "TALKTYPE_PRIVATE_NP"
+  },
+  "TALKTYPE_PRIVATE": {
+    "prefix": "TALKTYPE_PRIVATE",
+    "body": [
+      "TALKTYPE_PRIVATE"
+    ],
+    "description": "TALKTYPE_PRIVATE"
+  },
+  "TALKTYPE_CHANNEL_Y": {
+    "prefix": "TALKTYPE_CHANNEL_Y",
+    "body": [
+      "TALKTYPE_CHANNEL_Y"
+    ],
+    "description": "TALKTYPE_CHANNEL_Y"
+  },
+  "TALKTYPE_CHANNEL_W": {
+    "prefix": "TALKTYPE_CHANNEL_W",
+    "body": [
+      "TALKTYPE_CHANNEL_W"
+    ],
+    "description": "TALKTYPE_CHANNEL_W"
+  },
+  "TALKTYPE_RVR_CHANNEL": {
+    "prefix": "TALKTYPE_RVR_CHANNEL",
+    "body": [
+      "TALKTYPE_RVR_CHANNEL"
+    ],
+    "description": "TALKTYPE_RVR_CHANNEL"
+  },
+  "TALKTYPE_RVR_ANSWER": {
+    "prefix": "TALKTYPE_RVR_ANSWER",
+    "body": [
+      "TALKTYPE_RVR_ANSWER"
+    ],
+    "description": "TALKTYPE_RVR_ANSWER"
+  },
+  "TALKTYPE_RVR_CONTINUE": {
+    "prefix": "TALKTYPE_RVR_CONTINUE",
+    "body": [
+      "TALKTYPE_RVR_CONTINUE"
+    ],
+    "description": "TALKTYPE_RVR_CONTINUE"
+  },
+  "TALKTYPE_BROADCAST": {
+    "prefix": "TALKTYPE_BROADCAST",
+    "body": [
+      "TALKTYPE_BROADCAST"
+    ],
+    "description": "TALKTYPE_BROADCAST"
+  },
+  "TALKTYPE_CHANNEL_R1": {
+    "prefix": "TALKTYPE_CHANNEL_R1",
+    "body": [
+      "TALKTYPE_CHANNEL_R1"
+    ],
+    "description": "TALKTYPE_CHANNEL_R1"
+  },
+  "TALKTYPE_PRIVATE_RED": {
+    "prefix": "TALKTYPE_PRIVATE_RED",
+    "body": [
+      "TALKTYPE_PRIVATE_RED"
+    ],
+    "description": "TALKTYPE_PRIVATE_RED"
+  },
+  "TALKTYPE_CHANNEL_O": {
+    "prefix": "TALKTYPE_CHANNEL_O",
+    "body": [
+      "TALKTYPE_CHANNEL_O"
+    ],
+    "description": "TALKTYPE_CHANNEL_O"
+  },
+  "TALKTYPE_CHANNEL_R2": {
+    "prefix": "TALKTYPE_CHANNEL_R2",
+    "body": [
+      "TALKTYPE_CHANNEL_R2"
+    ],
+    "description": "TALKTYPE_CHANNEL_R2"
+  },
+  "TALKTYPE_MONSTER_SAY": {
+    "prefix": "TALKTYPE_MONSTER_SAY",
+    "body": [
+      "TALKTYPE_MONSTER_SAY"
+    ],
+    "description": "TALKTYPE_MONSTER_SAY"
+  },
+  "TALKTYPE_MONSTER_YELL": {
+    "prefix": "TALKTYPE_MONSTER_YELL",
+    "body": [
+      "TALKTYPE_MONSTER_YELL"
+    ],
+    "description": "TALKTYPE_MONSTER_YELL"
+  },
+  "MESSAGE_STATUS_CONSOLE_RED": {
+    "prefix": "MESSAGE_STATUS_CONSOLE_RED",
+    "body": [
+      "MESSAGE_STATUS_CONSOLE_RED"
+    ],
+    "description": "MESSAGE_STATUS_CONSOLE_RED"
+  },
+  "MESSAGE_EVENT_ORANGE": {
+    "prefix": "MESSAGE_EVENT_ORANGE",
+    "body": [
+      "MESSAGE_EVENT_ORANGE"
+    ],
+    "description": "MESSAGE_EVENT_ORANGE"
+  },
+  "MESSAGE_STATUS_CONSOLE_ORANGE": {
+    "prefix": "MESSAGE_STATUS_CONSOLE_ORANGE",
+    "body": [
+      "MESSAGE_STATUS_CONSOLE_ORANGE"
+    ],
+    "description": "MESSAGE_STATUS_CONSOLE_ORANGE"
+  },
+  "MESSAGE_STATUS_WARNING": {
+    "prefix": "MESSAGE_STATUS_WARNING",
+    "body": [
+      "MESSAGE_STATUS_WARNING"
+    ],
+    "description": "MESSAGE_STATUS_WARNING"
+  },
+  "MESSAGE_EVENT_ADVANCE": {
+    "prefix": "MESSAGE_EVENT_ADVANCE",
+    "body": [
+      "MESSAGE_EVENT_ADVANCE"
+    ],
+    "description": "MESSAGE_EVENT_ADVANCE"
+  },
+  "MESSAGE_EVENT_DEFAULT": {
+    "prefix": "MESSAGE_EVENT_DEFAULT",
+    "body": [
+      "MESSAGE_EVENT_DEFAULT"
+    ],
+    "description": "MESSAGE_EVENT_DEFAULT"
+  },
+  "MESSAGE_STATUS_DEFAULT": {
+    "prefix": "MESSAGE_STATUS_DEFAULT",
+    "body": [
+      "MESSAGE_STATUS_DEFAULT"
+    ],
+    "description": "MESSAGE_STATUS_DEFAULT"
+  },
+  "MESSAGE_INFO_DESCR": {
+    "prefix": "MESSAGE_INFO_DESCR",
+    "body": [
+      "MESSAGE_INFO_DESCR"
+    ],
+    "description": "MESSAGE_INFO_DESCR"
+  },
+  "MESSAGE_STATUS_SMALL": {
+    "prefix": "MESSAGE_STATUS_SMALL",
+    "body": [
+      "MESSAGE_STATUS_SMALL"
+    ],
+    "description": "MESSAGE_STATUS_SMALL"
+  },
+  "MESSAGE_STATUS_CONSOLE_BLUE": {
+    "prefix": "MESSAGE_STATUS_CONSOLE_BLUE",
+    "body": [
+      "MESSAGE_STATUS_CONSOLE_BLUE"
+    ],
+    "description": "MESSAGE_STATUS_CONSOLE_BLUE"
+  },
+  "TEXTCOLOR_BLACK": {
+    "prefix": "TEXTCOLOR_BLACK",
+    "body": [
+      "TEXTCOLOR_BLACK"
+    ],
+    "description": "TEXTCOLOR_BLACK"
+  },
+  "TEXTCOLOR_BLUE": {
+    "prefix": "TEXTCOLOR_BLUE",
+    "body": [
+      "TEXTCOLOR_BLUE"
+    ],
+    "description": "TEXTCOLOR_BLUE"
+  },
+  "TEXTCOLOR_GREEN": {
+    "prefix": "TEXTCOLOR_GREEN",
+    "body": [
+      "TEXTCOLOR_GREEN"
+    ],
+    "description": "TEXTCOLOR_GREEN"
+  },
+  "TEXTCOLOR_LIGHTGREEN": {
+    "prefix": "TEXTCOLOR_LIGHTGREEN",
+    "body": [
+      "TEXTCOLOR_LIGHTGREEN"
+    ],
+    "description": "TEXTCOLOR_LIGHTGREEN"
+  },
+  "TEXTCOLOR_DARKBROWN": {
+    "prefix": "TEXTCOLOR_DARKBROWN",
+    "body": [
+      "TEXTCOLOR_DARKBROWN"
+    ],
+    "description": "TEXTCOLOR_DARKBROWN"
+  },
+  "TEXTCOLOR_LIGHTBLUE": {
+    "prefix": "TEXTCOLOR_LIGHTBLUE",
+    "body": [
+      "TEXTCOLOR_LIGHTBLUE"
+    ],
+    "description": "TEXTCOLOR_LIGHTBLUE"
+  },
+  "TEXTCOLOR_MAYABLUE": {
+    "prefix": "TEXTCOLOR_MAYABLUE",
+    "body": [
+      "TEXTCOLOR_MAYABLUE"
+    ],
+    "description": "TEXTCOLOR_MAYABLUE"
+  },
+  "TEXTCOLOR_DARKRED": {
+    "prefix": "TEXTCOLOR_DARKRED",
+    "body": [
+      "TEXTCOLOR_DARKRED"
+    ],
+    "description": "TEXTCOLOR_DARKRED"
+  },
+  "TEXTCOLOR_DARKPURPLE": {
+    "prefix": "TEXTCOLOR_DARKPURPLE",
+    "body": [
+      "TEXTCOLOR_DARKPURPLE"
+    ],
+    "description": "TEXTCOLOR_DARKPURPLE"
+  },
+  "TEXTCOLOR_BROWN": {
+    "prefix": "TEXTCOLOR_BROWN",
+    "body": [
+      "TEXTCOLOR_BROWN"
+    ],
+    "description": "TEXTCOLOR_BROWN"
+  },
+  "TEXTCOLOR_GREY": {
+    "prefix": "TEXTCOLOR_GREY",
+    "body": [
+      "TEXTCOLOR_GREY"
+    ],
+    "description": "TEXTCOLOR_GREY"
+  },
+  "TEXTCOLOR_TEAL": {
+    "prefix": "TEXTCOLOR_TEAL",
+    "body": [
+      "TEXTCOLOR_TEAL"
+    ],
+    "description": "TEXTCOLOR_TEAL"
+  },
+  "TEXTCOLOR_DARKPINK": {
+    "prefix": "TEXTCOLOR_DARKPINK",
+    "body": [
+      "TEXTCOLOR_DARKPINK"
+    ],
+    "description": "TEXTCOLOR_DARKPINK"
+  },
+  "TEXTCOLOR_PURPLE": {
+    "prefix": "TEXTCOLOR_PURPLE",
+    "body": [
+      "TEXTCOLOR_PURPLE"
+    ],
+    "description": "TEXTCOLOR_PURPLE"
+  },
+  "TEXTCOLOR_DARKORANGE": {
+    "prefix": "TEXTCOLOR_DARKORANGE",
+    "body": [
+      "TEXTCOLOR_DARKORANGE"
+    ],
+    "description": "TEXTCOLOR_DARKORANGE"
+  },
+  "TEXTCOLOR_RED": {
+    "prefix": "TEXTCOLOR_RED",
+    "body": [
+      "TEXTCOLOR_RED"
+    ],
+    "description": "TEXTCOLOR_RED"
+  },
+  "TEXTCOLOR_PINK": {
+    "prefix": "TEXTCOLOR_PINK",
+    "body": [
+      "TEXTCOLOR_PINK"
+    ],
+    "description": "TEXTCOLOR_PINK"
+  },
+  "TEXTCOLOR_ORANGE": {
+    "prefix": "TEXTCOLOR_ORANGE",
+    "body": [
+      "TEXTCOLOR_ORANGE"
+    ],
+    "description": "TEXTCOLOR_ORANGE"
+  },
+  "TEXTCOLOR_DARKYELLOW": {
+    "prefix": "TEXTCOLOR_DARKYELLOW",
+    "body": [
+      "TEXTCOLOR_DARKYELLOW"
+    ],
+    "description": "TEXTCOLOR_DARKYELLOW"
+  },
+  "TEXTCOLOR_YELLOW": {
+    "prefix": "TEXTCOLOR_YELLOW",
+    "body": [
+      "TEXTCOLOR_YELLOW"
+    ],
+    "description": "TEXTCOLOR_YELLOW"
+  },
+  "TEXTCOLOR_WHITE": {
+    "prefix": "TEXTCOLOR_WHITE",
+    "body": [
+      "TEXTCOLOR_WHITE"
+    ],
+    "description": "TEXTCOLOR_WHITE"
+  },
+  "TEXTCOLOR_NONE": {
+    "prefix": "TEXTCOLOR_NONE",
+    "body": [
+      "TEXTCOLOR_NONE"
+    ],
+    "description": "TEXTCOLOR_NONE"
+  },
+  "WEAPON_NONE": {
+    "prefix": "WEAPON_NONE",
+    "body": [
+      "WEAPON_NONE"
+    ],
+    "description": "WEAPON_NONE"
+  },
+  "WEAPON_SWORD": {
+    "prefix": "WEAPON_SWORD",
+    "body": [
+      "WEAPON_SWORD"
+    ],
+    "description": "WEAPON_SWORD"
+  },
+  "WEAPON_CLUB": {
+    "prefix": "WEAPON_CLUB",
+    "body": [
+      "WEAPON_CLUB"
+    ],
+    "description": "WEAPON_CLUB"
+  },
+  "WEAPON_AXE": {
+    "prefix": "WEAPON_AXE",
+    "body": [
+      "WEAPON_AXE"
+    ],
+    "description": "WEAPON_AXE"
+  },
+  "WEAPON_SHIELD": {
+    "prefix": "WEAPON_SHIELD",
+    "body": [
+      "WEAPON_SHIELD"
+    ],
+    "description": "WEAPON_SHIELD"
+  },
+  "WEAPON_DISTANCE": {
+    "prefix": "WEAPON_DISTANCE",
+    "body": [
+      "WEAPON_DISTANCE"
+    ],
+    "description": "WEAPON_DISTANCE"
+  },
+  "WEAPON_WAND": {
+    "prefix": "WEAPON_WAND",
+    "body": [
+      "WEAPON_WAND"
+    ],
+    "description": "WEAPON_WAND"
+  },
+  "WEAPON_AMMO": {
+    "prefix": "WEAPON_AMMO",
+    "body": [
+      "WEAPON_AMMO"
+    ],
+    "description": "WEAPON_AMMO"
+  },
+  "SKULL_NONE": {
+    "prefix": "SKULL_NONE",
+    "body": [
+      "SKULL_NONE"
+    ],
+    "description": "SKULL_NONE"
+  },
+  "SKULL_YELLOW": {
+    "prefix": "SKULL_YELLOW",
+    "body": [
+      "SKULL_YELLOW"
+    ],
+    "description": "SKULL_YELLOW"
+  },
+  "SKULL_GREEN": {
+    "prefix": "SKULL_GREEN",
+    "body": [
+      "SKULL_GREEN"
+    ],
+    "description": "SKULL_GREEN"
+  },
+  "SKULL_WHITE": {
+    "prefix": "SKULL_WHITE",
+    "body": [
+      "SKULL_WHITE"
+    ],
+    "description": "SKULL_WHITE"
+  },
+  "SKULL_RED": {
+    "prefix": "SKULL_RED",
+    "body": [
+      "SKULL_RED"
+    ],
+    "description": "SKULL_RED"
+  },
+  "SKULL_BLACK": {
+    "prefix": "SKULL_BLACK",
+    "body": [
+      "SKULL_BLACK"
+    ],
+    "description": "SKULL_BLACK"
+  },
+  "ITEM_FIREFIELD_PVP_FULL": {
+    "prefix": "ITEM_FIREFIELD_PVP_FULL",
+    "body": [
+      "ITEM_FIREFIELD_PVP_FULL"
+    ],
+    "description": "ITEM_FIREFIELD_PVP_FULL"
+  },
+  "ITEM_FIREFIELD_PVP_MEDIUM": {
+    "prefix": "ITEM_FIREFIELD_PVP_MEDIUM",
+    "body": [
+      "ITEM_FIREFIELD_PVP_MEDIUM"
+    ],
+    "description": "ITEM_FIREFIELD_PVP_MEDIUM"
+  },
+  "ITEM_FIREFIELD_PVP_SMALL": {
+    "prefix": "ITEM_FIREFIELD_PVP_SMALL",
+    "body": [
+      "ITEM_FIREFIELD_PVP_SMALL"
+    ],
+    "description": "ITEM_FIREFIELD_PVP_SMALL"
+  },
+  "ITEM_FIREFIELD_PERSISTENT_FULL": {
+    "prefix": "ITEM_FIREFIELD_PERSISTENT_FULL",
+    "body": [
+      "ITEM_FIREFIELD_PERSISTENT_FULL"
+    ],
+    "description": "ITEM_FIREFIELD_PERSISTENT_FULL"
+  },
+  "ITEM_FIREFIELD_PERSISTENT_MEDIUM": {
+    "prefix": "ITEM_FIREFIELD_PERSISTENT_MEDIUM",
+    "body": [
+      "ITEM_FIREFIELD_PERSISTENT_MEDIUM"
+    ],
+    "description": "ITEM_FIREFIELD_PERSISTENT_MEDIUM"
+  },
+  "ITEM_FIREFIELD_PERSISTENT_SMALL": {
+    "prefix": "ITEM_FIREFIELD_PERSISTENT_SMALL",
+    "body": [
+      "ITEM_FIREFIELD_PERSISTENT_SMALL"
+    ],
+    "description": "ITEM_FIREFIELD_PERSISTENT_SMALL"
+  },
+  "ITEM_FIREFIELD_NOPVP": {
+    "prefix": "ITEM_FIREFIELD_NOPVP",
+    "body": [
+      "ITEM_FIREFIELD_NOPVP"
+    ],
+    "description": "ITEM_FIREFIELD_NOPVP"
+  },
+  "ITEM_POISONFIELD_PVP": {
+    "prefix": "ITEM_POISONFIELD_PVP",
+    "body": [
+      "ITEM_POISONFIELD_PVP"
+    ],
+    "description": "ITEM_POISONFIELD_PVP"
+  },
+  "ITEM_POISONFIELD_PERSISTENT": {
+    "prefix": "ITEM_POISONFIELD_PERSISTENT",
+    "body": [
+      "ITEM_POISONFIELD_PERSISTENT"
+    ],
+    "description": "ITEM_POISONFIELD_PERSISTENT"
+  },
+  "ITEM_POISONFIELD_NOPVP": {
+    "prefix": "ITEM_POISONFIELD_NOPVP",
+    "body": [
+      "ITEM_POISONFIELD_NOPVP"
+    ],
+    "description": "ITEM_POISONFIELD_NOPVP"
+  },
+  "ITEM_ENERGYFIELD_PVP": {
+    "prefix": "ITEM_ENERGYFIELD_PVP",
+    "body": [
+      "ITEM_ENERGYFIELD_PVP"
+    ],
+    "description": "ITEM_ENERGYFIELD_PVP"
+  },
+  "ITEM_ENERGYFIELD_PERSISTENT": {
+    "prefix": "ITEM_ENERGYFIELD_PERSISTENT",
+    "body": [
+      "ITEM_ENERGYFIELD_PERSISTENT"
+    ],
+    "description": "ITEM_ENERGYFIELD_PERSISTENT"
+  },
+  "ITEM_ENERGYFIELD_NOPVP": {
+    "prefix": "ITEM_ENERGYFIELD_NOPVP",
+    "body": [
+      "ITEM_ENERGYFIELD_NOPVP"
+    ],
+    "description": "ITEM_ENERGYFIELD_NOPVP"
+  },
+  "ITEM_MAGICWALL": {
+    "prefix": "ITEM_MAGICWALL",
+    "body": [
+      "ITEM_MAGICWALL"
+    ],
+    "description": "ITEM_MAGICWALL"
+  },
+  "ITEM_MAGICWALL_PERSISTENT": {
+    "prefix": "ITEM_MAGICWALL_PERSISTENT",
+    "body": [
+      "ITEM_MAGICWALL_PERSISTENT"
+    ],
+    "description": "ITEM_MAGICWALL_PERSISTENT"
+  },
+  "ITEM_MAGICWALL_SAFE": {
+    "prefix": "ITEM_MAGICWALL_SAFE",
+    "body": [
+      "ITEM_MAGICWALL_SAFE"
+    ],
+    "description": "ITEM_MAGICWALL_SAFE"
+  },
+  "ITEM_WILDGROWTH": {
+    "prefix": "ITEM_WILDGROWTH",
+    "body": [
+      "ITEM_WILDGROWTH"
+    ],
+    "description": "ITEM_WILDGROWTH"
+  },
+  "ITEM_WILDGROWTH_PERSISTENT": {
+    "prefix": "ITEM_WILDGROWTH_PERSISTENT",
+    "body": [
+      "ITEM_WILDGROWTH_PERSISTENT"
+    ],
+    "description": "ITEM_WILDGROWTH_PERSISTENT"
+  },
+  "ITEM_WILDGROWTH_SAFE": {
+    "prefix": "ITEM_WILDGROWTH_SAFE",
+    "body": [
+      "ITEM_WILDGROWTH_SAFE"
+    ],
+    "description": "ITEM_WILDGROWTH_SAFE"
+  },
+  "ITEM_BAG": {
+    "prefix": "ITEM_BAG",
+    "body": [
+      "ITEM_BAG"
+    ],
+    "description": "ITEM_BAG"
+  },
+  "ITEM_BACKPACK": {
+    "prefix": "ITEM_BACKPACK",
+    "body": [
+      "ITEM_BACKPACK"
+    ],
+    "description": "ITEM_BACKPACK"
+  },
+  "ITEM_GOLD_COIN": {
+    "prefix": "ITEM_GOLD_COIN",
+    "body": [
+      "ITEM_GOLD_COIN"
+    ],
+    "description": "ITEM_GOLD_COIN"
+  },
+  "ITEM_PLATINUM_COIN": {
+    "prefix": "ITEM_PLATINUM_COIN",
+    "body": [
+      "ITEM_PLATINUM_COIN"
+    ],
+    "description": "ITEM_PLATINUM_COIN"
+  },
+  "ITEM_CRYSTAL_COIN": {
+    "prefix": "ITEM_CRYSTAL_COIN",
+    "body": [
+      "ITEM_CRYSTAL_COIN"
+    ],
+    "description": "ITEM_CRYSTAL_COIN"
+  },
+  "ITEM_DEPOT": {
+    "prefix": "ITEM_DEPOT",
+    "body": [
+      "ITEM_DEPOT"
+    ],
+    "description": "ITEM_DEPOT"
+  },
+  "ITEM_LOCKER": {
+    "prefix": "ITEM_LOCKER",
+    "body": [
+      "ITEM_LOCKER"
+    ],
+    "description": "ITEM_LOCKER"
+  },
+  "ITEM_MALE_CORPSE": {
+    "prefix": "ITEM_MALE_CORPSE",
+    "body": [
+      "ITEM_MALE_CORPSE"
+    ],
+    "description": "ITEM_MALE_CORPSE"
+  },
+  "ITEM_FEMALE_CORPSE": {
+    "prefix": "ITEM_FEMALE_CORPSE",
+    "body": [
+      "ITEM_FEMALE_CORPSE"
+    ],
+    "description": "ITEM_FEMALE_CORPSE"
+  },
+  "ITEM_FULLSPLASH": {
+    "prefix": "ITEM_FULLSPLASH",
+    "body": [
+      "ITEM_FULLSPLASH"
+    ],
+    "description": "ITEM_FULLSPLASH"
+  },
+  "ITEM_SMALLSPLASH": {
+    "prefix": "ITEM_SMALLSPLASH",
+    "body": [
+      "ITEM_SMALLSPLASH"
+    ],
+    "description": "ITEM_SMALLSPLASH"
+  },
+  "ITEM_PARCEL": {
+    "prefix": "ITEM_PARCEL",
+    "body": [
+      "ITEM_PARCEL"
+    ],
+    "description": "ITEM_PARCEL"
+  },
+  "ITEM_LETTER": {
+    "prefix": "ITEM_LETTER",
+    "body": [
+      "ITEM_LETTER"
+    ],
+    "description": "ITEM_LETTER"
+  },
+  "ITEM_LETTER_STAMPED": {
+    "prefix": "ITEM_LETTER_STAMPED",
+    "body": [
+      "ITEM_LETTER_STAMPED"
+    ],
+    "description": "ITEM_LETTER_STAMPED"
+  },
+  "ITEM_LABEL": {
+    "prefix": "ITEM_LABEL",
+    "body": [
+      "ITEM_LABEL"
+    ],
+    "description": "ITEM_LABEL"
+  },
+  "ITEM_AMULETOFLOSS": {
+    "prefix": "ITEM_AMULETOFLOSS",
+    "body": [
+      "ITEM_AMULETOFLOSS"
+    ],
+    "description": "ITEM_AMULETOFLOSS"
+  },
+  "ITEM_DOCUMENT_RO": {
+    "prefix": "ITEM_DOCUMENT_RO",
+    "body": [
+      "ITEM_DOCUMENT_RO"
+    ],
+    "description": "ITEM_DOCUMENT_RO"
+  },
+  "Movement": {
+    "prefix": "Movement",
+    "body": [
+      "local ${1:moveevent} = MoveEvent()\n\nfunction ${2:moveevent}.onStepIn(creature, item, position, fromPosition)\n\n\treturn true\nend\n\n${3:moveevent}:${4:uid}(${5:uid})\n${6:moveevent}:register()"
+    ],
+    "description": "MoveEvent RevScripts"
+  },
+  "Action": {
+    "prefix": "Action",
+    "body": [
+      "local ${1:action} = Action()\n\nfunction ${2:action}.onUse(player, item, fromPosition, target, toPosition, isHotkey)\n\n\treturn true\nend\n\n${3:action}:${4:uid}(${5:uid})\n${6:action}:register()"
+    ],
+    "description": "Action RevScripts"
+  },
+  "onDeath": {
+    "prefix": "onDeath",
+    "body": [
+      "local ${1:creatureevent} = CreatureEvent(\"${2:eventname}\")\n\nfunction ${3:creatureevent}.onDeath(creature, corpse, killer, mostDamageKiller, lastHitUnjustified, mostDamageUnjustified)\n\n\treturn true\nend\n\n${4:creatureevent}:register()"
+    ],
+    "description": "onDeath RevScripts"
+  },
+  "Talkaction": {
+    "prefix": "onSay",
+    "body": [
+      "local ${1:talk} = TalkAction(\"${2:word}\")\n\nfunction ${3:talk}.onSay(player, words, param)\n\n\treturn false\nend\n\n${5:talk}:separator(\" \")\n${6:talk}:register()"
+    ],
+    "description": "onSay RevScripts"
+  }
+}
