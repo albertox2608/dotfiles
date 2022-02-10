@@ -7517,32 +7517,44 @@
     ],
     "description": "ITEM_DOCUMENT_RO"
   },
-  "Movement": {
-    "prefix": "Movement",
+  "Action Revscripts": {
+    "prefix": "Action Revscripts",
     "body": [
-      "local ${1:moveevent} = MoveEvent()\n\nfunction ${2:moveevent}.onStepIn(creature, item, position, fromPosition)\n\n\treturn true\nend\n\n${3:moveevent}:${4:uid}(${5:uid})\n${6:moveevent}:register()"
+      "local ${1:action} = Action()\n",
+      "function ${1:action}.onUse(player, item, fromPosition, target, toPosition, isHotkey)",
+      "\t${0}",
+      "\treturn true",
+      "end\n",
+      "${1:action}:${2|aid,id,uid|}(${3})",
+      "${1:action}:register()"
     ],
-    "description": "MoveEvent RevScripts"
+    "description": "Action Revscripts"
   },
-  "Action": {
-    "prefix": "Action",
+  "CreatureEvent Revsc": {
+    "prefix": "CreatureEvent Revscripts",
     "body": [
-      "local ${1:action} = Action()\n\nfunction ${2:action}.onUse(player, item, fromPosition, target, toPosition, isHotkey)\n\n\treturn true\nend\n\n${3:action}:${4:uid}(${5:uid})\n${6:action}:register()"
+      "local ${1:creatureevent} = CreatureEvent(\"${2:eventname}\")\n",
+      "function ${1:creatureevent}.${3|onLogin(player),onLogout(player),onThink(creature\\, interval),onPrepareDeath(creature\\, killer),onDeath(creature\\, corpse\\, killer\\, mostDamageKiller\\, lastHitUnjustified\\, mostDamageUnjustified),onAdvance(player\\, skill\\, oldLevel\\, newLevel),onKill(creature\\, target),onTextEdit(player\\, item\\, text),onHealthChange(creature\\, attacker\\, primaryDamage\\, primaryType\\, secondaryDamage\\, secondaryType\\, origin),onManaChange(creature\\, attacker\\, primaryDamage\\, primaryType\\, secondaryDamage\\, secondaryType\\, origin),onExtendedOpcode(player\\, opcode\\, buffer)|}",
+      "\t${0}",
+      "\treturn true",
+      "end\n",
+      "${1:creatureevent}:register()"
     ],
-    "description": "Action RevScripts"
+    "description": "CreatureEvent Revscripts"
   },
-  "onDeath": {
-    "prefix": "onDeath",
+  "MoveEvent Revscripts": {
+    "prefix": "MoveEvent Revscripts",
     "body": [
-      "local ${1:creatureevent} = CreatureEvent(\"${2:eventname}\")\n\nfunction ${3:creatureevent}.onDeath(creature, corpse, killer, mostDamageKiller, lastHitUnjustified, mostDamageUnjustified)\n\n\treturn true\nend\n\n${4:creatureevent}:register()"
+      "local ${1:moveevent} = MoveEvent()\n",
+      "function ${1}.${2/(stepin)|(stepout)|(equip)|(deequip)|(additem)|(removeitem)/${1:+onStepIn(creature, item, pos, fromPosition)}${2:+onStepOut(creature, item, pos, fromPosition)}${3:+onEquip(player, item, slot, isCheck)}${4:+onDeEquip(player, item, slot, isCheck)}${5:+onAddItem(moveitem, tileitem, pos)}${6:+onRemoveItem(moveitem, tileitem, pos)}/}",
+      "\t${0}",
+      "\treturn true",
+      "end\n",
+      "${1:moveevent}:type(\"${2:type}\")",
+      "${4:$1:slot(\"${5:slotid}\")}",
+      "${1:moveevent}:${6|aid,id,uid|}(${7})",
+      "${1:moveevent}:register()"
     ],
-    "description": "onDeath RevScripts"
+    "description": "MoveEvent Revscripts"
   },
-  "Talkaction": {
-    "prefix": "onSay",
-    "body": [
-      "local ${1:talk} = TalkAction(\"${2:word}\")\n\nfunction ${3:talk}.onSay(player, words, param)\n\n\treturn false\nend\n\n${5:talk}:separator(\" \")\n${6:talk}:register()"
-    ],
-    "description": "onSay RevScripts"
-  }
 }
